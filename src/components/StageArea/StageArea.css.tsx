@@ -3,7 +3,7 @@ import StageAreaWallpaper from '../../assets/StageArea.jpg';
 import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const StageAreaWrapper = styled.div`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${StageAreaWallpaper.src})
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(${StageAreaWallpaper.src}) fixed
     center;
     background-size: cover;
     position: relative;
@@ -26,13 +26,13 @@ export const StageAreaWelcomeText = styled.div`
     font-weight: bold;
 
     ${minWidthQuery(Breakpoints.medium)} {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 `;
 
 export const StageAreaUnderText = styled.div`
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
   
     * {
@@ -41,6 +41,14 @@ export const StageAreaUnderText = styled.div`
     }
 
     ${minWidthQuery(Breakpoints.medium)} {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
+`;
+
+export const Logo = styled.div`
+    position: absolute;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
 `;

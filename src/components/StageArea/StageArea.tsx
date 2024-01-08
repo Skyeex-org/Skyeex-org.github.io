@@ -1,30 +1,25 @@
 import React, { FC } from "react";
-import TypeWriter from 'typewriter-effect';
 import {
+    Logo,
     StageAreaContentContainer, StageAreaUnderText,
     StageAreaWelcomeText,
     StageAreaWrapper
 } from "@components/components/StageArea/StageArea.css";
-import { StageAreaConfig } from "@components/configs/generalConfig";
+import { Button, Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
 export const StageArea: FC = () => {
     return (
         <StageAreaWrapper>
+            <Logo>Skyeex.</Logo>
             <StageAreaContentContainer>
                 <StageAreaWelcomeText>
-                    SKYEEX
+                    Sky High Software Quality
                 </StageAreaWelcomeText>
                 <StageAreaUnderText>
-                    Sky High Software
-                    <TypeWriter
-                        options={{
-                            strings: StageAreaConfig.TypeWriterContext,
-                            autoStart: true,
-                            loop: true,
-                            delay: 90
-                        }}
-                    />
+                    we produce top-notch software for our customers
                 </StageAreaUnderText>
+                <Separator paddingValue={1.5} />
+                <Button>Get Started</Button>
             </StageAreaContentContainer>
         </StageAreaWrapper>
     )
