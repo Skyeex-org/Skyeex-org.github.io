@@ -19,7 +19,7 @@ export const StageArea: FC = () => {
                     Sky High Software Quality
                 </StageAreaWelcomeText>
                 <StageAreaUnderText>
-                    we produce top-notch software for our customers
+                    We produce top-notch software for our customers
                 </StageAreaUnderText>
                 <Separator paddingValue={1.5} />
                 <Button>Get Started</Button>
