@@ -1,3 +1,8 @@
+export const Colors = {
+    coreBlue: '#448EE2',
+    coreDarkerBlue: '#346EB0'
+};
+
 export const Breakpoints = {
     nano: '400px',
     small: '500px',
