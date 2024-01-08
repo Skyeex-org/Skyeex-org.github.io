@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Colors } from "@components/utils/cssMedia";
 
 export const Button = styled.button`
-    background: #448EE2;
+    background: ${Colors.coreBlue};
     padding: 1.2rem 3rem 1.2rem 3rem;
     color: white;
     font-weight: bold;
@@ -11,7 +12,7 @@ export const Button = styled.button`
     transition: all 500ms ease;
     
     :hover {
-        background: #346EB0;
+        background: ${Colors.coreDarkerBlue};
     }
 `;
 
