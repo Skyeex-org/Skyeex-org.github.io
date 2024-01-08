@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import {
-    Logo,
+    Logo, LogoLine, LogoWrapper,
     StageAreaContentContainer, StageAreaUnderText,
     StageAreaWelcomeText,
     StageAreaWrapper
@@ -10,7 +10,10 @@ import { Button, Separator } from "@components/components/GeneralStyleSheet/Gene
 export const StageArea: FC = () => {
     return (
         <StageAreaWrapper>
-            <Logo>Skyeex.</Logo>
+            <LogoWrapper>
+                <Logo>Skyeex.</Logo>
+                <LogoLine />
+            </LogoWrapper>
             <StageAreaContentContainer>
                 <StageAreaWelcomeText>
                     Sky High Software Quality

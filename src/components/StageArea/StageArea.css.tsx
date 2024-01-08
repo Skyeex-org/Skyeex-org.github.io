@@ -45,10 +45,23 @@ export const StageAreaUnderText = styled.div`
     }
 `;
 
-export const Logo = styled.div`
+export const LogoWrapper = styled.div`
+    height: 1px;
+    width: 100%;
     position: absolute;
+`;
+
+export const Logo = styled.div`
     font-size: 3rem;
     color: white;
     font-weight: bold;
     padding: 2rem;
+`;
+
+export const LogoLine = styled.div`
+    background: white;
+    height: 1px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.3;
 `;
