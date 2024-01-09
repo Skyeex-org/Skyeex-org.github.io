@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import StageAreaWallpaper from '../../assets/StageArea.jpg';
+import LandingAreaWallpaper from '../../assets/LandArea.jpg';
 import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const LandingAreaWrapper = styled.div`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(${StageAreaWallpaper.src}) fixed
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(${LandingAreaWallpaper.src}) fixed
     center;
     background-size: cover;
     position: relative;
