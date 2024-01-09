@@ -14,7 +14,7 @@ export const ServiceCard: FC<ServiceCardType> = ({ service }) => {
     return (
         <ServiceCardWrapper>
             <ServiceCardImage src={service.icon} alt={service.title} />
-            <Separator paddingValue={1} />
+            <Separator paddingValue={2} />
             <ServiceCardTitle>{service.title}</ServiceCardTitle>
         </ServiceCardWrapper>
     );

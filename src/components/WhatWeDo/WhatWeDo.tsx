@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import {
-    BreathingSpace,
     WhatWeDoColumn, WhatWeDoContent,
     WhatWeDoFlexContainer,
     WhatWeDoTitle,
@@ -13,12 +12,12 @@ import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyle
 export const WhatWeDo: FC = () => {
     return (
         <WhatWeDoWrapper>
-            <BreathingSpace>
+            <Separator paddingValue={5}>
                 <WhatWeDoFlexContainer>
-                    <WhatWeDoColumn columnPercentage={45}>
+                    <WhatWeDoColumn columnPercentage={55}>
                         <WhatWeDoTitle>Take your craft to the next level</WhatWeDoTitle>
                     </WhatWeDoColumn>
-                    <WhatWeDoColumn columnPercentage={55}>
+                    <WhatWeDoColumn columnPercentage={45}>
                         <WhatWeDoContent>
                             <p>Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
                             <Separator paddingValue={1} />
@@ -26,7 +25,7 @@ export const WhatWeDo: FC = () => {
                         </WhatWeDoContent>
                     </WhatWeDoColumn>
                 </WhatWeDoFlexContainer>
-            </BreathingSpace>
+            </Separator>
             <WhatWeDoFlexContainer>
                 {WhatWeDoConfig.map((service: ServiceType, index) => {
                     const isNotTheLastElement = WhatWeDoConfig.length - 1 !== index;
