@@ -6,7 +6,7 @@ import BrainSolid from "@components/assets/icons/brain-solid.svg";
 export const WhatWeDoConfig: ServiceType[] = [
     {
         icon: GearsSolid.src,
-        title: "Backend",
+        title: "Backend Services",
         content: 'We specialize in backend systems, where we excel at designing, developing, and optimizing the ' +
             'technology that powers applications. With a focus on scalability and security, ' +
             'We ensure that these systems are reliable and efficient.',

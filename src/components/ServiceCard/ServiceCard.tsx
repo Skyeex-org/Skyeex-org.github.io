@@ -1,4 +1,10 @@
 import React, { FC } from "react";
+import {
+    ServiceCardImage,
+    ServiceCardTitle,
+    ServiceCardWrapper
+} from "@components/components/ServiceCard/ServiceCard.css";
+import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
 type ServiceCardType = {
     service: ServiceType;
@@ -6,9 +12,10 @@ type ServiceCardType = {
 
 export const ServiceCard: FC<ServiceCardType> = ({ service }) => {
     return (
-        <div>
-            <p>{service.title}</p>
-            <p>{service.content}</p>
-        </div>
+        <ServiceCardWrapper>
+            <ServiceCardImage src={service.icon} alt={service.title} />
+            <Separator paddingValue={1} />
+            <ServiceCardTitle>{service.title}</ServiceCardTitle>
+        </ServiceCardWrapper>
     );
 };

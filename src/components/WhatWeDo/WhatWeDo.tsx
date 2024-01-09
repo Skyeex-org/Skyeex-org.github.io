@@ -6,9 +6,11 @@ import { WhatWeDoConfig } from "@components/configs/general";
 export const WhatWeDo: FC = () => {
     return (
         <WhatWeDoWrapper>
-            {WhatWeDoConfig.map((service: ServiceType) => {
+            {WhatWeDoConfig.map((service: ServiceType, index) => {
+                const isLastElement = WhatWeDoConfig.length - 1 === index;
+
                 return (
-                    <WhatWeDoColumn key={service.title}>
+                    <WhatWeDoColumn key={service.title} isLastElement={isLastElement}>
                         <ServiceCard service={service} />
                     </WhatWeDoColumn>
                 );
