@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import StageAreaWallpaper from '../../assets/StageArea.jpg';
+import LandingAreaWallpaper from '../../assets/LandArea.jpg';
 import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
-export const StageAreaWrapper = styled.div`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(${StageAreaWallpaper.src}) fixed
+export const LandingAreaWrapper = styled.div`
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(${LandingAreaWallpaper.src}) fixed
     center;
     background-size: cover;
     position: relative;
@@ -11,7 +11,7 @@ export const StageAreaWrapper = styled.div`
     color: #fff;
 `;
 
-export const StageAreaContentContainer = styled.div`
+export const LandingAreaContentContainer = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,7 +21,7 @@ export const StageAreaContentContainer = styled.div`
     width: 100%;
 `;
 
-export const StageAreaWelcomeText = styled.div`
+export const LandingAreaWelcomeText = styled.div`
     font-size: 3rem;
     font-weight: bold;
 
@@ -30,7 +30,7 @@ export const StageAreaWelcomeText = styled.div`
     }
 `;
 
-export const StageAreaUnderText = styled.div`
+export const LandingAreaUnderText = styled.div`
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
@@ -45,20 +45,20 @@ export const StageAreaUnderText = styled.div`
     }
 `;
 
-export const LogoWrapper = styled.div`
+export const LandingLogoWrapper = styled.div`
     height: 1px;
     width: 100%;
     position: absolute;
 `;
 
-export const Logo = styled.div`
+export const LandingLogo = styled.div`
     font-size: 3rem;
     color: white;
     font-weight: bold;
     padding: 2rem;
 `;
 
-export const LogoLine = styled.div`
+export const LandingLogoLine = styled.div`
     background: white;
     height: 1px;
     width: 100%;
