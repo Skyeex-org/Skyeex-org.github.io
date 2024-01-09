@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { StageArea } from "@components/components/StageArea/StageArea";
-import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { WhatWeDo } from "@components/components/WhatWeDo/WhatWeDo";
 
 export default function Home() {
     return (
@@ -10,7 +10,7 @@ export default function Home() {
                 <title>Skyeex</title>
             </Head>
             <StageArea />
-            <Separator paddingValue={30} />
+            <WhatWeDo />
         </>
     )
 }
