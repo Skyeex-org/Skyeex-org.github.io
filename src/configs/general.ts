@@ -3,10 +3,17 @@ import DesktopSolid from "@components/assets/icons/desktop-solid.svg";
 import MobileSolid from "@components/assets/icons/mobile-solid.svg";
 import BrainSolid from "@components/assets/icons/brain-solid.svg";
 
-export const WhatWeDoConfig: ServiceType[] = [
+export const WhatWeDoContentConfig = {
+    overTitle: 'Top Services',
+    title: 'Take your craft to the next level',
+    paragraphOne: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+    paragraphTwo: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+};
+
+export const WhatWeDoCardsConfig: ServiceType[] = [
     {
         icon: SeverSolid.src,
-        title: "Backend Services",
+        title: 'Backend Services',
         content: 'We specialize in backend systems, where we excel at designing, developing, and optimizing the ' +
             'technology that powers applications. With a focus on scalability and security, ' +
             'We ensure that these systems are reliable and efficient.',

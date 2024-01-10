@@ -13,11 +13,21 @@ export const WhatWeDoTitle = styled.div`
     font-weight: bold;
 `;
 
+export const WhatWeDoOverTitle = styled.p`
+    font-weight: bold;
+    font-size: 1.20rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
+`;
+
 export const WhatWeDoContent = styled.div`
-    font-size: 1.15rem;
     padding: 2rem;
     color: #333333;
+`;
+
+export const WhatWeDoParagraph = styled.p`
     line-height: 1.55rem;
+    font-size: 1.15rem;
 `;
 
 
