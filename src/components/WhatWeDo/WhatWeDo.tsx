@@ -12,7 +12,6 @@ import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 export const WhatWeDo: FC = () => {
     const { isMobile } = useGetScreenSize();
-    console.log(isMobile());
 
     return (
         <WhatWeDoWrapper>
