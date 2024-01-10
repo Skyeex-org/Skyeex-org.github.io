@@ -8,11 +8,15 @@ import {
 import { ServiceCard } from "@components/components/ServiceCard/ServiceCard";
 import { WhatWeDoCardsConfig, WhatWeDoContentConfig } from "@components/configs/general";
 import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 export const WhatWeDo: FC = () => {
+    const { isMobile } = useGetScreenSize();
+    console.log(isMobile());
+
     return (
         <WhatWeDoWrapper>
-            <Separator paddingValue={5}>
+            <Separator paddingValue={isMobile() ? 2 : 5}>
                 <WhatWeDoFlexContainer>
                     <WhatWeDoColumn columnPercentage={50}>
                         <WhatWeDoOverTitle>{WhatWeDoContentConfig.overTitle}</WhatWeDoOverTitle>

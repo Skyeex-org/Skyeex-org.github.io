@@ -19,12 +19,7 @@ export const ServiceCardWrapper = styled.div`
 `;
 
 export const ServiceCardImage = styled.img`
-    width: 3rem;
-    height: 3rem;
     transition: all 250ms ease;
-  
-    ${minWidthQuery(Breakpoints.medium)} {
-        width: 100%;
-        height: 100%;
-    }
+    width: 15rem;
+    height: 15rem;
 `;
