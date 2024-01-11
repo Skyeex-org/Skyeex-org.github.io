@@ -3,14 +3,21 @@ import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
 import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
 
-export const WhatWeDoContentConfig = {
+export const LandingAreaConfig: LandingAreaConfigType = {
+    landingLogo: 'Skyeex.',
+    welcomeText: 'Sky High Software Quality',
+    underWelcomeText: 'We produce top-notch software for our customers',
+    buttonText: 'Get Started'
+};
+
+export const WhatWeDoContentConfig: WhatWeDoConfigType = {
     overTitle: 'Top Services',
     title: 'Take your craft to the next level',
     paragraphOne: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
     paragraphTwo: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
 };
 
-export const WhatWeDoCardsConfig: ServiceType[] = [
+export const WhatWeDoCardsConfig: ServiceConfigType[] = [
     {
         icon: SeverSolid.src,
         title: 'Backend Services',

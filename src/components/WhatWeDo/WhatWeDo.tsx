@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { forwardRef, HTMLProps } from "react";
 import {
     WhatWeDoColumn, WhatWeDoContent,
     WhatWeDoFlexContainer, WhatWeDoOverTitle, WhatWeDoParagraph,
@@ -10,11 +10,15 @@ import { WhatWeDoCardsConfig, WhatWeDoContentConfig } from "@components/configs/
 import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
-export const WhatWeDo: FC = () => {
+// eslint-disable-next-line react/display-name
+export const WhatWeDo = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
+    props,
+    ref
+) => {
     const { isMobile } = useGetScreenSize();
 
     return (
-        <WhatWeDoWrapper>
+        <WhatWeDoWrapper ref={ref}>
             <Separator paddingValue={isMobile() ? 1 : 5}>
                 <WhatWeDoFlexContainer>
                     <WhatWeDoColumn columnPercentage={50}>
@@ -35,7 +39,7 @@ export const WhatWeDo: FC = () => {
                 </WhatWeDoFlexContainer>
             </Separator>
             <WhatWeDoFlexContainer>
-                {WhatWeDoCardsConfig.map((service: ServiceType, index) => {
+                {WhatWeDoCardsConfig.map((service: ServiceConfigType, index) => {
                     const isNotTheLastElement = WhatWeDoCardsConfig.length - 1 !== index;
 
                     return (
@@ -47,4 +51,4 @@ export const WhatWeDo: FC = () => {
             </WhatWeDoFlexContainer>
         </WhatWeDoWrapper>
     );
-};
+});

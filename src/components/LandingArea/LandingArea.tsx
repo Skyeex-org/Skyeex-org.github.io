@@ -6,23 +6,32 @@ import {
     LandingAreaWrapper
 } from "@components/components/LandingArea/LandingArea.css";
 import { Button, Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { LandingAreaConfig } from "@components/configs/general";
 
-export const LandingArea: FC = () => {
+type LandingAreaType = {
+    nextSectionReference: any;
+}
+
+export const LandingArea: FC<LandingAreaType> = ({ nextSectionReference }) => {
+    const scrollToRef = () => {
+        nextSectionReference?.current?.scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
         <LandingAreaWrapper>
             <LandingLogoWrapper>
-                <LandingLogo>Skyeex.</LandingLogo>
+                <LandingLogo>{LandingAreaConfig.landingLogo}</LandingLogo>
                 <LandingLogoLine />
             </LandingLogoWrapper>
             <LandingAreaContentContainer>
                 <LandingAreaWelcomeText>
-                    Sky High Software Quality
+                    {LandingAreaConfig.welcomeText}
                 </LandingAreaWelcomeText>
                 <LandingAreaUnderText>
-                    We produce top-notch software for our customers
+                    {LandingAreaConfig.underWelcomeText}
                 </LandingAreaUnderText>
                 <Separator paddingValue={1.5} />
-                <Button>Get Started</Button>
+                <Button onClick={scrollToRef}>{LandingAreaConfig.buttonText}</Button>
             </LandingAreaContentContainer>
         </LandingAreaWrapper>
     )
