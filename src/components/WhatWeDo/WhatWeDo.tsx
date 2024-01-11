@@ -15,7 +15,7 @@ export const WhatWeDo: FC = () => {
 
     return (
         <WhatWeDoWrapper>
-            <Separator paddingValue={isMobile() ? 2 : 5}>
+            <Separator paddingValue={isMobile() ? 1 : 5}>
                 <WhatWeDoFlexContainer>
                     <WhatWeDoColumn columnPercentage={50}>
                         <WhatWeDoOverTitle>{WhatWeDoContentConfig.overTitle}</WhatWeDoOverTitle>
