@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
+import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const WhatWeDoWrapper = styled.div`
-    background: #fff;
-    color: #000;
+    background: ${Colors.white};
+    color: ${Colors.black};
     text-align: center;
   
     ${minWidthQuery(Breakpoints.large)} {
@@ -40,7 +40,7 @@ export const WhatWeDoOverTitle = styled.p`
 
 export const WhatWeDoContent = styled.div`
     padding-top: 2rem;
-    color: #333333;
+    color: ${Colors.gray};
 
     ${minWidthQuery(Breakpoints.medium)} {
         padding: 2rem;

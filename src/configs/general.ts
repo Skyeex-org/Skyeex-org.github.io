@@ -1,7 +1,7 @@
-import SeverSolid from "@components/assets/icons/server-solid.svg";
-import DesktopSolid from "@components/assets/icons/desktop-solid.svg";
-import MobileSolid from "@components/assets/icons/mobile-solid.svg";
-import BrainSolid from "@components/assets/icons/brain-solid.svg";
+import SeverSolid from "@components/assets/svgs/server-solid.svg";
+import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
+import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
+import BrainSolid from "@components/assets/svgs/brain-solid.svg";
 
 export const WhatWeDoContentConfig = {
     overTitle: 'Top Services',

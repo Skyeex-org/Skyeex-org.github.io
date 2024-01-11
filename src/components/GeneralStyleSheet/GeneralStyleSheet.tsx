@@ -4,7 +4,7 @@ import { Colors } from "@components/utils/cssMedia";
 export const Button = styled.button`
     background: ${Colors.coreBlue};
     padding: 1.2rem 3rem 1.2rem 3rem;
-    color: white;
+    color: ${Colors.white};
     font-weight: bold;
     border: none;
     font-size: 1rem;
