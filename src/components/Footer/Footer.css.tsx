@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { Colors } from "@components/utils/cssMedia";
 import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const FooterWrapper = styled.div`
-    background: #0B0D26;
+    background: ${Colors.footerWrapperEbony};
     display: flex;
-    color: #F4F8FA;
+    color: ${Colors.footerTextWhite};
 `;
 
 export const FooterContainer = styled.div`
@@ -18,9 +19,12 @@ export const FooterMetadataContainer = styled.div`
     justify-content: space-between;
     margin: 0rem 5rem 5rem 5rem;
 
+    text-align: center;
+
     ${minWidthQuery(Breakpoints.medium)} {
         flex-direction: row;
         margin: 0rem 7.5rem 5rem 7.5rem;
+        text-align: left;
     }
 `;
 
@@ -59,4 +63,8 @@ export const FooterLine = styled.div`
 
 export const FooterCopyright = styled.div`
     text-align: center;
+`;
+
+export const FooterCopyrightText = styled.a`
+
 `;

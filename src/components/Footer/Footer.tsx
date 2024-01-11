@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import {
   FooterWrapper, FooterContainer, FooterMetadataContainer,
   FooterMetadataMotto, FooterMetadataTitle, FooterMetadataText,
-  FooterMetadataContact, FooterLine, FooterCopyright
+  FooterMetadataContact, FooterLine, FooterCopyright, FooterCopyrightText
 } from "@components/components/Footer/Footer.css";
 import { SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
@@ -12,9 +12,8 @@ export const Footer: FC = () => {
       <FooterContainer>
         <FooterMetadataContainer>
           <FooterMetadataMotto>
-            <p>Architecting new digital horizons</p>
+            Architecting new digital horizons
           </FooterMetadataMotto>
-
             <FooterMetadataContact>
               <FooterMetadataTitle>Have questions?</FooterMetadataTitle>
               <FooterMetadataText>skyeex-org@gmail.com</FooterMetadataText>
@@ -23,12 +22,10 @@ export const Footer: FC = () => {
         <FooterLine />
         <SeparatorSpace paddingValue={0.75} />
         <FooterCopyright>
-        <p>Copyright &copy; {new Date().getFullYear()} {" "}
-        <a href="https://skyeex.org/">
+          <FooterCopyrightText href="https://skyeex.org/">
           Skyeex
-        </a>
-        . All rights reserved.
-        </p>
+          </FooterCopyrightText>
+        &nbsp;&copy; {new Date().getFullYear()}. All rights reserved.
         </FooterCopyright>
       </FooterContainer>
     </FooterWrapper>
