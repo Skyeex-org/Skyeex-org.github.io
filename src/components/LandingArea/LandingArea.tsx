@@ -5,11 +5,11 @@ import {
     LandingAreaWelcomeText,
     LandingAreaWrapper
 } from "@components/components/LandingArea/LandingArea.css";
-import { Button, Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { Button, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
 export const LandingArea: FC = () => {
     return (
-        <LandingAreaWrapper>
+        <LandingAreaWrapper>  
             <LandingLogoWrapper>
                 <LandingLogo>Skyeex.</LandingLogo>
                 <LandingLogoLine />
@@ -21,7 +21,7 @@ export const LandingArea: FC = () => {
                 <LandingAreaUnderText>
                     We produce top-notch software for our customers
                 </LandingAreaUnderText>
-                <Separator paddingValue={1.5} />
+                <SeparatorSpace paddingValue={1.5} />
                 <Button>Get Started</Button>
             </LandingAreaContentContainer>
         </LandingAreaWrapper>

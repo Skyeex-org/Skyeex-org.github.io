@@ -16,6 +16,6 @@ export const Button = styled.button`
     }
 `;
 
-export const Separator = styled.div<{ paddingValue: number }>`
+export const SeparatorSpace = styled.div<{ paddingValue: number }>`
     padding: ${(props) => props.paddingValue}rem;
 `;
