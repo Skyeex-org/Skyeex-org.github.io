@@ -5,6 +5,7 @@ import {
   FooterMetadataContact, FooterLine, FooterCopyright, FooterCopyrightText
 } from "@components/components/Footer/Footer.css";
 import { SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { FooterConfig } from "@components/configs/general";
 
 export const Footer: FC = () => {
   return (
@@ -12,17 +13,17 @@ export const Footer: FC = () => {
       <FooterContainer>
         <FooterMetadataContainer>
           <FooterMetadataMotto>
-            Architecting new digital horizons
+            {FooterConfig.metadataMoto}
           </FooterMetadataMotto>
             <FooterMetadataContact>
-              <FooterMetadataTitle>Have questions?</FooterMetadataTitle>
-              <FooterMetadataText>skyeex-org@gmail.com</FooterMetadataText>
+              <FooterMetadataTitle>{FooterConfig.metadataTitle}</FooterMetadataTitle>
+              <FooterMetadataText>{FooterConfig.metadataText}</FooterMetadataText>
             </FooterMetadataContact>
         </FooterMetadataContainer>
         <FooterLine />
         <SeparatorSpace paddingValue={0.75} />
         <FooterCopyright>
-          <FooterCopyrightText href="https://skyeex.org/">
+          <FooterCopyrightText href={FooterConfig.websiteUrl}>
           Skyeex
           </FooterCopyrightText>
         &nbsp;&copy; {new Date().getFullYear()}. All rights reserved.

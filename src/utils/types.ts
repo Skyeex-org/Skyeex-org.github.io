@@ -17,3 +17,10 @@ type ServiceConfigType = {
     title: string;
     content: string;
 };
+
+type FooterConfigType = {
+    metadataMoto: string;
+    metadataTitle: string;
+    metadataText: string;
+    websiteUrl: string;
+}

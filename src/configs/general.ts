@@ -43,4 +43,11 @@ export const WhatWeDoCardsConfig: ServiceConfigType[] = [
         content: 'We offer Machine Learning services, leveraging my expertise in this field to provide ' +
             'tailored solutions that harness the power of data and algorithms for diverse applications',
     },
-]
+];
+
+export const FooterConfig: FooterConfigType = {
+    metadataMoto: 'Architecting new digital horizons',
+    metadataTitle: 'Have questions?',
+    metadataText: 'skyeex-org@gmail.com',
+    websiteUrl: 'https://skyeex-org.github.io/'
+}
