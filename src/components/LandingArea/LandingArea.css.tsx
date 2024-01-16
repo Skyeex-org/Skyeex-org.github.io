@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import LandingAreaWallpaper from '../../assets/LandArea.jpg';
-import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
+import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const LandingAreaWrapper = styled.div`
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(${LandingAreaWallpaper.src}) fixed
@@ -8,7 +8,7 @@ export const LandingAreaWrapper = styled.div`
     background-size: cover;
     position: relative;
     height: 100vh;
-    color: #fff;
+    color: ${Colors.white};
 `;
 
 export const LandingAreaContentContainer = styled.div`
@@ -16,7 +16,7 @@ export const LandingAreaContentContainer = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: ${Colors.white};
     text-align: center;
     width: 100%;
 `;
@@ -53,13 +53,13 @@ export const LandingLogoWrapper = styled.div`
 
 export const LandingLogo = styled.div`
     font-size: 3rem;
-    color: white;
+    color: ${Colors.white};
     font-weight: bold;
     padding: 2rem;
 `;
 
 export const LandingLogoLine = styled.div`
-    background: white;
+    background: ${Colors.white};
     height: 1px;
     width: 100%;
     text-align: center;
