@@ -7,7 +7,7 @@ export const ServiceCardTitle = styled.h2`
     transition: all 250ms ease;
 
     ${minWidthQuery(Breakpoints.medium)} {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 `;
 
@@ -28,12 +28,12 @@ export const ServiceCardImage = styled.img`
     height: 15rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
-          width: 25rem;
-          height: 25rem;
+        width: 25rem;
+        height: 25rem;
     }
 
     ${minWidthQuery(Breakpoints.large)} {
-        width: 15rem;
-        height: 15rem;
+        width: 12.5rem;
+        height: 12.5rem;
     }
 `;

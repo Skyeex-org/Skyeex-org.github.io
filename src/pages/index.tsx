@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Head from "next/head";
 import { LandingArea } from "@components/components/LandingArea/LandingArea";
-import { WhatWeDo } from "@components/components/WhatWeDo/WhatWeDo";
+import { Services } from "@components/components/Services/Services";
 import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
 export default function Home() {
@@ -13,8 +13,7 @@ export default function Home() {
                 <title>Skyeex</title>
             </Head>
             <LandingArea nextSectionReference={whatWeDoRef} />
-            <WhatWeDo ref={whatWeDoRef} />
-            <Separator paddingValue={30} />
+            <Services ref={whatWeDoRef} />
         </>
     )
 }

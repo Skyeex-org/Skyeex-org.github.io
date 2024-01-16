@@ -7,7 +7,7 @@ import {
 import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
 type ServiceCardType = {
-    service: ServiceType;
+    service: ServiceConfigType;
 }
 
 export const ServiceCard: FC<ServiceCardType> = ({ service }) => {
