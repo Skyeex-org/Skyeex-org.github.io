@@ -5,7 +5,7 @@ import {
     LandingAreaWelcomeText,
     LandingAreaWrapper
 } from "@components/components/LandingArea/LandingArea.css";
-import { Button, Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { Button, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { LandingAreaConfig } from "@components/configs/general";
 
 type LandingAreaType = {
@@ -30,7 +30,7 @@ export const LandingArea: FC<LandingAreaType> = ({ nextSectionReference }) => {
                 <LandingAreaUnderText>
                     {LandingAreaConfig.underWelcomeText}
                 </LandingAreaUnderText>
-                <Separator paddingValue={1.5} />
+                <SeparatorSpace paddingValue={1.5} />
                 <Button onClick={scrollToRef}>{LandingAreaConfig.buttonText}</Button>
             </LandingAreaContentContainer>
         </LandingAreaWrapper>

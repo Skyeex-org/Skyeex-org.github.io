@@ -7,7 +7,7 @@ import {
 } from "@components/components/Services/Services.css";
 import { ServiceCard } from "@components/components/ServiceCard/ServiceCard";
 import { WhatWeDoCardsConfig, WhatWeDoContentConfig } from "@components/configs/general";
-import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 // eslint-disable-next-line react/display-name
@@ -19,7 +19,7 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
 
     return (
         <ServicesWrapper ref={ref}>
-            <Separator paddingValue={isMobile() ? 1 : 5}>
+            <SeparatorSpace paddingValue={isMobile() ? 1 : 5}>
                 <ServicesFlexContainer>
                     <ServicesColumn columnPercentage={50}>
                         <ServicesOverTitle>{WhatWeDoContentConfig.overTitle}</ServicesOverTitle>
@@ -30,14 +30,14 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
                             <ServicesParagraph>
                                 {WhatWeDoContentConfig.paragraphOne}
                             </ServicesParagraph>
-                            <Separator paddingValue={1} />
+                            <SeparatorSpace paddingValue={1} />
                             <ServicesParagraph>
                                 {WhatWeDoContentConfig.paragraphTwo}
                             </ServicesParagraph>
                         </ServicesContent>
                     </ServicesColumn>
                 </ServicesFlexContainer>
-            </Separator>
+            </SeparatorSpace>
             <ServicesFlexContainer>
                 {WhatWeDoCardsConfig.map((service: ServiceConfigType, index) => {
                     const isNotTheLastElement = WhatWeDoCardsConfig.length - 1 !== index;

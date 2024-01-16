@@ -3,7 +3,9 @@ export const Colors = {
     coreDarkerBlue: '#346EB0',
     white: '#fff',
     black: '#000',
-    gray: '#333333'
+    gray: '#333333',
+    footerWrapperEbony: '#0B0D26',
+    footerTextWhite: '#F4F8FA'
 };
 
 export const Breakpoints = {

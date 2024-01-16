@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Head from "next/head";
 import { LandingArea } from "@components/components/LandingArea/LandingArea";
 import { Services } from "@components/components/Services/Services";
-import { Separator } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { Footer } from "@components/components/Footer/Footer";
 
 export default function Home() {
     const whatWeDoRef = useRef<HTMLDivElement | null>(null);
@@ -14,6 +14,7 @@ export default function Home() {
             </Head>
             <LandingArea nextSectionReference={whatWeDoRef} />
             <Services ref={whatWeDoRef} />
+            <Footer />
         </>
     )
 }
