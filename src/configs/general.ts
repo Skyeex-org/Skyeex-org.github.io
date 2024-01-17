@@ -2,6 +2,7 @@ import SeverSolid from "@components/assets/svgs/server-solid.svg";
 import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
 import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
+import ProjectPlaceholder from "@components/assets/ProjectPlaceholder.png";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: 'Skyeex.',
@@ -51,3 +52,26 @@ export const FooterConfig: FooterConfigType = {
     metadataText: 'skyeex-org@gmail.com',
     websiteUrl: 'https://skyeex-org.github.io/'
 }
+
+export const ProjectsCardsConfig: ProjectsConfigType[] = [
+    {
+        title: 'Streamsnap',
+        description: 'Streamsnap is a multiplatform VOD streaming app with integrated analytics.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'Defect detection analyser',
+        description: 'When machine learning and neural networks meet, product quality improvements happen.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'CRUZE',
+        description: 'Cruze is a mobile carpooling app specially tailored for businesses.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'Car damage detector',
+        description: 'A smart classifier that can accurately determine the severity of accident indused vehicle damage.',
+        icon: ProjectPlaceholder.src,
+    },
+]

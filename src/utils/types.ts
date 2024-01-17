@@ -18,6 +18,12 @@ type ServiceConfigType = {
     content: string;
 };
 
+type ProjectsConfigType = {
+    title: string;
+    description: string;
+    icon: string;
+};
+
 type FooterConfigType = {
     metadataMoto: string;
     metadataTitle: string;
