@@ -7,7 +7,7 @@ export const ServicesWrapper = styled.div`
     text-align: center;
   
     ${minWidthQuery(Breakpoints.large)} {
-        padding: 2rem 6rem 2rem 6rem;
+        padding: 2rem 4rem 2rem 4rem;
         text-align: left;
     }
   
