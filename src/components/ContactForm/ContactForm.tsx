@@ -26,7 +26,7 @@ export const ContactForm: FC = () => {
                     <SeparatorSpace paddingValue={1} />
                     <ContactInput placeholder={'email'} />
                     <SeparatorSpace paddingValue={1} />
-                    <ContactTextArea rows={12} />
+                    <ContactTextArea rows={12} placeholder={'Message'} />
                 </FlexColumn>
             </FlexContainer>
         </ContactFormWrapper>
