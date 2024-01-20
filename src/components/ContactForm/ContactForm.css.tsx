@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
-export const ContactFormWrapper = styled.div`
+export const ContactWrapper = styled.div`
     height: 100vh;
     background: ${Colors.white};
     color: ${Colors.black};
     padding: 2rem;
   
     ${minWidthQuery(Breakpoints.large)} {
-        padding: 8rem 8rem 2rem 8rem;
+        padding: 8rem 6rem 2rem 6rem;
     }
     
     ${minWidthQuery(Breakpoints.xxLarge)} {
@@ -16,8 +16,10 @@ export const ContactFormWrapper = styled.div`
     }
 `;
 
+export const ContactFormWrapper = styled.div``;
+
 export const ContactInput = styled.input`
-    width: 100%;
+    width: 80%;
     padding: 1rem;
     color: ${Colors.black};
     background: ${Colors.white};
@@ -38,7 +40,7 @@ export const ContactTextArea = styled.textarea`
     background: ${Colors.white};
     font-weight: bold;
     border-radius: 2.5rem;
-    width: 100%;
+    width: 80%;
     padding: 1rem;
     resize: none;
     border: 0.1rem solid ${Colors.black};
@@ -49,4 +51,16 @@ export const ContactTextArea = styled.textarea`
         border-color: ${Colors.coreDarkerBlue};
         box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
     }
+`;
+
+export const ContactTextBox = styled.div`
+    text-align: center;
+`;
+
+export const ContactHeader = styled.h1`
+    padding: 1rem;
+`;
+
+export const ContactParagraph = styled.p`
+    padding: 0.5rem;
 `;
