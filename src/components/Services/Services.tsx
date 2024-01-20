@@ -1,13 +1,17 @@
 import React, { forwardRef, HTMLProps } from "react";
 import {
-    ServicesColumn, ServicesContent,
-    ServicesFlexContainer, ServicesOverTitle, ServicesParagraph,
+    ServicesContent,
+    ServicesOverTitle, ServicesParagraph,
     ServicesTitle,
     ServicesWrapper
 } from "@components/components/Services/Services.css";
 import { ServiceCard } from "@components/components/ServiceCard/ServiceCard";
 import { WhatWeDoCardsConfig, WhatWeDoContentConfig } from "@components/configs/general";
-import { SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import {
+    SeparatorSpace,
+    FlexColumn,
+    FlexContainer
+} from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 // eslint-disable-next-line react/display-name
@@ -20,12 +24,12 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
     return (
         <ServicesWrapper ref={ref}>
             <SeparatorSpace paddingValue={isMobile() ? 1 : 5}>
-                <ServicesFlexContainer>
-                    <ServicesColumn columnPercentage={50}>
+                <FlexContainer>
+                    <FlexColumn columnPercentage={50}>
                         <ServicesOverTitle>{WhatWeDoContentConfig.overTitle}</ServicesOverTitle>
                         <ServicesTitle>{WhatWeDoContentConfig.title}</ServicesTitle>
-                    </ServicesColumn>
-                    <ServicesColumn columnPercentage={50}>
+                    </FlexColumn>
+                    <FlexColumn columnPercentage={50}>
                         <ServicesContent>
                             <ServicesParagraph>
                                 {WhatWeDoContentConfig.paragraphOne}
@@ -35,20 +39,20 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
                                 {WhatWeDoContentConfig.paragraphTwo}
                             </ServicesParagraph>
                         </ServicesContent>
-                    </ServicesColumn>
-                </ServicesFlexContainer>
+                    </FlexColumn>
+                </FlexContainer>
             </SeparatorSpace>
-            <ServicesFlexContainer>
+            <FlexContainer>
                 {WhatWeDoCardsConfig.map((service: ServiceConfigType, index) => {
                     const isNotTheLastElement = WhatWeDoCardsConfig.length - 1 !== index;
 
                     return (
-                        <ServicesColumn key={service.title} columnPercentage={25} shouldHaveBorder={isNotTheLastElement}>
+                        <FlexColumn key={service.title} columnPercentage={25} shouldHaveBorder={isNotTheLastElement}>
                             <ServiceCard service={service} />
-                        </ServicesColumn>
+                        </FlexColumn>
                     );
                 })}
-            </ServicesFlexContainer>
+            </FlexContainer>
         </ServicesWrapper>
     );
 });
