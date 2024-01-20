@@ -16,7 +16,9 @@ export const ContactWrapper = styled.div`
     }
 `;
 
-export const ContactFormWrapper = styled.div``;
+export const ContactFormWrapper = styled.div`
+    text-align: center;
+`;
 
 export const ContactInput = styled.input`
     width: 80%;
