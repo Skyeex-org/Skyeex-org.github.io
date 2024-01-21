@@ -13,7 +13,7 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
     return (
         <ProjectCardWrapper>
             <ProjectCardImage />
-            <SeparatorMargin value={0.5} />
+            <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
                 <SeparatorSpace paddingValue={1} />

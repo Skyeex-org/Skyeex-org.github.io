@@ -20,6 +20,6 @@ export const SeparatorSpace = styled.div<{ paddingValue: number }>`
     padding: ${(props) => props.paddingValue}rem;
 `;
 
-export const SeparatorMargin = styled.div<{ value: number }>`
-    margin: ${(props) => props.value}rem;
+export const SeparatorMargin = styled.div<{ marginValue: number }>`
+    margin: ${(props) => props.marginValue}rem;
 `;

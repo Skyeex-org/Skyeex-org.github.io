@@ -74,4 +74,6 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
         description: 'Automated defect detection analyser. When machine learning and neural networks meet, product quality improvements happen.',
         icon: ProjectPlaceholder.src,
     },
-]
+];
+
+export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);
