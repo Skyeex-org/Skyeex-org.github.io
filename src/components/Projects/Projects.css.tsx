@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
+import { Colors } from "@components/utils/cssMedia";
 
 export const ProjectsWrapper = styled.div`
     background: ${Colors.paleBluishGray};

@@ -3,7 +3,7 @@ import {
     ProjectsContainer, ProjectsHeadliner, ProjectsTitle,
     ProjectsWrapper, ProjectsFlexContainer
 } from "@components/components/Projects/Projects.css";
-import { ProjectsCardsConfig, ProjectsCardsPreviewConfig } from "@components/configs/general";
+import { ProjectsCardsPreviewConfig } from "@components/configs/general";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { Button, SeparatorMargin, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
