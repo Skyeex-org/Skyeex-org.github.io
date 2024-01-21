@@ -5,7 +5,8 @@ export const Colors = {
     black: '#000',
     gray: '#333333',
     footerWrapperEbony: '#0B0D26',
-    footerTextWhite: '#F4F8FA'
+    footerTextWhite: '#F4F8FA',
+    fontGray: '#5E5E5E'
 };
 
 export const Breakpoints = {

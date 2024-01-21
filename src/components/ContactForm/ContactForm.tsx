@@ -9,27 +9,31 @@ import {
     FlexColumn,
     FlexContainer, Button
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { ContactConfig, formSubmitCodeUrl } from "@components/configs/general";
 
 export const ContactForm: FC = () => {
     return (
         <ContactWrapper>
             <FlexContainer>
-                <FlexColumn columnPercentage={30}>
+                <FlexColumn columnPercentage={25}>
                     <ContactTextBox>
                         <ContactHeader>Contact Details</ContactHeader>
-                        <ContactParagraph>785 15h Street, Office 478</ContactParagraph>
-                        <ContactParagraph>Berlin, De 81566</ContactParagraph>
-                        <ContactParagraph>skyeex-org@gmail.com</ContactParagraph>
-                        <ContactParagraph>+1 840 841 25 69</ContactParagraph>
+                        <SeparatorSpace paddingValue={1} />
+                        <ContactParagraph>{ContactConfig.addressPartOne}</ContactParagraph>
+                        <ContactParagraph>{ContactConfig.addressPartTwo}</ContactParagraph>
+                        <ContactParagraph isBold={true}>{ContactConfig.email}</ContactParagraph>
+                        <ContactParagraph>{ContactConfig.phoneNumber}</ContactParagraph>
                     </ContactTextBox>
                 </FlexColumn>
-                <FlexColumn columnPercentage={70}>
-                    <ContactFormWrapper>
-                        <ContactInput placeholder={'name'} />
+                <FlexColumn columnPercentage={75}>
+                    <ContactFormWrapper action={formSubmitCodeUrl} method="POST">
+                        <ContactInput placeholder={'name'} name={'name'} />
                         <SeparatorSpace paddingValue={1} />
-                        <ContactInput placeholder={'email'} />
+                        <ContactInput placeholder={'email'} type={'email'} name={'email'}/>
                         <SeparatorSpace paddingValue={1} />
-                        <ContactTextArea rows={12} placeholder={'message'} />
+                        <ContactInput placeholder={'subject'} name={'subject'}/>
+                        <SeparatorSpace paddingValue={1} />
+                        <ContactTextArea rows={12} placeholder={'message'} name={'message'} />
                         <SeparatorSpace paddingValue={1} />
                         <Button>Send Message</Button>
                     </ContactFormWrapper>

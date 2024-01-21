@@ -15,7 +15,7 @@ export const ContactWrapper = styled.div`
     }
 `;
 
-export const ContactFormWrapper = styled.div`
+export const ContactFormWrapper = styled.form`
     text-align: center;
 `;
 
@@ -54,14 +54,21 @@ export const ContactTextArea = styled.textarea`
     }
 `;
 
-export const ContactTextBox = styled.div`
-    text-align: center;
-`;
-
 export const ContactHeader = styled.h1`
     padding: 1rem;
+    font-size: 2.5rem;
 `;
 
-export const ContactParagraph = styled.p`
+export const ContactParagraph = styled.p<{ isBold?: boolean }>`
     padding: 0.5rem;
+    font-weight: ${(props) => props.isBold ? 'bold' : 'none'};
+`;
+
+
+export const ContactTextBox = styled.div`
+    text-align: center;
+  
+    ${ContactParagraph} {
+        font-size: 1.2rem;
+    }
 `;
