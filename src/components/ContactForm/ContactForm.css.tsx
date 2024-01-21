@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ContactWrapper = styled.div`
-    height: 100vh;
     background: ${Colors.white};
     color: ${Colors.black};
     padding: 2rem;
@@ -21,7 +20,7 @@ export const ContactFormWrapper = styled.div`
 `;
 
 export const ContactInput = styled.input`
-    width: 80%;
+    width: 60%;
     padding: 1rem;
     color: ${Colors.black};
     background: ${Colors.white};
@@ -32,8 +31,8 @@ export const ContactInput = styled.input`
 
     :focus {
         outline: none !important;
-        border-color: #719ECE;
-        box-shadow: 0 0 10px #719ECE;
+        border-color: ${Colors.coreDarkerBlue};
+        box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
     }
 `;
 
@@ -42,7 +41,7 @@ export const ContactTextArea = styled.textarea`
     background: ${Colors.white};
     font-weight: bold;
     border-radius: 2.5rem;
-    width: 80%;
+    width: 60%;
     padding: 1rem;
     resize: none;
     border: 0.1rem solid ${Colors.black};

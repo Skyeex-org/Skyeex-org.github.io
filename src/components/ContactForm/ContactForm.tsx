@@ -29,11 +29,12 @@ export const ContactForm: FC = () => {
                         <SeparatorSpace paddingValue={1} />
                         <ContactInput placeholder={'email'} />
                         <SeparatorSpace paddingValue={1} />
-                        <ContactTextArea rows={12} placeholder={'Message'} />
+                        <ContactTextArea rows={12} placeholder={'message'} />
                         <SeparatorSpace paddingValue={1} />
                         <Button>Send Message</Button>
                     </ContactFormWrapper>
                 </FlexColumn>
+                <SeparatorSpace paddingValue={4} />
             </FlexContainer>
         </ContactWrapper>
     )
