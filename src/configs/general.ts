@@ -60,18 +60,18 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
         icon: ProjectPlaceholder.src,
     },
     {
-        title: 'Defect detection analyser',
-        description: 'When machine learning and neural networks meet, product quality improvements happen.',
-        icon: ProjectPlaceholder.src,
-    },
-    {
-        title: 'CRUZE',
-        description: 'Cruze is a mobile carpooling app specially tailored for businesses.',
+        title: 'Cruze',
+        description: 'Cruze is a mobile carpooling app specially tailored for businesses and public institutions.',
         icon: ProjectPlaceholder.src,
     },
     {
         title: 'Car damage detector',
         description: 'A smart classifier that can accurately determine the severity of accident indused vehicle damage.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'ADDA',
+        description: 'Automated defect detection analyser. When machine learning and neural networks meet, product quality improvements happen.',
         icon: ProjectPlaceholder.src,
     },
 ]

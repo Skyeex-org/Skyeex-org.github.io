@@ -6,13 +6,13 @@ import {
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
 type ProjectCardType = {
-    project: ProjectType;
+    project: ProjectsConfigType;
 }
 
 export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
     return (
         <ProjectCardWrapper>
-            <ProjectCardImage src={project.icon} alt={project.title} />
+            <ProjectCardImage />
             <SeparatorMargin value={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
