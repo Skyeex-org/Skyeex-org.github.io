@@ -20,6 +20,10 @@ export const SeparatorSpace = styled.div<{ paddingValue: number }>`
     padding: ${(props) => props.paddingValue}rem;
 `;
 
+export const SeparatorMargin = styled.div<{ marginValue: number }>`
+    margin: ${(props) => props.marginValue}rem;
+`;
+
 export const FlexContainer = styled.div`
     display: flex;
     flex-wrap: wrap;

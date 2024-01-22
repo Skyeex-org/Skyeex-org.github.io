@@ -2,6 +2,7 @@ import SeverSolid from "@components/assets/svgs/server-solid.svg";
 import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
 import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
+import ProjectPlaceholder from "@components/assets/ProjectPlaceholder.png";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: 'Skyeex.',
@@ -50,7 +51,7 @@ export const ContactConfig = {
     addressPartTwo: 'Berlin, De 81566',
     email: 'skyeex-org@gmail.com',
     phoneNumber: '+1 840 841 25 69'
-}
+};
 
 export const FooterConfig: FooterConfigType = {
     metadataMoto: 'Architecting new digital horizons',
@@ -59,4 +60,28 @@ export const FooterConfig: FooterConfigType = {
     websiteUrl: 'https://skyeex-org.github.io/'
 };
 
+export const ProjectsCardsConfig: ProjectsConfigType[] = [
+    {
+        title: 'Streamsnap',
+        description: 'Streamsnap is a multiplatform VOD streaming app with integrated analytics.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'Cruze',
+        description: 'Cruze is a mobile carpooling app specially tailored for businesses and public institutions.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'Car damage detector',
+        description: 'A smart classifier that can accurately determine the severity of accident indused vehicle damage.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'ADDA',
+        description: 'Automated defect detection analyser. When machine learning and neural networks meet, product quality improvements happen.',
+        icon: ProjectPlaceholder.src,
+    },
+];
+
+export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);
 export const formSubmitCodeUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';
