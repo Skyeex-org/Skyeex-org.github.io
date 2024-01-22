@@ -17,10 +17,15 @@ export const ContactWrapper = styled.div`
 
 export const ContactFormWrapper = styled.form`
     text-align: center;
+    margin-top: 4rem;
+
+    ${minWidthQuery(Breakpoints.large)} {
+        margin-top: 0;
+    }
 `;
 
 export const ContactInput = styled.input`
-    width: 60%;
+    width: 90%;
     padding: 1rem;
     color: ${Colors.black};
     background: ${Colors.white};
@@ -34,6 +39,10 @@ export const ContactInput = styled.input`
         border-color: ${Colors.coreDarkerBlue};
         box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
     }
+
+    ${minWidthQuery(Breakpoints.large)} {
+        width: 60%;
+    }
 `;
 
 export const ContactTextArea = styled.textarea`
@@ -41,7 +50,7 @@ export const ContactTextArea = styled.textarea`
     background: ${Colors.white};
     font-weight: bold;
     border-radius: 2.5rem;
-    width: 60%;
+    width: 90%;
     padding: 1rem;
     resize: none;
     border: 0.1rem solid ${Colors.black};
@@ -51,6 +60,10 @@ export const ContactTextArea = styled.textarea`
         outline: none !important;
         border-color: ${Colors.coreDarkerBlue};
         box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
+    }
+
+    ${minWidthQuery(Breakpoints.large)} {
+        width: 60%;
     }
 `;
 

@@ -114,7 +114,7 @@ export const ContactForm: FC = () => {
                         <Button disabled={!canSubmitForm}>Send Message</Button>
                     </ContactFormWrapper>
                 </FlexColumn>
-                <SeparatorSpace paddingValue={4} />
+                <SeparatorSpace paddingValue={3} />
             </FlexContainer>
         </ContactWrapper>
     )
