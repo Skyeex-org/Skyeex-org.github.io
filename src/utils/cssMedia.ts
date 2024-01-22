@@ -8,6 +8,7 @@ export const Colors = {
     paleWhite: '#F4F8FA',
     paleBluishGray: '#CAD7DD',
     footerWrapperEbony: '#0B0D26',
+    fontGray: '#5E5E5E'
 };
 
 export const Breakpoints = {

@@ -10,20 +10,19 @@ export const FooterWrapper = styled.div`
 
 export const FooterContainer = styled.div`
     width: 100%;
-    margin: 5rem 0rem 1.5rem 0rem;
+    margin: 5rem 0 1.5rem 0;
 `;
 
 export const FooterMetadataContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0rem 5rem 5rem 5rem;
-
+    margin: 5rem 0 5rem 0;
     text-align: center;
 
     ${minWidthQuery(Breakpoints.medium)} {
         flex-direction: row;
-        margin: 0rem 7.5rem 5rem 7.5rem;
+        margin: 0 7.5rem 5rem 7.5rem;
         text-align: left;
     }
 `;
@@ -31,7 +30,7 @@ export const FooterMetadataContainer = styled.div`
 export const FooterMetadataMotto = styled.div`
     font-size: 2.5rem;
     font-weight: bold;
-    tect-align: center;
+    text-align: center;
     margin-bottom: 5rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
@@ -57,7 +56,7 @@ export const FooterMetadataText = styled.p`
 export const FooterLine = styled.div`
     background: white;
     height: 1px;
-    margin: 0rem 5rem 0rem 5rem;
+    margin: 0 5rem 0 5rem;
     opacity: 0.075;
 `;
 
