@@ -21,6 +21,7 @@ type ServiceConfigType = {
 type ProjectsConfigType = {
     id: string;
     title: string;
+    subtitle: string;
     description: string;
     icon: string;
 };

@@ -64,24 +64,28 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
     {
         id: 'streamsnap',
         title: 'Streamsnap',
+        subtitle: 'An usecase driven approach',
         description: 'Streamsnap is a multiplatform VOD streaming app with integrated analytics.',
         icon: ProjectPlaceholder.src,
     },
     {
         id: 'cruze',
         title: 'Cruze',
+        subtitle: 'An usecase driven approach',
         description: 'Cruze is a mobile carpooling app specially tailored for businesses and public institutions.',
         icon: ProjectPlaceholder.src,
     },
     {
         id: 'car-damage-detector',
         title: 'Car damage detector',
+        subtitle: 'An usecase driven approach',
         description: 'A smart classifier that can accurately determine the severity of accident indused vehicle damage.',
         icon: ProjectPlaceholder.src,
     },
     {
         id: 'adda',
         title: 'ADDA',
+        subtitle: 'An usecase driven approach',
         description: 'Automated defect detection analyser. When machine learning and neural networks meet, product quality improvements happen.',
         icon: ProjectPlaceholder.src,
     },
