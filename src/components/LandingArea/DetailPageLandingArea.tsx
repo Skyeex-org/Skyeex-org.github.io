@@ -11,11 +11,12 @@ import { LandingAreaConfig } from "@components/configs/general";
 
 type DetailPageLandingAreaType = {
     project: ProjectsConfigType;
+    wallpaper: string;
 };
 
-export const DetailPageLandingArea: FC<DetailPageLandingAreaType> = ({ project }) => {
+export const DetailPageLandingArea: FC<DetailPageLandingAreaType> = ({ project, wallpaper }) => {
     return (
-        <LandingAreaWrapper height={60}>
+        <LandingAreaWrapper height={80} wallpaper={wallpaper}>
             <LandingLogoWrapper>
                 <LandingLogo>{LandingAreaConfig.landingLogo}</LandingLogo>
                 <LandingLogoLine />

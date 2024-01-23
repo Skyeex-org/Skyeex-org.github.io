@@ -46,4 +46,13 @@ export const FlexColumn = styled.div<{
 export const TextContentWrapper = styled.div`
     background: ${Colors.white};
     color: ${Colors.black};
+
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 2rem 12rem 2rem 12rem;
+        text-align: left;
+    }
+    
+    ${minWidthQuery(Breakpoints.xxLarge)} {
+        padding: 2rem 12rem 6rem 12rem;
+    }
 `;

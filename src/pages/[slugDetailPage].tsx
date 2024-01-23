@@ -5,6 +5,7 @@ import { ProjectsCardsConfig } from "@components/configs/general";
 import { Footer } from "@components/components/Footer/Footer";
 import { DetailPageLandingArea } from "@components/components/LandingArea/DetailPageLandingArea";
 import { TextContentWrapper } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { ServicesParagraph } from "@components/components/Services/Services.css";
 
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
     return ProjectsCardsConfig.find((obj) => obj.id === keyId);
@@ -24,9 +25,9 @@ const DetailPage: FC = () => {
 
     return (
         <div>
-            <DetailPageLandingArea project={project} />
+            <DetailPageLandingArea project={project} wallpaper={project.icon} />
             <TextContentWrapper>
-                <p dangerouslySetInnerHTML={project.htmlField}></p>
+                <ServicesParagraph dangerouslySetInnerHTML={project.htmlField} />
             </TextContentWrapper>
             <Footer />
         </div>
