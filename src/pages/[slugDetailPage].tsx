@@ -10,6 +10,7 @@ import { ServicesParagraph } from "@components/components/Services/Services.css"
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
     return ProjectsCardsConfig.find((obj) => obj.id === keyId);
 }
+
 const DetailPage: FC = () => {
     const [project, setProject] = useState<ProjectsConfigType>();
     const router = useRouter();
@@ -24,13 +25,13 @@ const DetailPage: FC = () => {
     }
 
     return (
-        <div>
+        <React.Fragment>
             <DetailPageLandingArea project={project} wallpaper={project.icon} />
             <TextContentWrapper>
                 <ServicesParagraph dangerouslySetInnerHTML={project.htmlField} />
             </TextContentWrapper>
             <Footer />
-        </div>
+        </React.Fragment>
     )
 }
 

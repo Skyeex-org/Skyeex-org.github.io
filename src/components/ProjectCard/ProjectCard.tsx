@@ -18,13 +18,13 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
     };
 
     return (
-        <ProjectCardWrapper onClick={handleProjectCardClick}>
+        <ProjectCardWrapper onClick={project.isDetailPageEnabled ? handleProjectCardClick : () => null}>
             <ProjectCardImage />
             <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
                 <SeparatorSpace paddingValue={1} />
-                <ProjectCardDescription>{project.description}</ProjectCardDescription>
+                <ProjectCardDescription>{project.previewDescription}</ProjectCardDescription>
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>
     );

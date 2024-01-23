@@ -25,7 +25,9 @@ type ProjectsConfigType = {
     title: string;
     subtitle: string;
     icon: string;
+    previewDescription: string;
     htmlField: innerHtmlType;
+    isDetailPageEnabled: boolean;
 };
 
 type FooterConfigType = {
