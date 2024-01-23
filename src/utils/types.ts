@@ -18,12 +18,14 @@ type ServiceConfigType = {
     content: string;
 };
 
+type innerHtmlType = { __html: string | TrustedHTML };
+
 type ProjectsConfigType = {
     id: string;
     title: string;
     subtitle: string;
-    description: string;
     icon: string;
+    htmlField: innerHtmlType;
 };
 
 type FooterConfigType = {
