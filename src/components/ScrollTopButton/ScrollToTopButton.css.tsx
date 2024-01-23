@@ -27,4 +27,5 @@ export const ScrollToTopButton = styled.button`
 export const ScrollToTopIcon = styled.img`
     width: 50%;
     filter: brightness(0) invert(1);
+    height: 50%;
 `

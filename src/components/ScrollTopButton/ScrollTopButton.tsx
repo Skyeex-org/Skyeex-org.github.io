@@ -2,16 +2,14 @@ import React, { useState, useEffect, FC } from 'react';
 import ArrowToTop from '../../assets/icons/arrow-up-long-solid.svg';
 import { ScrollToTopButton, ScrollToTopIcon } from "@components/components/ScrollTopButton/ScrollToTopButton.css";
 
+const STANDARD_SCROLL_BUTTON_APPEARANCE_HEIGHT = 300;
+
 const ScrollTopButton: FC = () => {
     const [isVisible, setIsVisible] = useState<boolean>(false);
 
     useEffect(() => {
         const toggleVisibility = () => {
-            if (window.scrollY > 300) {
-                setIsVisible(true);
-            } else {
-                setIsVisible(false);
-            }
+            setIsVisible(window.scrollY > STANDARD_SCROLL_BUTTON_APPEARANCE_HEIGHT);
         };
 
         window.addEventListener('scroll', toggleVisibility);
