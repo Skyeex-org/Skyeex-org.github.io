@@ -29,4 +29,4 @@ type FooterConfigType = {
     metadataTitle: string;
     metadataText: string;
     websiteUrl: string;
-}
+};

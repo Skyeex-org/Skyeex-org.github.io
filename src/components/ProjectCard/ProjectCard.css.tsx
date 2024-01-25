@@ -3,35 +3,35 @@ import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ProjectCardTitle = styled.h2`
     height: 2.5rem;
-    margin: 1.5rem 0rem 0rem 0rem;
+    margin: 1.5rem 0 0 0;
     font-size: 1.25rem;
     transition: all 500ms ease;
 
     ${minWidthQuery(Breakpoints.medium)} {
-        margin: 2.5rem 0rem 0rem 0rem;
+        margin: 2.5rem 0 0 0;
         font-size: 1.5rem;
     }
 `;
 
 export const ProjectCardWrapper = styled.div`
     width: 75%;
-    height: 22.5rem;
+    height: auto;
     background: ${Colors.paleWhite};
     border-radius: 0.85rem;
-    margin: 2.5rem 1.25rem 0rem 1.25rem;
+    margin: 2.5rem 1.25rem 0 1.25rem;
     user-select: none;
     transition: all 500ms ease;
-
+  
     ${minWidthQuery(Breakpoints.small)} {
         width: 60%;
         height: 20rem;
-        margin: 2.5rem 0.5rem 0rem 0.5rem;
+        margin: 2.5rem 0.5rem 0 0.5rem;
     }
 
      ${minWidthQuery(Breakpoints.medium)} {
         width: 17.5rem;
         height: 25rem;
-        margin: 2.5rem 0.5rem 0rem 0.5rem;
+        margin: 2.5rem 0.5rem 0 0.5rem;
     }
 
     :hover {
@@ -43,12 +43,16 @@ export const ProjectCardWrapper = styled.div`
     }
 
     * {
-        border-radius: 0.85rem 0.85rem 0rem 0rem;
+        border-radius: 0.85rem 0.85rem 0 0;
     }
 `;
 
 export const ProjectCardWrapperContainer = styled.div`
-    margin: 0rem 1rem 0.5rem 1rem;
+    margin: 0 1rem 3rem 1rem;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        margin: 0 1rem 0.5rem 1rem;
+    }
 `;
 
 export const ProjectCardImage = styled.img`
@@ -58,7 +62,7 @@ export const ProjectCardImage = styled.img`
 `;
 
 export const ProjectCardDescription = styled.p`
-    font-size: 0.85rem;
+    font-size: 1.15rem;
     color: ${Colors.paleGray};
 
     ${minWidthQuery(Breakpoints.medium)} {
