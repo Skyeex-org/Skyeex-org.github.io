@@ -4,6 +4,7 @@ import {
     ProjectCardWrapperContainer, ProjectCardDescription
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { useRouter } from "next/router";
 
 export type ProjectCardType = {
@@ -11,6 +12,7 @@ export type ProjectCardType = {
 }
 
 export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
+    const { isMobile } = useGetScreenSize();
     const router = useRouter();
 
     const handleProjectCardClick = () => {
@@ -23,7 +25,7 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
             <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
-                <SeparatorSpace paddingValue={1} />
+                <SeparatorSpace paddingValue={isMobile() ? 0.5 : 1} />
                 <ProjectCardDescription>{project.previewDescription}</ProjectCardDescription>
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>

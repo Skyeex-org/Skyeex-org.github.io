@@ -18,7 +18,7 @@ export const Projects: FC = () => {
                 <ProjectsTitle>
                     <p>Engineered solutions</p>
                 </ProjectsTitle>
-                <SeparatorSpace paddingValue={2.5} />
+                <SeparatorMargin marginValue={3} />
                 <ProjectsFlexContainer>
                     {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType, index) => {
                         return (
@@ -26,10 +26,10 @@ export const Projects: FC = () => {
                         );
                     })}
                 </ProjectsFlexContainer>
-                <SeparatorMargin marginValue={6} />
+                <SeparatorMargin marginValue={3} />
                 <Button>Show More</Button>
             </ProjectsContainer>
-            <SeparatorSpace paddingValue={2.5} />
+            <SeparatorSpace paddingValue={0.5} />
         </ProjectsWrapper>
     );
 };
