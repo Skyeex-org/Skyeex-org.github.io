@@ -63,22 +63,22 @@ export const FooterConfig: FooterConfigType = {
 export const ProjectsCardsConfig: ProjectsConfigType[] = [
     {
         title: 'Streamsnap',
-        description: 'Streamsnap is a multiplatform VOD streaming app with integrated analytics.',
+        description: 'Streamsnap is a cutting-edge multiplatform VOD streaming app with integrated analytics designed to provide a data-driven viewing experience across multiple devices.',
         icon: ProjectPlaceholder.src,
     },
     {
         title: 'Cruze',
-        description: 'Cruze is a mobile carpooling app specially tailored for businesses and public institutions.',
+        description: 'Cruze revolutionizes commuting with its mobile carpooling app specially tailored for businesses and institutions fostering a sense for efficient and sustainable transportation.',
         icon: ProjectPlaceholder.src,
     },
     {
         title: 'Car damage detector',
-        description: 'A smart classifier that can accurately determine the severity of accident indused vehicle damage.',
+        description: 'Introducing a smart classifier engineered to accurately assess the accident-indused vehicle damage, bringing precision to the evaluation process, streamlining the repair workflow and enhance customer satisfaction.',
         icon: ProjectPlaceholder.src,
     },
     {
         title: 'ADDA',
-        description: 'Automated defect detection analyser. When machine learning and neural networks meet, product quality improvements happen.',
+        description: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
         icon: ProjectPlaceholder.src,
     },
 ];
