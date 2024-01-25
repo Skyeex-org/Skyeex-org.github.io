@@ -3,7 +3,7 @@ import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ProjectCardTitle = styled.h2`
     height: 2.5rem;
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 1.5rem 0rem 0rem 0rem;
     font-size: 1.25rem;
     transition: all 500ms ease;
 
@@ -14,11 +14,11 @@ export const ProjectCardTitle = styled.h2`
 `;
 
 export const ProjectCardWrapper = styled.div`
-    width: 50%;
-    height: 15rem;
+    width: 75%;
+    height: 22.5rem;
     background: ${Colors.paleWhite};
     border-radius: 0.85rem;
-    margin: 5rem 1.25rem 0rem 1.25rem;
+    margin: 2.5rem 1.25rem 0rem 1.25rem;
     user-select: none;
     transition: all 500ms ease;
 
@@ -29,7 +29,7 @@ export const ProjectCardWrapper = styled.div`
     }
 
      ${minWidthQuery(Breakpoints.medium)} {
-        width: 17.5rem;
+        width: 30%;
         height: 25rem;
         margin: 2.5rem 0.5rem 0rem 0.5rem;
     }
