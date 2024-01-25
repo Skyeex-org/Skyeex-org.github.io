@@ -46,7 +46,8 @@ export const FlexColumn = styled.div<{
 export const TextContentWrapper = styled.div`
     background: ${Colors.white};
     color: ${Colors.black};
-
+    padding: 2rem;
+  
     ${minWidthQuery(Breakpoints.large)} {
         padding: 2rem 12rem 2rem 12rem;
         text-align: left;

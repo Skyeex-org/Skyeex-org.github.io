@@ -13,7 +13,7 @@ export default function Home() {
     const whatWeDoRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <>
+        <React.Fragment>
             <Head>
                 <title>Skyeex</title>
             </Head>
@@ -23,6 +23,6 @@ export default function Home() {
             <Projects />
             <ContactForm />
             <Footer />
-        </>
+        </React.Fragment>
     )
 }
