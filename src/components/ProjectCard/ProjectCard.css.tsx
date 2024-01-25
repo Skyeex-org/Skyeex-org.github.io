@@ -29,7 +29,7 @@ export const ProjectCardWrapper = styled.div`
     }
 
      ${minWidthQuery(Breakpoints.medium)} {
-        width: 30%;
+        width: 17.5rem;
         height: 25rem;
         margin: 2.5rem 0.5rem 0rem 0.5rem;
     }
