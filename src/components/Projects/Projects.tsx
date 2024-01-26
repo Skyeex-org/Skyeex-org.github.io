@@ -16,12 +16,7 @@ import {
 import { useRouter } from "next/router";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 
-type ProjectsType = {
-    isPreviewMode?: boolean;
-};
-
-export const Projects: FC<ProjectsType> = ({ isPreviewMode = true }) => {
-    const projectsConfig = isPreviewMode ? ProjectsCardsPreviewConfig : ProjectsCardsConfig;
+export const Projects: FC = () => {
     const router = useRouter();
 
     const onShowMoreClick = () => {
@@ -33,14 +28,14 @@ export const Projects: FC<ProjectsType> = ({ isPreviewMode = true }) => {
             <ProjectsContainer>
                 <ProjectsMetadataContainer />
                 <FlexContainer>
-                    {projectsConfig.map((project: ProjectsConfigType) => {
+                    {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType) => {
                         return (
                             <ProjectCard project={project} key={project.title} />
                         );
                     })}
                 </FlexContainer>
                 <SeparatorMargin marginValue={3} />
-                {isPreviewMode && <Button onClick={onShowMoreClick}>Show More</Button>}
+                <Button onClick={onShowMoreClick}>Show More</Button>
             </ProjectsContainer>
             <SeparatorSpace paddingValue={0.5} />
         </ProjectsWrapper>
