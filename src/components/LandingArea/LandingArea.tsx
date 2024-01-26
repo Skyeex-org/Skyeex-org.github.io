@@ -7,6 +7,7 @@ import {
 } from "@components/components/LandingArea/LandingArea.css";
 import { Button, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { LandingAreaConfig } from "@components/configs/general";
+import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
 
 type LandingAreaType = {
     nextSectionReference: any;
@@ -20,7 +21,7 @@ export const LandingArea: FC<LandingAreaType> = ({ nextSectionReference }) => {
     return (
         <LandingAreaWrapper>
             <LandingLogoWrapper>
-                <LandingLogo>{LandingAreaConfig.landingLogo}</LandingLogo>
+                <LandingLogo src={SkyeexLogo.src} />
                 <LandingLogoLine />
             </LandingLogoWrapper>
             <LandingAreaContentContainer>
