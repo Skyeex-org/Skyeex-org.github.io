@@ -3,11 +3,23 @@ import {
     ProjectsContainer, ProjectsHeadliner, ProjectsTitle,
     ProjectsWrapper, ProjectsFlexContainer
 } from "@components/components/Projects/Projects.css";
-import { ProjectsCardsPreviewConfig } from "@components/configs/general";
+import { ProjectsCardsConfig, ProjectsCardsPreviewConfig } from "@components/configs/general";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { Button, SeparatorMargin, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { useRouter } from "next/router";
 
-export const Projects: FC = () => {
+type ProjectsType = {
+    isPreviewMode: boolean;
+};
+
+export const Projects: FC<ProjectsType> = ({ isPreviewMode = true }) => {
+    const projectsConfig = isPreviewMode ? ProjectsCardsPreviewConfig : ProjectsCardsConfig;
+    const router = useRouter();
+
+    const onShowMoreClick = () => {
+        router.push(`/projects`).then(null);
+    };
+
     return (
         <ProjectsWrapper>
             <ProjectsContainer>
@@ -20,14 +32,14 @@ export const Projects: FC = () => {
                 </ProjectsTitle>
                 <SeparatorMargin marginValue={3} />
                 <ProjectsFlexContainer>
-                    {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType, index) => {
+                    {projectsConfig.map((project: ProjectsConfigType, index) => {
                         return (
                             <ProjectCard project={project} key={project.title}/>
                         );
                     })}
                 </ProjectsFlexContainer>
                 <SeparatorMargin marginValue={3} />
-                <Button>Show More</Button>
+                {isPreviewMode && <Button onClick={onShowMoreClick}>Show More</Button>}
             </ProjectsContainer>
             <SeparatorSpace paddingValue={0.5} />
         </ProjectsWrapper>

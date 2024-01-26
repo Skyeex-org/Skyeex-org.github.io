@@ -81,6 +81,26 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
         description: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
         icon: ProjectPlaceholder.src,
     },
+    {
+        title: 'ADDA',
+        description: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'ADDA',
+        description: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'ADDA',
+        description: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
+        icon: ProjectPlaceholder.src,
+    },
+    {
+        title: 'ADDA',
+        description: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
+        icon: ProjectPlaceholder.src,
+    },
 ];
 
 export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);
