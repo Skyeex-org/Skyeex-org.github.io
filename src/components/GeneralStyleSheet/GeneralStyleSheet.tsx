@@ -27,11 +27,13 @@ export const SeparatorMargin = styled.div<{ marginValue: number }>`
 export const FlexContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 `;
 
 export const FlexColumn = styled.div<{
     columnPercentage: number,
-    shouldHaveBorder?: boolean
+    shouldHaveBorder?: boolean,
+    alignColumnsCenter?: boolean,
 }>`
     flex: 1 1 100%;
     border-bottom: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
@@ -41,6 +43,11 @@ export const FlexColumn = styled.div<{
         border-right: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
         border-bottom: none;
     }
+    
+    ${(props) => props.alignColumnsCenter && `
+        display: flex;
+        justify-content: center;
+    `}
 `;
 
 export const StandardBackground = styled.div<{ background?: string, color?: string }>`

@@ -9,14 +9,14 @@ import { ProjectsCardsConfig, ProjectsCardsPreviewConfig } from "@components/con
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import {
     Button,
-    FlexColumn, FlexContainer,
+    FlexContainer,
     SeparatorMargin,
     SeparatorSpace
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useRouter } from "next/router";
 
 type ProjectsType = {
-    isPreviewMode: boolean;
+    isPreviewMode?: boolean;
 };
 
 export const Projects: FC<ProjectsType> = ({ isPreviewMode = true }) => {
@@ -39,11 +39,9 @@ export const Projects: FC<ProjectsType> = ({ isPreviewMode = true }) => {
                 </ProjectsTitle>
                 <SeparatorMargin marginValue={3} />
                 <FlexContainer>
-                    {projectsConfig.map((project: ProjectsConfigType, index) => {
+                    {projectsConfig.map((project: ProjectsConfigType) => {
                         return (
-                            <FlexColumn columnPercentage={33} key={project.title}>
-                                <ProjectCard project={project} />
-                            </FlexColumn>
+                            <ProjectCard project={project} key={project.title} />
                         );
                     })}
                 </FlexContainer>
