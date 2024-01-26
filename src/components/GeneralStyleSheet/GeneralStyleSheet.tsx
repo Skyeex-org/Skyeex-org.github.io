@@ -43,7 +43,7 @@ export const FlexColumn = styled.div<{
     }
 `;
 
-export const StandardBackground = styled.div`
-    background: ${Colors.white};
-    color: ${Colors.black};
+export const StandardBackground = styled.div<{ background?: string, color?: string }>`
+    background: ${(props) => props.background || Colors.white};
+    color: ${(props) => props.color || Colors.black};
 `
