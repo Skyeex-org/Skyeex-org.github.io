@@ -3,12 +3,12 @@ import { Colors } from "@components/utils/cssMedia";
 
 export const ProjectsWrapper = styled.div`
     background: ${Colors.paleBluishGray};
-    text-align: center;
     color: black;
 `;
 
 export const ProjectsContainer = styled.div`
     padding: 2.5rem;
+    text-align: center;
 `;
 
 export const ProjectsTitle = styled.div`

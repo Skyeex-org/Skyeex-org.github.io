@@ -1,8 +1,5 @@
 import React, { FC } from "react";
 import Head from "next/head";
-import { Projects } from "@components/components/Projects/Projects";
-import { LandingLogo, LandingLogoWrapper } from "@components/components/LandingArea/LandingArea.css";
-import SkyeexLogoBlack from "@components/assets/SkyeexLogoBlack.svg";
 import {
     FlexColumn,
     FlexContainer,
@@ -12,6 +9,9 @@ import {
 import { Colors } from "@components/utils/cssMedia";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { ProjectsCardsConfig } from "@components/configs/general";
+import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
+import { ProjectsContainer } from "@components/components/Projects/Projects.css";
 
 const ProjectsPage: FC = () => {
     return (
@@ -20,19 +20,20 @@ const ProjectsPage: FC = () => {
                 <title>Skyeex - Projects</title>
             </Head>
             <StandardBackground background={Colors.paleBluishGray}>
-                <LandingLogoWrapper>
-                    <LandingLogo src={SkyeexLogoBlack.src} />
-                </LandingLogoWrapper>
-                <SeparatorSpace paddingValue={3} />
-                <FlexContainer>
-                    {ProjectsCardsConfig.map((project: ProjectsConfigType) => {
-                        return (
-                            <FlexColumn columnPercentage={33} alignColumnsCenter={true} key={project.title}>
-                                <ProjectCard project={project} />
-                            </FlexColumn>
-                        );
-                    })}
-                </FlexContainer>
+                <LogoWrapper isDarkLogo={true} />
+                <ProjectsContainer>
+                    <SeparatorSpace paddingValue={3} />
+                    <ProjectsMetadataContainer />
+                    <FlexContainer>
+                        {ProjectsCardsConfig.map((project: ProjectsConfigType) => {
+                            return (
+                                <FlexColumn columnPercentage={33} alignColumnsCenter={true} key={project.title}>
+                                    <ProjectCard project={project} />
+                                </FlexColumn>
+                            );
+                        })}
+                    </FlexContainer>
+                </ProjectsContainer>
             </StandardBackground>
         </React.Fragment>
     )

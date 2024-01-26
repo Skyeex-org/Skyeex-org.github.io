@@ -1,13 +1,12 @@
 import React, { FC } from "react";
 import {
-    LandingLogo, LandingLogoLine, LandingLogoWrapper,
     LandingAreaContentContainer, LandingAreaUnderText,
     LandingAreaWelcomeText,
     LandingAreaWrapper
 } from "@components/components/LandingArea/LandingArea.css";
 import { Button, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { LandingAreaConfig } from "@components/configs/general";
-import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
+import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 
 type LandingAreaType = {
     nextSectionReference: any;
@@ -20,10 +19,7 @@ export const LandingArea: FC<LandingAreaType> = ({ nextSectionReference }) => {
 
     return (
         <LandingAreaWrapper>
-            <LandingLogoWrapper>
-                <LandingLogo src={SkyeexLogo.src} />
-                <LandingLogoLine />
-            </LandingLogoWrapper>
+            <LogoWrapper />
             <LandingAreaContentContainer>
                 <LandingAreaWelcomeText>
                     {LandingAreaConfig.welcomeText}

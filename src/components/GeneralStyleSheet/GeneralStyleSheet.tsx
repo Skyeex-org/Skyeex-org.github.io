@@ -10,7 +10,8 @@ export const Button = styled.button`
     font-size: 1rem;
     border-radius: 5rem;
     transition: all 500ms ease;
-    
+    cursor: pointer;
+  
     :hover {
         background: ${Colors.coreDarkerBlue};
     }

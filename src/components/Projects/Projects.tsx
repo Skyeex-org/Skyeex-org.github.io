@@ -14,6 +14,7 @@ import {
     SeparatorSpace
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useRouter } from "next/router";
+import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 
 type ProjectsType = {
     isPreviewMode?: boolean;
@@ -30,14 +31,7 @@ export const Projects: FC<ProjectsType> = ({ isPreviewMode = true }) => {
     return (
         <ProjectsWrapper>
             <ProjectsContainer>
-            <SeparatorMargin marginValue={1.5} />
-                <ProjectsHeadliner>
-                    <p>PRECISION & EFFICIENCY</p>
-                </ProjectsHeadliner>
-                <ProjectsTitle>
-                    <p>Engineered solutions</p>
-                </ProjectsTitle>
-                <SeparatorMargin marginValue={3} />
+                <ProjectsMetadataContainer />
                 <FlexContainer>
                     {projectsConfig.map((project: ProjectsConfigType) => {
                         return (
