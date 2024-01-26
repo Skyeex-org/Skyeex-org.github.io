@@ -1,11 +1,18 @@
 import React, { FC } from "react";
 import {
-    ProjectsContainer, ProjectsHeadliner, ProjectsTitle,
-    ProjectsWrapper, ProjectsFlexContainer
+    ProjectsContainer,
+    ProjectsHeadliner,
+    ProjectsTitle,
+    ProjectsWrapper
 } from "@components/components/Projects/Projects.css";
 import { ProjectsCardsConfig, ProjectsCardsPreviewConfig } from "@components/configs/general";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
-import { Button, SeparatorMargin, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import {
+    Button,
+    FlexColumn, FlexContainer,
+    SeparatorMargin,
+    SeparatorSpace
+} from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useRouter } from "next/router";
 
 type ProjectsType = {
@@ -31,13 +38,15 @@ export const Projects: FC<ProjectsType> = ({ isPreviewMode = true }) => {
                     <p>Engineered solutions</p>
                 </ProjectsTitle>
                 <SeparatorMargin marginValue={3} />
-                <ProjectsFlexContainer>
+                <FlexContainer>
                     {projectsConfig.map((project: ProjectsConfigType, index) => {
                         return (
-                            <ProjectCard project={project} key={project.title}/>
+                            <FlexColumn columnPercentage={33} key={project.title}>
+                                <ProjectCard project={project} />
+                            </FlexColumn>
                         );
                     })}
-                </ProjectsFlexContainer>
+                </FlexContainer>
                 <SeparatorMargin marginValue={3} />
                 {isPreviewMode && <Button onClick={onShowMoreClick}>Show More</Button>}
             </ProjectsContainer>

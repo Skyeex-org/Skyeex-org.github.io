@@ -22,9 +22,3 @@ export const ProjectsHeadliner = styled.div`
     font-weight: bold;
     letter-spacing: 0.25rem;
 `;
-
-export const ProjectsFlexContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-`;
