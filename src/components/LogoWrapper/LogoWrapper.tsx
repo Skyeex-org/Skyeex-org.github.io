@@ -6,9 +6,10 @@ import { useRouter } from "next/router";
 
 type LogoWrapperType = {
     isDarkLogo?: boolean;
+    isLogoLine?: boolean;
 };
 
-export const LogoWrapper: FC<LogoWrapperType> = ({ isDarkLogo }) => {
+export const LogoWrapper: FC<LogoWrapperType> = ({ isDarkLogo, isLogoLine }) => {
     const router = useRouter();
     const skyeexLogo = isDarkLogo ? SkyeexBlackLogo : SkyeexWhiteLogo;
 
@@ -19,7 +20,7 @@ export const LogoWrapper: FC<LogoWrapperType> = ({ isDarkLogo }) => {
     return (
         <LandingLogoWrapper onClick={navigateHome}>
             <LandingLogo src={skyeexLogo.src} />
-            <LandingLogoLine />
+            {isLogoLine && <LandingLogoLine />}
         </LandingLogoWrapper>
     )
 }
