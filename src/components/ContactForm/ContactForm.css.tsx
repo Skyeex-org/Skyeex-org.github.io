@@ -40,6 +40,10 @@ export const ContactInput = styled.input`
         box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
     }
 
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 70%;
+    }
+  
     ${minWidthQuery(Breakpoints.large)} {
         width: 60%;
     }
@@ -62,6 +66,10 @@ export const ContactTextArea = styled.textarea`
         box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
     }
 
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 70%;
+    }
+  
     ${minWidthQuery(Breakpoints.large)} {
         width: 60%;
     }
@@ -88,13 +96,13 @@ export const ContactTextBox = styled.div`
 `;
 
 export const ContactSvg = styled.img`
-    width: 80%;
+    width: 100%;
 
     ${minWidthQuery(Breakpoints.medium)} {
         width: 50%;
     }
   
     ${minWidthQuery(Breakpoints.large)} {
-        width: 100%;
+        width: 90%;
     }
 `;
