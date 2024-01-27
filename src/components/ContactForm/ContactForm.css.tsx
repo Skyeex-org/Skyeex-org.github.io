@@ -70,6 +70,7 @@ export const ContactTextArea = styled.textarea`
 export const ContactHeader = styled.h1`
     padding: 1rem;
     font-size: 2.5rem;
+    text-align: center;
 `;
 
 export const ContactParagraph = styled.p<{ isBold?: boolean }>`

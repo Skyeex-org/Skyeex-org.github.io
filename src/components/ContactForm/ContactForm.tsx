@@ -88,6 +88,8 @@ export const ContactForm: FC = () => {
                     </ContactTextBox>
                 </FlexColumn>
                 <FlexColumn columnPercentage={70}>
+                    <ContactHeader>Send us a message!</ContactHeader>
+                    <SeparatorSpace paddingValue={1.5} />
                     <ContactFormWrapper action={formSubmitCodeUrl} method="POST" onSubmit={onSubmitFormProcess}>
                         <ContactInput
                             placeholder={EmailElements.NAME}
