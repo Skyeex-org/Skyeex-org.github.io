@@ -9,7 +9,7 @@ import {
     FlexColumn,
     FlexContainer, Button
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { ContactConfig, formSubmitCodeUrl } from "@components/configs/general";
+import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
 
 enum EmailElements {
@@ -83,7 +83,7 @@ export const ContactForm: FC = () => {
                 <FlexColumn columnPercentage={30}>
                     <ContactTextBox>
                         <ContactSvg src={ContactUsSvg.src} />
-                        <ContactParagraph isBold={true}>{ContactConfig.email}</ContactParagraph>
+                        <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
                         <ContactParagraph>Social Media Placeholder</ContactParagraph>
                     </ContactTextBox>
                 </FlexColumn>

@@ -46,13 +46,6 @@ export const WhatWeDoCardsConfig: ServiceConfigType[] = [
     },
 ];
 
-export const ContactConfig = {
-    addressPartOne: '785 15h Street, Office 478',
-    addressPartTwo: 'Berlin, De 81566',
-    email: 'skyeex-org@gmail.com',
-    phoneNumber: '+1 840 841 25 69'
-};
-
 export const FooterConfig: FooterConfigType = {
     metadataMoto: 'Architecting new digital horizons',
     metadataTitle: 'Have questions?',
