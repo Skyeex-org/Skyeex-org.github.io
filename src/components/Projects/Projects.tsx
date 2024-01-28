@@ -1,33 +1,41 @@
 import React, { FC } from "react";
 import {
-    ProjectsContainer, ProjectsHeadliner, ProjectsTitle,
-    ProjectsWrapper, ProjectsFlexContainer
+    ProjectsContainer,
+    ProjectsHeadliner,
+    ProjectsTitle,
+    ProjectsWrapper
 } from "@components/components/Projects/Projects.css";
-import { ProjectsCardsPreviewConfig } from "@components/configs/general";
+import { ProjectsCardsConfig, ProjectsCardsPreviewConfig } from "@components/configs/general";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
-import { Button, SeparatorMargin, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import {
+    Button,
+    FlexContainer,
+    SeparatorMargin,
+    SeparatorSpace
+} from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { useRouter } from "next/router";
+import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 
 export const Projects: FC = () => {
+    const router = useRouter();
+
+    const onShowMoreClick = () => {
+        router.push(`/projects`).then(null);
+    };
+
     return (
         <ProjectsWrapper>
             <ProjectsContainer>
-            <SeparatorMargin marginValue={1.5} />
-                <ProjectsHeadliner>
-                    <p>PRECISION & EFFICIENCY</p>
-                </ProjectsHeadliner>
-                <ProjectsTitle>
-                    <p>Engineered solutions</p>
-                </ProjectsTitle>
-                <SeparatorMargin marginValue={3} />
-                <ProjectsFlexContainer>
-                    {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType, index) => {
+                <ProjectsMetadataContainer />
+                <FlexContainer>
+                    {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType) => {
                         return (
-                            <ProjectCard project={project} key={project.title}/>
+                            <ProjectCard project={project} key={project.title} />
                         );
                     })}
-                </ProjectsFlexContainer>
+                </FlexContainer>
                 <SeparatorMargin marginValue={3} />
-                <Button>Show More</Button>
+                <Button onClick={onShowMoreClick}>Show More</Button>
             </ProjectsContainer>
             <SeparatorSpace paddingValue={0.5} />
         </ProjectsWrapper>

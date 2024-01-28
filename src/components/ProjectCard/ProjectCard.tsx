@@ -5,22 +5,28 @@ import {
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
+import { useRouter } from "next/router";
 
-type ProjectCardType = {
+export type ProjectCardType = {
     project: ProjectsConfigType;
 }
 
 export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
     const { isMobile } = useGetScreenSize();
+    const router = useRouter();
+
+    const handleProjectCardClick = () => {
+        router.push(`/${project.id}`).then(null);
+    };
 
     return (
-        <ProjectCardWrapper>
+        <ProjectCardWrapper onClick={project.isDetailPageEnabled ? handleProjectCardClick : () => null}>
             <ProjectCardImage />
             <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
                 <SeparatorSpace paddingValue={isMobile() ? 0.5 : 1} />
-                <ProjectCardDescription>{project.description}</ProjectCardDescription>
+                <ProjectCardDescription>{project.previewDescription}</ProjectCardDescription>
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>
     );

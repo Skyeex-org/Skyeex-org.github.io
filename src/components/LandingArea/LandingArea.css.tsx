@@ -2,12 +2,12 @@ import styled from "styled-components";
 import LandingAreaWallpaper from '../../assets/LandArea.jpg';
 import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
-export const LandingAreaWrapper = styled.div`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(${LandingAreaWallpaper.src}) fixed
-    center;
+export const LandingAreaWrapper = styled.div<{ height?: number; wallpaper?: string }>`
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), 
+    url(${(props) => props.wallpaper || LandingAreaWallpaper.src}) fixed center;
     background-size: cover;
     position: relative;
-    height: 100vh;
+    height: ${(props) => props.height || 100}vh;
     color: ${Colors.white};
 `;
 
@@ -43,23 +43,4 @@ export const LandingAreaUnderText = styled.div`
     ${minWidthQuery(Breakpoints.medium)} {
         font-size: 1.5rem;
     }
-`;
-
-export const LandingLogoWrapper = styled.div`
-    height: 1px;
-    width: 100%;
-    position: absolute;
-`;
-
-export const LandingLogo = styled.img`
-    width: 13rem;
-    padding: 0.2rem;
-`;
-
-export const LandingLogoLine = styled.div`
-    background: ${Colors.white};
-    height: 1px;
-    width: 100%;
-    text-align: center;
-    opacity: 0.3;
 `;

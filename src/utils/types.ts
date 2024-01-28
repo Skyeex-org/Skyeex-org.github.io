@@ -18,10 +18,22 @@ type ServiceConfigType = {
     content: string;
 };
 
+type innerHtmlType = { __html: string | TrustedHTML };
+
 type ProjectsConfigType = {
+    id: string;
     title: string;
-    description: string;
+    subtitle: string;
     icon: string;
+    previewDescription: string;
+    htmlField: innerHtmlType;
+    isDetailPageEnabled: boolean;
+};
+
+type SocialMediaConfigType = {
+    id: string;
+    icon: string;
+    url: string;
 };
 
 type FooterConfigType = {

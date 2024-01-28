@@ -10,7 +10,8 @@ export const Button = styled.button`
     font-size: 1rem;
     border-radius: 5rem;
     transition: all 500ms ease;
-    
+    cursor: pointer;
+  
     :hover {
         background: ${Colors.coreDarkerBlue};
     }
@@ -27,11 +28,13 @@ export const SeparatorMargin = styled.div<{ marginValue: number }>`
 export const FlexContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 `;
 
 export const FlexColumn = styled.div<{
     columnPercentage: number,
-    shouldHaveBorder?: boolean
+    shouldHaveBorder?: boolean,
+    alignColumnsCenter?: boolean,
 }>`
     flex: 1 1 100%;
     border-bottom: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
@@ -40,5 +43,47 @@ export const FlexColumn = styled.div<{
         flex: ${(props) => `1 1 ${props.columnPercentage}%;`}
         border-right: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
         border-bottom: none;
+    }${(props) => props.alignColumnsCenter && `
+        display: flex;
+        justify-content: center;
+    `}
+`;
+
+export const TextContentWrapper = styled.div`
+    background: ${Colors.white};
+    color: ${Colors.black};
+    padding: 2rem;
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 2rem 12rem 2rem 12rem;
+        text-align: left;
+    }
+    
+    ${minWidthQuery(Breakpoints.xxLarge)} {
+        padding: 2rem 12rem 6rem 12rem;
     }
 `;
+
+export const SocialMediaWrapper = styled.div`
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.5rem 0 0.5rem;
+    border-radius: 50%;
+    transition: all 500ms ease;
+    cursor: pointer;
+
+    :hover {
+        background: ${Colors.coreDarkerBlue};
+    }
+`
+
+export const SocialMediaIcon = styled.img`
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+`;
+
+export const StandardBackground = styled.div<{ background?: string, color?: string }>`
+    background: ${(props) => props.background || Colors.white};
+    color: ${(props) => props.color || Colors.black};
+`
