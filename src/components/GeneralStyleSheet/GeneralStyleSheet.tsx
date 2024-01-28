@@ -51,6 +51,40 @@ export const FlexColumn = styled.div<{
     `}
 `;
 
+export const TextContentWrapper = styled.div`
+    background: ${Colors.white};
+    color: ${Colors.black};
+    padding: 2rem;
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 2rem 12rem 2rem 12rem;
+        text-align: left;
+    }
+    
+    ${minWidthQuery(Breakpoints.xxLarge)} {
+        padding: 2rem 12rem 6rem 12rem;
+    }
+`;
+
+export const SocialMediaWrapper = styled.div`
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.5rem 0 0.5rem;
+    border-radius: 50%;
+    transition: all 500ms ease;
+    cursor: pointer;
+
+    :hover {
+        background: ${Colors.coreDarkerBlue};
+    }
+`
+
+export const SocialMediaIcon = styled.img`
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+`;
+
 export const StandardBackground = styled.div<{ background?: string, color?: string }>`
     background: ${(props) => props.background || Colors.white};
     color: ${(props) => props.color || Colors.black};
