@@ -35,11 +35,6 @@ type SocialMediaConfigType = {
     url: string;
 };
 
-type SocialMediaConfigType = {
-    icon: string;
-    url: string;
-};
-
 type FooterConfigType = {
     metadataMoto: string;
     metadataTitle: string;
