@@ -249,5 +249,6 @@ export const FooterConfig: FooterConfigType = {
     websiteUrl: 'https://skyeex-org.github.io/'
 };
 
+
 export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);
 export const formSubmitCodeUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';
