@@ -2,6 +2,8 @@ import SeverSolid from "@components/assets/svgs/server-solid.svg";
 import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
 import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
+import LinkedIn from "@components/assets/svgs/SocialMedia/linkedin.svg";
+import Medium from "@components/assets/svgs/SocialMedia/medium.svg";
 import ProjectPlaceholder from "@components/assets/ProjectPlaceholder.png";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
@@ -53,13 +55,6 @@ export const ContactConfig = {
     phoneNumber: '+1 840 841 25 69'
 };
 
-export const FooterConfig: FooterConfigType = {
-    metadataMoto: 'Architecting new digital horizons',
-    metadataTitle: 'Have questions?',
-    metadataText: 'skyeex-org@gmail.com',
-    websiteUrl: 'https://skyeex-org.github.io/'
-};
-
 export const ProjectsCardsConfig: ProjectsConfigType[] = [
     {
         title: 'Streamsnap',
@@ -82,6 +77,24 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
         icon: ProjectPlaceholder.src,
     },
 ];
+
+export const SocialMediaConfig: SocialMediaConfigType[] = [
+    {
+        icon: LinkedIn.src,
+        url: "https://skyeex-org.github.io/",
+    },
+    {
+        icon: Medium.src,
+        url: "https://skyeex-org.github.io/",
+    },
+];
+
+export const FooterConfig: FooterConfigType = {
+    metadataMoto: 'Architecting new digital horizons',
+    metadataTitle: 'Have questions?',
+    metadataText: 'skyeex-org@gmail.com',
+    websiteUrl: 'https://skyeex-org.github.io/'
+};
 
 export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);
 export const formSubmitCodeUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';
