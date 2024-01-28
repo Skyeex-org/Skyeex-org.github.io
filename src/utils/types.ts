@@ -31,6 +31,7 @@ type ProjectsConfigType = {
 };
 
 type SocialMediaConfigType = {
+    id: string;
     icon: string;
     url: string;
 };

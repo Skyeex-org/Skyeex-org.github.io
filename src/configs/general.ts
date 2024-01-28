@@ -233,10 +233,12 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
 
 export const SocialMediaConfig: SocialMediaConfigType[] = [
     {
+        id: 'linkedin',
         icon: LinkedIn.src,
         url: "https://skyeex-org.github.io/",
     },
     {
+        id: 'medium',
         icon: Medium.src,
         url: "https://skyeex-org.github.io/",
     },
