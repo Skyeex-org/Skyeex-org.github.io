@@ -49,6 +49,7 @@ export const SocialMediaWrapper = styled.div`
     height: 2.5rem;
     margin: 0 0.5rem 0 0.5rem;
     border-radius: 50%;
+    transition: all 500ms ease;
     cursor: pointer;
 
     :hover {
