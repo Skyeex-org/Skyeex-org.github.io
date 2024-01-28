@@ -34,14 +34,29 @@ export const FlexColumn = styled.div<{
     columnPercentage: number,
     shouldHaveBorder?: boolean
 }>`
-  flex: 1 1 100%;
-  border-bottom: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
+    flex: 1 1 100%;
+    border-bottom: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
+    
+    ${minWidthQuery(Breakpoints.large)} {
+        flex: ${(props) => `1 1 ${props.columnPercentage}%;`}
+        border-right: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
+        border-bottom: none;
+    }
+`;
 
-  ${minWidthQuery(Breakpoints.large)} {
-    flex: ${(props) => `1 1 ${props.columnPercentage}%;`}
-    border-right: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
-    border-bottom: none;
-  }
+export const TextContentWrapper = styled.div`
+    background: ${Colors.white};
+    color: ${Colors.black};
+    padding: 2rem;
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 2rem 12rem 2rem 12rem;
+        text-align: left;
+    }
+    
+    ${minWidthQuery(Breakpoints.xxLarge)} {
+        padding: 2rem 12rem 6rem 12rem;
+    }
 `;
 
 export const SocialMediaWrapper = styled.div`
@@ -55,7 +70,6 @@ export const SocialMediaWrapper = styled.div`
     :hover {
         background: ${Colors.coreDarkerBlue};
     }
-
 `
 
 export const SocialMediaIcon = styled.img`
