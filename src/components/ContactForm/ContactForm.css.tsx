@@ -7,11 +7,11 @@ export const ContactWrapper = styled.div`
     padding: 2rem;
   
     ${minWidthQuery(Breakpoints.large)} {
-        padding: 8rem 6rem 2rem 6rem;
+        padding: 8rem 5rem 2rem 5rem;
     }
     
     ${minWidthQuery(Breakpoints.xxLarge)} {
-        padding: 2rem 12rem 6rem 12rem;
+        padding: 2rem 10rem 6rem 10rem;
     }
 `;
 
@@ -29,7 +29,7 @@ export const ContactInput = styled.input`
     padding: 1rem;
     color: ${Colors.black};
     background: ${Colors.white};
-    border-radius: 2.5rem;
+    border-radius: 1rem;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     border: 0.1rem solid ${Colors.black};
@@ -40,6 +40,10 @@ export const ContactInput = styled.input`
         box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
     }
 
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 70%;
+    }
+  
     ${minWidthQuery(Breakpoints.large)} {
         width: 60%;
     }
@@ -49,7 +53,7 @@ export const ContactTextArea = styled.textarea`
     color: ${Colors.black};
     background: ${Colors.white};
     font-weight: bold;
-    border-radius: 2.5rem;
+    border-radius: 1rem;
     width: 90%;
     padding: 1rem;
     resize: none;
@@ -62,6 +66,10 @@ export const ContactTextArea = styled.textarea`
         box-shadow: 0 0 10px ${Colors.coreDarkerBlue};
     }
 
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 70%;
+    }
+  
     ${minWidthQuery(Breakpoints.large)} {
         width: 60%;
     }
@@ -70,6 +78,7 @@ export const ContactTextArea = styled.textarea`
 export const ContactHeader = styled.h1`
     padding: 1rem;
     font-size: 2.5rem;
+    text-align: center;
 `;
 
 export const ContactParagraph = styled.p<{ isBold?: boolean }>`
@@ -83,5 +92,17 @@ export const ContactTextBox = styled.div`
   
     ${ContactParagraph} {
         font-size: 1.2rem;
+    }
+`;
+
+export const ContactSvg = styled.img`
+    width: 100%;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 50%;
+    }
+  
+    ${minWidthQuery(Breakpoints.large)} {
+        width: 90%;
     }
 `;

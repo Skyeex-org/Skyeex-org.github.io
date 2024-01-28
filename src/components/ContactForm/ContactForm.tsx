@@ -2,14 +2,16 @@ import React, { FC, useEffect, useState } from "react";
 import {
     ContactWrapper, ContactHeader,
     ContactInput, ContactParagraph,
-    ContactTextArea, ContactTextBox, ContactFormWrapper
+    ContactTextArea, ContactTextBox, ContactFormWrapper, ContactSvg
 } from "@components/components/ContactForm/ContactForm.css";
 import {
     SeparatorSpace,
     FlexColumn,
     FlexContainer, Button
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { ContactConfig, formSubmitCodeUrl } from "@components/configs/general";
+import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
+import ContactUsSvg from "../../assets/svgs/contact-us.svg";
+import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 enum EmailElements {
     NAME = 'name',
@@ -23,6 +25,8 @@ const isValidEmail = (email: string): boolean => {
 };
 
 export const ContactForm: FC = () => {
+    const { isDesktop } = useGetScreenSize();
+
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [message, setMessage] = useState<string>('');
@@ -79,17 +83,20 @@ export const ContactForm: FC = () => {
     return (
         <ContactWrapper>
             <FlexContainer>
-                <FlexColumn columnPercentage={25}>
+                <FlexColumn columnPercentage={35}>
                     <ContactTextBox>
-                        <ContactHeader>Contact Details</ContactHeader>
-                        <SeparatorSpace paddingValue={1} />
-                        <ContactParagraph>{ContactConfig.addressPartOne}</ContactParagraph>
-                        <ContactParagraph>{ContactConfig.addressPartTwo}</ContactParagraph>
-                        <ContactParagraph isBold={true}>{ContactConfig.email}</ContactParagraph>
-                        <ContactParagraph>{ContactConfig.phoneNumber}</ContactParagraph>
+                        <ContactSvg src={ContactUsSvg.src} />
+                        <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
+                        <ContactParagraph>Social Media Placeholder</ContactParagraph>
                     </ContactTextBox>
                 </FlexColumn>
-                <FlexColumn columnPercentage={75}>
+                <FlexColumn columnPercentage={65}>
+                    {isDesktop() && (
+                        <React.Fragment>
+                            <ContactHeader>Send us a message!</ContactHeader>
+                            <SeparatorSpace paddingValue={1.5} />
+                        </React.Fragment>
+                    )}
                     <ContactFormWrapper action={formSubmitCodeUrl} method="POST" onSubmit={onSubmitFormProcess}>
                         <ContactInput
                             placeholder={EmailElements.NAME}
