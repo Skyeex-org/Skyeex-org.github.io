@@ -4,11 +4,8 @@ import {
     LandingAreaUnderText,
     LandingAreaWelcomeText,
     LandingAreaWrapper,
-    LandingLogo, LandingLogoLine,
-    LandingLogoWrapper
 } from "@components/components/LandingArea/LandingArea.css";
-import { LandingAreaConfig } from "@components/configs/general";
-import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
+import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 
 type DetailPageLandingAreaType = {
     project: ProjectsConfigType;
@@ -18,10 +15,7 @@ type DetailPageLandingAreaType = {
 export const DetailPageLandingArea: FC<DetailPageLandingAreaType> = ({ project, wallpaper }) => {
     return (
         <LandingAreaWrapper height={80} wallpaper={wallpaper}>
-            <LandingLogoWrapper>
-                <LandingLogo src={SkyeexLogo.src} />
-                <LandingLogoLine />
-            </LandingLogoWrapper>
+            <LogoWrapper isLogoLine={true} />
             <LandingAreaContentContainer>
                 <LandingAreaWelcomeText>
                     {project.title}

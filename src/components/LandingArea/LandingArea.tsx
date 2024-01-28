@@ -19,7 +19,7 @@ export const LandingArea: FC<LandingAreaType> = ({ nextSectionReference }) => {
 
     return (
         <LandingAreaWrapper>
-            <LogoWrapper isLogoLine={true}/>
+            <LogoWrapper isLogoLine={true} />
             <LandingAreaContentContainer>
                 <LandingAreaWelcomeText>
                     {LandingAreaConfig.welcomeText}
