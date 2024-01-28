@@ -27,6 +27,7 @@ export const SeparatorMargin = styled.div<{ marginValue: number }>`
 export const FlexContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 `;
 
 export const FlexColumn = styled.div<{
@@ -56,4 +57,23 @@ export const TextContentWrapper = styled.div`
     ${minWidthQuery(Breakpoints.xxLarge)} {
         padding: 2rem 12rem 6rem 12rem;
     }
+`;
+
+export const SocialMediaWrapper = styled.div`
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.5rem 0 0.5rem;
+    border-radius: 50%;
+    transition: all 500ms ease;
+    cursor: pointer;
+
+    :hover {
+        background: ${Colors.coreDarkerBlue};
+    }
+`
+
+export const SocialMediaIcon = styled.img`
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
 `;

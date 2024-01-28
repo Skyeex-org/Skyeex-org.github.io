@@ -51,11 +51,9 @@ export const LandingLogoWrapper = styled.div`
     position: absolute;
 `;
 
-export const LandingLogo = styled.div`
-    font-size: 3rem;
-    color: ${Colors.white};
-    font-weight: bold;
-    padding: 2rem;
+export const LandingLogo = styled.img`
+    width: 13rem;
+    padding: 0.2rem;
 `;
 
 export const LandingLogoLine = styled.div`

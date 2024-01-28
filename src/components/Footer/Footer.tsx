@@ -4,10 +4,14 @@ import {
   FooterMetadataMotto, FooterMetadataTitle, FooterMetadataText,
   FooterMetadataContact, FooterLine, FooterCopyright, FooterCopyrightText
 } from "@components/components/Footer/Footer.css";
-import { SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig } from "@components/configs/general";
+import { SeparatorMargin, FlexContainer, SocialMediaWrapper, SocialMediaIcon } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { FooterConfig, SocialMediaConfig } from "@components/configs/general";
 
 export const Footer: FC = () => {
+  const handleSocialMediaIconClick = (url: string) => {
+    window.location.href = url;
+  };
+
   return (
     <FooterWrapper>
       <FooterContainer>
@@ -21,12 +25,22 @@ export const Footer: FC = () => {
             </FooterMetadataContact>
         </FooterMetadataContainer>
         <FooterLine />
-        <SeparatorSpace paddingValue={0.75} />
+        <SeparatorMargin marginValue={1.5} />
+        <FlexContainer>
+            {SocialMediaConfig.map((platform: SocialMediaConfigType, index) => {
+              return (
+              <SocialMediaWrapper onClick={() => handleSocialMediaIconClick(platform.url)}>
+                <SocialMediaIcon src={platform.icon} />
+              </SocialMediaWrapper>
+              );
+            })}
+        </FlexContainer>
+        <SeparatorMargin marginValue={1.5} />
         <FooterCopyright>
           <FooterCopyrightText href={FooterConfig.websiteUrl}>
-          Skyeex
+            Skyeex
           </FooterCopyrightText>
-        &nbsp;&copy; {new Date().getFullYear()}. All rights reserved.
+          &nbsp;&copy; {new Date().getFullYear()}. All rights reserved.
         </FooterCopyright>
       </FooterContainer>
     </FooterWrapper>
