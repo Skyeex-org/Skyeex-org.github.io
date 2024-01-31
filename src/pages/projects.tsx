@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import Head from "next/head";
 import {
     FlexColumn,
     FlexContainer,
@@ -12,13 +11,12 @@ import { ProjectsMetadataContainer } from "@components/components/ProjectsMetada
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
+import { getStandardHeader } from "@components/utils/general";
 
 const ProjectsPage: FC = () => {
     return (
         <React.Fragment>
-            <Head>
-                <title>Skyeex - Projects</title>
-            </Head>
+            {getStandardHeader('Skyeex - Projects')}
             <StandardBackground background={Colors.paleBluishGray}>
                 <LogoWrapper isDarkLogo={true} />
                 <ProjectsContainer>
