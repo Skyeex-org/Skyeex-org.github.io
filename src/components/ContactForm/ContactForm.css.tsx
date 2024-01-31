@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ContactWrapper = styled.div`
-    background: ${Colors.white};
-    color: ${Colors.black};
     padding: 2rem;
   
     ${minWidthQuery(Breakpoints.large)} {

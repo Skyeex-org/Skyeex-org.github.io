@@ -13,7 +13,7 @@ import {
     Button,
     FlexColumn,
     FlexContainer,
-    SeparatorSpace
+    SeparatorSpace, StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
@@ -83,48 +83,50 @@ export const ContactForm: FC = () => {
     }, [wasFormDataSubmitted]);
 
     return (
-        <ContactWrapper>
-            <FlexContainer>
-                <FlexColumn columnPercentage={35}>
-                    <ContactTextBox>
-                        <ContactSvg src={ContactUsSvg.src} />
-                        <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
-                        <ContactParagraph>Social Media Placeholder</ContactParagraph>
-                    </ContactTextBox>
-                </FlexColumn>
-                <FlexColumn columnPercentage={65}>
-                    {isDesktop() && (
-                        <React.Fragment>
-                            <ContactHeader>Send us a message!</ContactHeader>
-                            <SeparatorSpace paddingValue={1.5} />
-                        </React.Fragment>
-                    )}
-                    <ContactFormWrapper action={formSubmitCodeUrl} method="POST" onSubmit={onSubmitFormProcess}>
-                        <ContactInput
-                            placeholder={EmailElements.NAME}
-                            name={EmailElements.NAME}
-                            onChange={handleInputNameChange}
-                        />
-                        <SeparatorSpace paddingValue={1} />
-                        <ContactInput
-                            placeholder={EmailElements.EMAIL}
-                            type={EmailElements.EMAIL}
-                            name={EmailElements.EMAIL}
-                            onChange={handleInputEmailChange}
-                        />
-                        <SeparatorSpace paddingValue={1} />
-                        <ContactTextArea
-                            rows={12}
-                            placeholder={EmailElements.MESSAGE}
-                            name={EmailElements.MESSAGE}
-                            onChange={handleInputMessageChange}
-                        />
-                        <SeparatorSpace paddingValue={1} />
-                        <Button disabled={!canSubmitForm}>Send Message</Button>
-                    </ContactFormWrapper>
-                </FlexColumn>
-                <SeparatorSpace paddingValue={3} />
-            </FlexContainer>
-        </ContactWrapper>
+        <StandardBackground>
+            <ContactWrapper>
+                <FlexContainer>
+                    <FlexColumn columnPercentage={35}>
+                        <ContactTextBox>
+                            <ContactSvg src={ContactUsSvg.src} />
+                            <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
+                            <ContactParagraph>Social Media Placeholder</ContactParagraph>
+                        </ContactTextBox>
+                    </FlexColumn>
+                    <FlexColumn columnPercentage={65}>
+                        {isDesktop() && (
+                            <React.Fragment>
+                                <ContactHeader>Send us a message!</ContactHeader>
+                                <SeparatorSpace paddingValue={1.5} />
+                            </React.Fragment>
+                        )}
+                        <ContactFormWrapper action={formSubmitCodeUrl} method="POST" onSubmit={onSubmitFormProcess}>
+                            <ContactInput
+                                placeholder={EmailElements.NAME}
+                                name={EmailElements.NAME}
+                                onChange={handleInputNameChange}
+                            />
+                            <SeparatorSpace paddingValue={1} />
+                            <ContactInput
+                                placeholder={EmailElements.EMAIL}
+                                type={EmailElements.EMAIL}
+                                name={EmailElements.EMAIL}
+                                onChange={handleInputEmailChange}
+                            />
+                            <SeparatorSpace paddingValue={1} />
+                            <ContactTextArea
+                                rows={12}
+                                placeholder={EmailElements.MESSAGE}
+                                name={EmailElements.MESSAGE}
+                                onChange={handleInputMessageChange}
+                            />
+                            <SeparatorSpace paddingValue={1} />
+                            <Button disabled={!canSubmitForm}>Send Message</Button>
+                        </ContactFormWrapper>
+                    </FlexColumn>
+                    <SeparatorSpace paddingValue={3} />
+                </FlexContainer>
+            </ContactWrapper>
+        </StandardBackground>
     )
 }

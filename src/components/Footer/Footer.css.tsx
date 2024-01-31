@@ -3,9 +3,7 @@ import { Colors } from "@components/utils/cssMedia";
 import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const FooterWrapper = styled.div`
-    background: ${Colors.footerWrapperEbony};
     display: flex;
-    color: ${Colors.paleWhite};
 `;
 
 export const FooterContainer = styled.div`
