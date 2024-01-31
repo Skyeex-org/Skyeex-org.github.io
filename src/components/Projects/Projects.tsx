@@ -5,7 +5,6 @@ import {
     ProjectsTitle,
     ProjectsWrapper
 } from "@components/components/Projects/Projects.css";
-import { ProjectsCardsConfig, ProjectsCardsPreviewConfig } from "@components/configs/general";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import {
     Button,
@@ -15,6 +14,7 @@ import {
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useRouter } from "next/router";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { ProjectsCardsPreviewConfig, ProjectsConfig } from "@components/configs/projectsConfig";
 
 export const Projects: FC = () => {
     const router = useRouter();

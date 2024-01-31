@@ -8,10 +8,10 @@ import {
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Colors } from "@components/utils/cssMedia";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
-import { ProjectsCardsConfig } from "@components/configs/general";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
+import { ProjectsConfig } from "@components/configs/projectsConfig";
 
 const ProjectsPage: FC = () => {
     return (
@@ -25,7 +25,7 @@ const ProjectsPage: FC = () => {
                     <SeparatorSpace paddingValue={3} />
                     <ProjectsMetadataContainer />
                     <FlexContainer>
-                        {ProjectsCardsConfig.map((project: ProjectsConfigType) => {
+                        {ProjectsConfig.map((project: ProjectsConfigType) => {
                             return (
                                 <FlexColumn columnPercentage={33} alignColumnsCenter={true} key={project.title}>
                                     <ProjectCard project={project} />
