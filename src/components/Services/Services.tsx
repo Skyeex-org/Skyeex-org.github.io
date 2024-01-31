@@ -10,7 +10,7 @@ import { WhatWeDoCardsConfig, WhatWeDoContentConfig } from "@components/configs/
 import {
     SeparatorSpace,
     FlexColumn,
-    FlexContainer
+    FlexContainer, StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
@@ -22,37 +22,39 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
     const { isMobile } = useGetScreenSize();
 
     return (
-        <ServicesWrapper ref={ref}>
-            <SeparatorSpace paddingValue={isMobile() ? 1 : 5}>
-                <FlexContainer>
-                    <FlexColumn columnPercentage={50}>
-                        <ServicesOverTitle>{WhatWeDoContentConfig.overTitle}</ServicesOverTitle>
-                        <ServicesTitle>{WhatWeDoContentConfig.title}</ServicesTitle>
-                    </FlexColumn>
-                    <FlexColumn columnPercentage={50}>
-                        <ServicesContent>
-                            <ServicesParagraph>
-                                {WhatWeDoContentConfig.paragraphOne}
-                            </ServicesParagraph>
-                            <SeparatorSpace paddingValue={1} />
-                            <ServicesParagraph>
-                                {WhatWeDoContentConfig.paragraphTwo}
-                            </ServicesParagraph>
-                        </ServicesContent>
-                    </FlexColumn>
-                </FlexContainer>
-            </SeparatorSpace>
-            <FlexContainer>
-                {WhatWeDoCardsConfig.map((service: ServiceConfigType, index) => {
-                    const isNotTheLastElement = WhatWeDoCardsConfig.length - 1 !== index;
-
-                    return (
-                        <FlexColumn key={service.title} columnPercentage={25} shouldHaveBorder={isNotTheLastElement}>
-                            <ServiceCard service={service} />
+        <StandardBackground>
+            <ServicesWrapper ref={ref}>
+                <SeparatorSpace paddingValue={isMobile() ? 1 : 5}>
+                    <FlexContainer>
+                        <FlexColumn columnPercentage={50}>
+                            <ServicesOverTitle>{WhatWeDoContentConfig.overTitle}</ServicesOverTitle>
+                            <ServicesTitle>{WhatWeDoContentConfig.title}</ServicesTitle>
                         </FlexColumn>
-                    );
-                })}
-            </FlexContainer>
-        </ServicesWrapper>
+                        <FlexColumn columnPercentage={50}>
+                            <ServicesContent>
+                                <ServicesParagraph>
+                                    {WhatWeDoContentConfig.paragraphOne}
+                                </ServicesParagraph>
+                                <SeparatorSpace paddingValue={1} />
+                                <ServicesParagraph>
+                                    {WhatWeDoContentConfig.paragraphTwo}
+                                </ServicesParagraph>
+                            </ServicesContent>
+                        </FlexColumn>
+                    </FlexContainer>
+                </SeparatorSpace>
+                <FlexContainer>
+                    {WhatWeDoCardsConfig.map((service: ServiceConfigType, index) => {
+                        const isNotTheLastElement = WhatWeDoCardsConfig.length - 1 !== index;
+
+                        return (
+                            <FlexColumn key={service.title} columnPercentage={25} shouldHaveBorder={isNotTheLastElement}>
+                                <ServiceCard service={service} />
+                            </FlexColumn>
+                        );
+                    })}
+                </FlexContainer>
+            </ServicesWrapper>
+        </StandardBackground>
     );
 });
