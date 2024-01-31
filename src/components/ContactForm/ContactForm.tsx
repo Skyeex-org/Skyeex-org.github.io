@@ -1,28 +1,30 @@
 import React, { FC, useEffect, useState } from "react";
 import {
-    ContactWrapper, ContactHeader,
-    ContactInput, ContactParagraph,
-    ContactTextArea, ContactTextBox, ContactFormWrapper, ContactSvg
+    ContactFormWrapper,
+    ContactHeader,
+    ContactInput,
+    ContactParagraph,
+    ContactSvg,
+    ContactTextArea,
+    ContactTextBox,
+    ContactWrapper
 } from "@components/components/ContactForm/ContactForm.css";
 import {
-    SeparatorSpace,
+    Button,
     FlexColumn,
-    FlexContainer, Button
+    FlexContainer,
+    SeparatorSpace
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
+import { isValidEmail } from "@components/utils/general";
 
 enum EmailElements {
     NAME = 'name',
     EMAIL = 'email',
     MESSAGE = 'message'
 }
-
-const isValidEmail = (email: string): boolean => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-};
 
 export const ContactForm: FC = () => {
     const { isDesktop } = useGetScreenSize();
