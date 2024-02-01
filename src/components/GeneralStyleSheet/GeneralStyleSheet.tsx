@@ -25,10 +25,10 @@ export const SeparatorMargin = styled.div<{ marginValue: number }>`
     margin: ${(props) => props.marginValue}rem;
 `;
 
-export const FlexContainer = styled.div`
+export const FlexContainer = styled.div<{ positionType: string }>`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: ${(props) => props.positionType};
 `;
 
 export const FlexColumn = styled.div<{

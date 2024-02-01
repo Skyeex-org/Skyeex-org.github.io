@@ -4,12 +4,13 @@ import {
     ContactInput, ContactParagraph,
     ContactTextArea, ContactTextBox, ContactFormWrapper, ContactSvg
 } from "@components/components/ContactForm/ContactForm.css";
+import { SocialMediaContainer } from "@components/components/common/SocialMediaContainer";
 import {
     SeparatorSpace,
     FlexColumn,
     FlexContainer, Button
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
+import { FooterConfig, ThemeConfig, formSubmitCodeUrl } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
@@ -82,12 +83,12 @@ export const ContactForm: FC = () => {
 
     return (
         <ContactWrapper>
-            <FlexContainer>
+            <FlexContainer positionType="space-around">
                 <FlexColumn columnPercentage={35}>
                     <ContactTextBox>
                         <ContactSvg src={ContactUsSvg.src} />
                         <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
-                        <ContactParagraph>Social Media Placeholder</ContactParagraph>
+                        <SocialMediaContainer theme={ThemeConfig[1].theme} />
                     </ContactTextBox>
                 </FlexColumn>
                 <FlexColumn columnPercentage={65}>

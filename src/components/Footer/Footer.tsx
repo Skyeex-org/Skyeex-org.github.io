@@ -4,14 +4,11 @@ import {
     FooterMetadataMotto, FooterMetadataTitle, FooterMetadataText,
     FooterMetadataContact, FooterLine, FooterCopyright, FooterCopyrightText
 } from "@components/components/Footer/Footer.css";
-import { SeparatorMargin, FlexContainer, SocialMediaWrapper, SocialMediaIcon } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig, SocialMediaConfig } from "@components/configs/general";
+import { SocialMediaContainer } from "@components/components/common/SocialMediaContainer";
+import { SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { FooterConfig, ThemeConfig } from "@components/configs/general";
 
 export const Footer: FC = () => {
-    const handleSocialMediaIconClick = (url: string) => {
-        window.location.href = url;
-    };
-
     return (
         <FooterWrapper>
             <FooterContainer>
@@ -26,15 +23,7 @@ export const Footer: FC = () => {
                 </FooterMetadataContainer>
                 <FooterLine />
                 <SeparatorMargin marginValue={1.5} />
-                <FlexContainer>
-                    {SocialMediaConfig.map((platform: SocialMediaConfigType) => {
-                        return (
-                            <SocialMediaWrapper onClick={() => handleSocialMediaIconClick(platform.url)} key={platform.id}>
-                                <SocialMediaIcon src={platform.icon} />
-                            </SocialMediaWrapper>
-                        );
-                    })}
-                </FlexContainer>
+                <SocialMediaContainer theme={ThemeConfig[0].theme}/>
                 <SeparatorMargin marginValue={1.5} />
                 <FooterCopyright>
                     <FooterCopyrightText href={FooterConfig.websiteUrl}>
