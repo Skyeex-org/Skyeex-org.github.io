@@ -81,6 +81,10 @@ export const SocialMediaIcon = styled.img`
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.5rem;
+    
+    :hover {
+        filter: brightness(0) invert(1);
+    }
 `;
 
 export const StandardBackground = styled.div<{ background?: string, color?: string }>`
