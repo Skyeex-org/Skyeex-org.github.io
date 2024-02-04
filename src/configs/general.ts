@@ -2,10 +2,13 @@ import SeverSolid from "@components/assets/svgs/server-solid.svg";
 import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
 import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
-import LinkedIn from "@components/assets/svgs/SocialMedia/linkedin.svg";
-import Medium from "@components/assets/svgs/SocialMedia/medium.svg";
-import ProjectPlaceholder from "@components/assets/ProjectPlaceholder.png";
+import LinkedIn from "@components/assets/svgs/socialMedia/linkedin.svg";
+import Medium from "@components/assets/svgs/socialMedia/medium.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
+import StreamSnap from "@components/assets/projects/streamsnap.jpg";
+import CaRepair from "@components/assets/projects/caRepair.jpeg";
+import Adda from "@components/assets/projects/adda.jpg";
+import Cruze from "@components/assets/projects/cruze.jpg";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,
@@ -54,7 +57,7 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
         id: 'streamsnap',
         title: 'Streamsnap',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: StreamSnap.src,
         previewDescription: 'Streamsnap is a cutting-edge multiplatform VOD streaming app with integrated analytics designed to provide a data-driven viewing experience across multiple devices.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -97,7 +100,7 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
         id: 'cruze',
         title: 'Cruze',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: Cruze.src,
         previewDescription: 'Cruze revolutionizes commuting with its mobile carpooling app specially tailored for businesses and institutions fostering a sense for efficient and sustainable transportation.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -138,9 +141,9 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
     },
     {
         id: 'car-damage-detector',
-        title: 'Car damage detector',
+        title: 'CaRepair',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: CaRepair.src,
         previewDescription: 'Introducing a smart classifier engineered to accurately assess the accident-indused vehicle damage, bringing precision to the evaluation process, streamlining the repair workflow and enhance customer satisfaction.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -183,7 +186,7 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
         id: 'adda',
         title: 'ADDA',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: Adda.src,
         previewDescription: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
