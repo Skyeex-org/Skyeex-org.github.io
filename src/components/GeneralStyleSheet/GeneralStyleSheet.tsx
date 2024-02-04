@@ -75,6 +75,10 @@ export const SocialMediaWrapper = styled.div<{ isBackgroundLight: boolean}>`
     img {
         filter: ${(props) => (props.isBackgroundLight ? 'brightness(0)' : 'brightness(1)')};
     }
+
+    :hover {
+        background: ${Colors.coreDarkerBlue};
+    }
 `
 
 export const SocialMediaIcon = styled.img`
