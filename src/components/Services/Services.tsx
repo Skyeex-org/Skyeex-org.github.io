@@ -53,6 +53,7 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
                     );
                 })}
             </FlexContainer>
+            <SeparatorSpace paddingValue={1} />
         </ServicesWrapper>
     );
 });

@@ -37,7 +37,7 @@ export const Projects: FC = () => {
                 <SeparatorMargin marginValue={3} />
                 <Button onClick={onShowMoreClick}>Show More</Button>
             </ProjectsContainer>
-            <SeparatorSpace paddingValue={0.5} />
+            <SeparatorSpace paddingValue={1.5} />
         </ProjectsWrapper>
     );
 };
