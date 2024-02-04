@@ -14,14 +14,14 @@ export const LandingAreaConfig: LandingAreaConfigType = {
     buttonText: 'Get Started'
 };
 
-export const WhatWeDoContentConfig: WhatWeDoConfigType = {
-    overTitle: 'Top Services',
+export const ServicesConfig: ServicesConfigType = {
+    overTitle: 'Our Services',
     title: 'Take your craft to the next level',
-    paragraphOne: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-    paragraphTwo: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+    paragraphOne: "Our comprehensive tech stack empowers us to deliver a diverse range of services, spanning backend development, web and mobile application development, and even cutting-edge machine learning solutions.",
+    paragraphTwo: "From concept to execution, we are your dedicated partners in turning visions into reality because success is not just a goal; it is our shared destination."
 };
 
-export const WhatWeDoCardsConfig: ServiceConfigType[] = [
+export const ServicesCardsConfig: ServiceConfigType[] = [
     {
         icon: SeverSolid.src,
         title: 'Backend Services',
