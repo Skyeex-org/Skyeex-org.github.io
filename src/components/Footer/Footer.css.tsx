@@ -62,6 +62,7 @@ export const FooterLine = styled.div`
 
 export const FooterCopyright = styled.div`
     text-align: center;
+    font-weight: bold;
 `;
 
 export const FooterCopyrightText = styled.a`
