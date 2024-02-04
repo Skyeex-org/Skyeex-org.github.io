@@ -85,7 +85,8 @@ export const SocialMediaIcon = styled.img`
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.5rem;
-    
+    transition: all 500ms ease;
+  
     :hover {
         filter: brightness(0) invert(1);
     }

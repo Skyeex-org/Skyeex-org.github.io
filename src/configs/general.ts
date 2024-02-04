@@ -224,11 +224,6 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
     },
 ];
 
-export enum ThemeConfig {
-    LIGHT = 'light',
-    DARK = 'dark'
-}
-
 export const SocialMediaConfig: SocialMediaConfigType[] = [
     {
         id: 'linkedin',

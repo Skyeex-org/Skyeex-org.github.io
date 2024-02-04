@@ -10,7 +10,7 @@ import {
     FlexColumn,
     FlexContainer, Button
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig, ThemeConfig, formSubmitCodeUrl } from "@components/configs/general";
+import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
