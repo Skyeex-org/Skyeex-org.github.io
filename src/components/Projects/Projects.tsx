@@ -1,11 +1,6 @@
 import React, { FC } from "react";
-import {
-    ProjectsContainer,
-    ProjectsHeadliner,
-    ProjectsTitle,
-    ProjectsWrapper
-} from "@components/components/Projects/Projects.css";
-import { ProjectsCardsConfig, ProjectsCardsPreviewConfig } from "@components/configs/general";
+import { ProjectsContainer,ProjectsWrapper } from "@components/components/Projects/Projects.css";
+import { ProjectsCardsPreviewConfig } from "@components/configs/general";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import {
     Button,
@@ -27,7 +22,7 @@ export const Projects: FC = () => {
         <ProjectsWrapper>
             <ProjectsContainer>
                 <ProjectsMetadataContainer />
-                <FlexContainer>
+                <FlexContainer positionType="space-around">
                     {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType) => {
                         return (
                             <ProjectCard project={project} key={project.title} />

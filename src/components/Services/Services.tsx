@@ -24,7 +24,7 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
     return (
         <ServicesWrapper ref={ref}>
             <SeparatorSpace paddingValue={isMobile() ? 1 : 5}>
-                <FlexContainer>
+                <FlexContainer positionType="space-around">
                     <FlexColumn columnPercentage={50}>
                         <ServicesOverTitle>{ServicesConfig.overTitle}</ServicesOverTitle>
                         <ServicesTitle>{ServicesConfig.title}</ServicesTitle>
@@ -42,7 +42,7 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
                     </FlexColumn>
                 </FlexContainer>
             </SeparatorSpace>
-            <FlexContainer>
+            <FlexContainer positionType="space-around">
                 {ServicesCardsConfig.map((service: ServiceConfigType, index) => {
                     const isNotTheLastElement = ServicesCardsConfig.length - 1 !== index;
 

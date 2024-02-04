@@ -234,7 +234,7 @@ export const SocialMediaConfig: SocialMediaConfigType[] = [
         id: 'medium',
         icon: Medium.src,
         url: "https://skyeex-org.github.io/",
-    },
+    }
 ];
 
 export const FooterConfig: FooterConfigType = {
@@ -243,7 +243,6 @@ export const FooterConfig: FooterConfigType = {
     metadataText: 'skyeex-org@gmail.com',
     websiteUrl: 'https://skyeex-org.github.io/'
 };
-
 
 export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);
 export const formSubmitCodeUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';
