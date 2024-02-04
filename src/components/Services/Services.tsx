@@ -23,7 +23,7 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
 
     return (
         <ServicesWrapper ref={ref}>
-            <SeparatorSpace paddingValue={isMobile() ? 1 : 5}>
+            <SeparatorSpace paddingValue={isMobile() ? 1 : 4}>
                 <FlexContainer positionType="space-around">
                     <FlexColumn columnPercentage={50}>
                         <ServicesOverTitle>{ServicesConfig.overTitle}</ServicesOverTitle>
@@ -53,6 +53,7 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
                     );
                 })}
             </FlexContainer>
+            <SeparatorSpace paddingValue={1} />
         </ServicesWrapper>
     );
 });
