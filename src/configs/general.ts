@@ -2,10 +2,8 @@ import SeverSolid from "@components/assets/svgs/server-solid.svg";
 import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
 import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
-import LightLinkedIn from "@components/assets/svgs/SocialMedia/light/linkedin.svg";
-import LightMedium from "@components/assets/svgs/SocialMedia/light/medium.svg";
-import DarkLinkedIn from "@components/assets/svgs/SocialMedia/dark/linkedin.svg";
-import DarkMedium from "@components/assets/svgs/SocialMedia/dark/medium.svg";
+import LinkedIn from "@components/assets/svgs/SocialMedia/linkedin.svg";
+import Medium from "@components/assets/svgs/SocialMedia/medium.svg";
 import ProjectPlaceholder from "@components/assets/ProjectPlaceholder.png";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
 
@@ -226,41 +224,23 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
     },
 ];
 
-export const ThemeConfig: ThemeConfigType[] = [
-    {
-        theme: 'light',
-    },
-    {
-        theme: 'dark',
-    },
-]
+export enum ThemeConfig {
+    LIGHT = 'light',
+    DARK = 'dark'
+}
 
 export const SocialMediaConfig: SocialMediaConfigType[] = [
     {
-        id: 'light_linkedin',
-        icon: LightLinkedIn.src,
+        id: 'linkedin',
+        icon: LinkedIn.src,
         url: "https://skyeex-org.github.io/",
     },
     {
-        id: 'light_medium',
-        icon: LightMedium.src,
+        id: 'medium',
+        icon: Medium.src,
         url: "https://skyeex-org.github.io/",
-    },
-    {
-        id: 'dark_linkedin',
-        icon: DarkLinkedIn.src,
-        url: "https://skyeex-org.github.io/",
-    },
-    {
-        id: 'dark_medium',
-        icon: DarkMedium.src,
-        url: "https://skyeex-org.github.io/",
-    },
+    }
 ];
-
-export const SocialMediaConfigExtractor = (type: string) : SocialMediaConfigType[] => {
-    return SocialMediaConfig.filter(item => item.id.includes(type));
-};
 
 export const FooterConfig: FooterConfigType = {
     metadataMoto: 'Architecting new digital horizons',

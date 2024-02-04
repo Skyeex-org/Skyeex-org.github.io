@@ -30,10 +30,6 @@ type ProjectsConfigType = {
     isDetailPageEnabled: boolean;
 };
 
-type ThemeConfigType = {
-    theme: string;
-}
-
 type SocialMediaConfigType = {
     id: string;
     icon: string;

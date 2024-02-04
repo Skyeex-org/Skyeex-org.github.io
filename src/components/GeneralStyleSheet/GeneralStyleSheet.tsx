@@ -64,13 +64,17 @@ export const TextContentWrapper = styled.div`
     }
 `;
 
-export const SocialMediaWrapper = styled.div`
+export const SocialMediaWrapper = styled.div<{ isBackgroundLight: boolean}>`
     width: 2.5rem;
     height: 2.5rem;
     margin: 0 0.5rem 0 0.5rem;
     border-radius: 50%;
     transition: all 500ms ease;
     cursor: pointer;
+
+    img {
+        filter: ${(props) => (props.isBackgroundLight ? 'brightness(0)' : 'brightness(1)')};
+    }
 
     :hover {
         background: ${Colors.coreDarkerBlue};

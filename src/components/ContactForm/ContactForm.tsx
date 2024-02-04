@@ -4,7 +4,7 @@ import {
     ContactInput, ContactParagraph,
     ContactTextArea, ContactTextBox, ContactFormWrapper, ContactSvg
 } from "@components/components/ContactForm/ContactForm.css";
-import { SocialMediaContainer } from "@components/components/common/SocialMediaContainer";
+import { SocialMediaContainer } from "@components/components/SocialMediaContainer/SocialMediaContainer";
 import {
     SeparatorSpace,
     FlexColumn,
@@ -88,7 +88,7 @@ export const ContactForm: FC = () => {
                     <ContactTextBox>
                         <ContactSvg src={ContactUsSvg.src} />
                         <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
-                        <SocialMediaContainer theme={ThemeConfig[1].theme} />
+                        <SocialMediaContainer isBackgroundLight={true}/>
                     </ContactTextBox>
                 </FlexColumn>
                 <FlexColumn columnPercentage={65}>

@@ -1,10 +1,12 @@
 import React from "react";
 import { FlexContainer, SocialMediaWrapper, SocialMediaIcon } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { SocialMediaConfigExtractor } from "@components/configs/general";
+import { SocialMediaConfig } from "@components/configs/general";
 
-export const SocialMediaContainer: React.FC<ThemeConfigType> = ({ theme }) => {
-    const SocialMediaConfig = SocialMediaConfigExtractor(theme);
+interface BackgroundType {
+    isBackgroundLight: boolean;
+  }
 
+export const SocialMediaContainer: React.FC<BackgroundType> = ({ isBackgroundLight }) => {
     const handleSocialMediaIconClick = (url: string) => {
         window.location.href = url;
     };
@@ -13,7 +15,7 @@ export const SocialMediaContainer: React.FC<ThemeConfigType> = ({ theme }) => {
         <FlexContainer positionType="center">
             {SocialMediaConfig.map((platform: SocialMediaConfigType) => {
                 return (
-                <SocialMediaWrapper onClick={() => handleSocialMediaIconClick(platform.url)} key={platform.id}>
+                <SocialMediaWrapper isBackgroundLight={isBackgroundLight} onClick={() => handleSocialMediaIconClick(platform.url)} key={platform.id}>
                     <SocialMediaIcon src={platform.icon} />
                 </SocialMediaWrapper>
                 );

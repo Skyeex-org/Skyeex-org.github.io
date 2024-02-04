@@ -4,9 +4,9 @@ import {
     FooterMetadataMotto, FooterMetadataTitle, FooterMetadataText,
     FooterMetadataContact, FooterLine, FooterCopyright, FooterCopyrightText
 } from "@components/components/Footer/Footer.css";
-import { SocialMediaContainer } from "@components/components/common/SocialMediaContainer";
+import { SocialMediaContainer } from "@components/components/SocialMediaContainer/SocialMediaContainer";
 import { SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig, ThemeConfig } from "@components/configs/general";
+import { FooterConfig } from "@components/configs/general";
 
 export const Footer: FC = () => {
     return (
@@ -23,7 +23,7 @@ export const Footer: FC = () => {
                 </FooterMetadataContainer>
                 <FooterLine />
                 <SeparatorMargin marginValue={1.5} />
-                <SocialMediaContainer theme={ThemeConfig[0].theme}/>
+                <SocialMediaContainer isBackgroundLight={false}/>
                 <SeparatorMargin marginValue={1.5} />
                 <FooterCopyright>
                     <FooterCopyrightText href={FooterConfig.websiteUrl}>
