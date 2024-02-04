@@ -57,7 +57,7 @@ export const ProjectCardWrapperContainer = styled.div`
 
 export const ProjectCardImage = styled.img`
     width: 100%;
-    height: 40%;
+    height: 43%;
 `;
 
 export const ProjectCardDescription = styled.p`
