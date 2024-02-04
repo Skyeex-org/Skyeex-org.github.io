@@ -5,7 +5,7 @@ type LandingAreaConfigType = {
     buttonText: string;
 };
 
-type WhatWeDoConfigType = {
+type ServicesConfigType = {
     overTitle: string;
     title: string;
     paragraphOne: string;
