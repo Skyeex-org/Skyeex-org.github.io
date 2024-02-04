@@ -29,8 +29,8 @@ export const ProjectCardWrapper = styled.div`
     }
 
      ${minWidthQuery(Breakpoints.medium)} {
-        width: 17.5rem;
-        height: 25rem;
+        width: 22rem;
+        height: 30rem;
         margin: 2.5rem 0.5rem 0 0.5rem;
     }
 
@@ -57,8 +57,7 @@ export const ProjectCardWrapperContainer = styled.div`
 
 export const ProjectCardImage = styled.img`
     width: 100%;
-    height: 6.5rem;
-    background: ${Colors.gray};
+    height: 40%;
 `;
 
 export const ProjectCardDescription = styled.p`
