@@ -25,10 +25,10 @@ export const SeparatorMargin = styled.div<{ marginValue: number }>`
     margin: ${(props) => props.marginValue}rem;
 `;
 
-export const FlexContainer = styled.div`
+export const FlexContainer = styled.div<{ positionType: string }>`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: ${(props) => props.positionType};
 `;
 
 export const FlexColumn = styled.div<{
@@ -64,13 +64,17 @@ export const TextContentWrapper = styled.div`
     }
 `;
 
-export const SocialMediaWrapper = styled.div`
+export const SocialMediaWrapper = styled.div<{ isBackgroundLight: boolean}>`
     width: 2.5rem;
     height: 2.5rem;
     margin: 0 0.5rem 0 0.5rem;
     border-radius: 50%;
     transition: all 500ms ease;
     cursor: pointer;
+
+    img {
+        filter: ${(props) => (props.isBackgroundLight ? 'brightness(0)' : 'brightness(1)')};
+    }
 
     :hover {
         background: ${Colors.coreDarkerBlue};
@@ -81,6 +85,11 @@ export const SocialMediaIcon = styled.img`
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.5rem;
+    transition: all 500ms ease;
+  
+    :hover {
+        filter: brightness(0) invert(1);
+    }
 `;
 
 export const StandardBackground = styled.div<{ background?: string, color?: string }>`
