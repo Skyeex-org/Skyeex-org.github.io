@@ -1,5 +1,5 @@
 import React, { useState, useEffect, FC } from 'react';
-import ArrowToTop from '../../assets/icons/arrow-up-long-solid.svg';
+import ArrowToTop from '../../assets/svgs/arrow-up-long-solid.svg';
 import { ScrollToTopButton, ScrollToTopIcon } from "@components/components/ScrollTopButton/ScrollToTopButton.css";
 
 const STANDARD_SCROLL_BUTTON_APPEARANCE_HEIGHT = 300;
