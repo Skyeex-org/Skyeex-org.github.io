@@ -23,7 +23,7 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
 
     return (
         <ServicesWrapper ref={ref}>
-            <SeparatorSpace paddingValue={isMobile() ? 1 : 5}>
+            <SeparatorSpace paddingValue={isMobile() ? 1 : 4}>
                 <FlexContainer>
                     <FlexColumn columnPercentage={50}>
                         <ServicesOverTitle>{WhatWeDoContentConfig.overTitle}</ServicesOverTitle>
