@@ -81,14 +81,14 @@ export const SocialMediaWrapper = styled.div<{ isBackgroundLight: boolean}>`
     }
 `
 
-export const SocialMediaIcon = styled.img`
+export const SocialMediaIcon = styled.img<{ isBackgroundLight: boolean}>`
     width: 2.5rem;
     height: 2.5rem;
     padding: 0.5rem;
     transition: all 500ms ease;
   
     :hover {
-        filter: brightness(0) invert(1);
+        filter: ${(props) => (props.isBackgroundLight ? 'brightness(1)' : 'brightness(1)')};
     }
 `;
 
