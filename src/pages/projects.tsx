@@ -12,6 +12,7 @@ import { ProjectsCardsConfig } from "@components/configs/general";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
+import { Footer } from "@components/components/Footer/Footer";
 
 const ProjectsPage: FC = () => {
     return (
@@ -35,6 +36,7 @@ const ProjectsPage: FC = () => {
                     </FlexContainer>
                 </ProjectsContainer>
             </StandardBackground>
+            <Footer />
         </React.Fragment>
     )
 }
