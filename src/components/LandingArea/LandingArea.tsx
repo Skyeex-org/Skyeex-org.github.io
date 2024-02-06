@@ -7,18 +7,21 @@ import {
 import { Button, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { LandingAreaConfig } from "@components/configs/general";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
+import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 type LandingAreaType = {
     nextSectionReference: any;
 }
 
 export const LandingArea: FC<LandingAreaType> = ({ nextSectionReference }) => {
+    const { isMobile } = useGetScreenSize();
+
     const scrollToRef = () => {
         nextSectionReference?.current?.scrollIntoView({ behavior: "smooth" });
     }
 
     return (
-        <LandingAreaWrapper>
+        <LandingAreaWrapper isMobile={isMobile()}>
             <LogoWrapper isLogoLine={true} />
             <LandingAreaContentContainer>
                 <LandingAreaWelcomeText>

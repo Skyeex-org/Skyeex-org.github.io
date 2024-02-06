@@ -5,9 +5,12 @@ import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 export const LandingAreaWrapper = styled.div<{
     height?: number,
     wallpaper?: string,
-    darkLevel?: number }>`
+    darkLevel?: number,
+    isMobile?: boolean,
+}>`
     background: linear-gradient(to bottom, rgba(0, 0, 0, ${(props) => props.darkLevel || 0.6}), rgba(0, 0, 0, 0.1)), 
-    url(${(props) => props.wallpaper || LandingAreaWallpaper.src}) fixed center;
+    url(${(props) => props.wallpaper || LandingAreaWallpaper.src}) ${(props) => !props.isMobile && 'fixed'} center;
+
     background-size: cover;
     position: relative;
     height: ${(props) => props.height || 100}vh;
