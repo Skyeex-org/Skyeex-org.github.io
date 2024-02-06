@@ -8,8 +8,8 @@ import {
     SeparatorMargin,
     SeparatorSpace
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { useRouter } from "next/router";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { useRouter } from "next/router";
 
 export const Projects: FC = () => {
     const router = useRouter();
