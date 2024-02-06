@@ -1,24 +1,25 @@
 import React, { FC } from "react";
 import {
-    FooterWrapper, FooterContainer, FooterMetadataContainer,
-    FooterMetadataMotto, FooterMetadataTitle, FooterMetadataText,
-    FooterMetadataContact, FooterLine, FooterCopyright, FooterCopyrightText
+    FooterWrapper,
+    FooterContainer,
+    FooterMetadataContainer,
+    FooterMetadataMotto,
+    FooterMetadataTitle,
+    FooterMetadataText,
+    FooterMetadataContact,
+    FooterLine,
+    FooterCopyright,
+    FooterCopyrightText
 } from "@components/components/Footer/Footer.css";
+import { SocialMediaContainer } from "@components/components/SocialMediaContainer/SocialMediaContainer";
 import {
     SeparatorMargin,
-    FlexContainer,
-    SocialMediaWrapper,
-    SocialMediaIcon,
-    StandardBackground
+    StandardBackground,
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig, SocialMediaConfig } from "@components/configs/general";
 import { Colors } from "@components/utils/cssMedia";
+import { FooterConfig } from "@components/configs/general";
 
 export const Footer: FC = () => {
-    const handleSocialMediaIconClick = (url: string) => {
-        window.location.href = url;
-    };
-
     return (
         <StandardBackground background={Colors.footerWrapperEbony} color={Colors.paleWhite}>
             <FooterWrapper>
@@ -34,15 +35,7 @@ export const Footer: FC = () => {
                     </FooterMetadataContainer>
                     <FooterLine />
                     <SeparatorMargin marginValue={1.5} />
-                    <FlexContainer>
-                        {SocialMediaConfig.map((platform: SocialMediaConfigType) => {
-                            return (
-                                <SocialMediaWrapper onClick={() => handleSocialMediaIconClick(platform.url)} key={platform.id}>
-                                    <SocialMediaIcon src={platform.icon} />
-                                </SocialMediaWrapper>
-                            );
-                        })}
-                    </FlexContainer>
+                    <SocialMediaContainer isBackgroundLight={false}/>
                     <SeparatorMargin marginValue={1.5} />
                     <FooterCopyright>
                         <FooterCopyrightText href={FooterConfig.websiteUrl}>

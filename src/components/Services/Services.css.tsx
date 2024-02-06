@@ -31,6 +31,7 @@ export const ServicesTitle = styled.div`
 export const ServicesOverTitle = styled.p`
     font-weight: bold;
     font-size: 1.20rem;
+    color: ${Colors.paleGray};
     padding-left: 2rem;
     text-transform: uppercase;
     display: none;

@@ -2,9 +2,13 @@ import SeverSolid from "@components/assets/svgs/server-solid.svg";
 import DesktopSolid from "@components/assets/svgs/desktop-solid.svg";
 import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
-import LinkedIn from "@components/assets/svgs/SocialMedia/linkedin.svg";
-import Medium from "@components/assets/svgs/SocialMedia/medium.svg";
+import LinkedIn from "@components/assets/svgs/socialMedia/linkedin.svg";
+import Medium from "@components/assets/svgs/socialMedia/medium.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
+import StreamSnap from "@components/assets/projects/streamsnap.jpg";
+import CaRepair from "@components/assets/projects/caRepair.jpeg";
+import Adda from "@components/assets/projects/adda.jpg";
+import Cruze from "@components/assets/projects/cruze.jpg";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,
@@ -13,14 +17,14 @@ export const LandingAreaConfig: LandingAreaConfigType = {
     buttonText: 'Get Started'
 };
 
-export const WhatWeDoContentConfig: WhatWeDoConfigType = {
-    overTitle: 'Top Services',
+export const ServicesConfig: ServicesConfigType = {
+    overTitle: 'Our Services',
     title: 'Take your craft to the next level',
-    paragraphOne: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-    paragraphTwo: 'Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+    paragraphOne: "Our comprehensive tech stack empowers us to deliver a diverse range of services, spanning backend development, web and mobile application development, and even cutting-edge machine learning solutions.",
+    paragraphTwo: "From concept to execution, we are your dedicated partners in turning visions into reality because success is not just a goal; it is our shared destination."
 };
 
-export const WhatWeDoCardsConfig: ServiceConfigType[] = [
+export const ServicesCardsConfig: ServiceConfigType[] = [
     {
         icon: SeverSolid.src,
         title: 'Backend Services',
@@ -58,7 +62,7 @@ export const SocialMediaConfig: SocialMediaConfigType[] = [
         id: 'medium',
         icon: Medium.src,
         url: "https://skyeex-org.github.io/",
-    },
+    }
 ];
 
 export const FooterConfig: FooterConfigType = {
@@ -67,6 +71,5 @@ export const FooterConfig: FooterConfigType = {
     metadataText: 'skyeex-org@gmail.com',
     websiteUrl: 'https://skyeex-org.github.io/'
 };
-
 
 export const formSubmitCodeUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';

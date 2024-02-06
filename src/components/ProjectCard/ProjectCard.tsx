@@ -21,7 +21,7 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
 
     return (
         <ProjectCardWrapper onClick={project.isDetailPageEnabled ? handleProjectCardClick : () => null}>
-            <ProjectCardImage />
+            <ProjectCardImage src={project.icon} />
             <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>

@@ -7,11 +7,12 @@ import {
     Button,
     FlexContainer,
     SeparatorMargin,
-    SeparatorSpace, StandardBackground
+    SeparatorSpace,
+    StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useRouter } from "next/router";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
-import { ProjectsCardsPreviewConfig, ProjectsConfig } from "@components/configs/projectsConfig";
+import { ProjectsCardsPreviewConfig } from "@components/configs/projectsConfig";
 import { Colors } from "@components/utils/cssMedia";
 
 export const Projects: FC = () => {
@@ -25,7 +26,7 @@ export const Projects: FC = () => {
         <StandardBackground background={Colors.paleBluishGray} color={Colors.black}>
             <ProjectsContainer>
                 <ProjectsMetadataContainer />
-                <FlexContainer>
+                <FlexContainer positionType="space-around">
                     {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType) => {
                         return (
                             <ProjectCard project={project} key={project.title} />
@@ -35,7 +36,7 @@ export const Projects: FC = () => {
                 <SeparatorMargin marginValue={3} />
                 <Button onClick={onShowMoreClick}>Show More</Button>
             </ProjectsContainer>
-            <SeparatorSpace paddingValue={0.5} />
+            <SeparatorSpace paddingValue={1.5} />
         </StandardBackground>
     );
 };

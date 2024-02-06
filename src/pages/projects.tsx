@@ -10,7 +10,7 @@ import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
-import { ProjectsConfig } from "@components/configs/projectsConfig";
+import { ProjectsCardsConfig } from "@components/configs/projectsConfig";
 import { getStandardHeader } from "@components/utils/general";
 
 const ProjectsPage: FC = () => {
@@ -22,8 +22,8 @@ const ProjectsPage: FC = () => {
                 <ProjectsContainer>
                     <SeparatorSpace paddingValue={3} />
                     <ProjectsMetadataContainer />
-                    <FlexContainer>
-                        {ProjectsConfig.map((project: ProjectsConfigType) => {
+                    <FlexContainer positionType="space-around">
+                        {ProjectsCardsConfig.map((project: ProjectsConfigType) => {
                             return (
                                 <FlexColumn columnPercentage={33} alignColumnsCenter={true} key={project.title}>
                                     <ProjectCard project={project} />

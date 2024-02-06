@@ -9,6 +9,7 @@ import {
     ContactTextBox,
     ContactWrapper
 } from "@components/components/ContactForm/ContactForm.css";
+import { SocialMediaContainer } from "@components/components/SocialMediaContainer/SocialMediaContainer";
 import {
     Button,
     FlexColumn,
@@ -85,12 +86,12 @@ export const ContactForm: FC = () => {
     return (
         <StandardBackground>
             <ContactWrapper>
-                <FlexContainer>
+                <FlexContainer positionType="space-around">
                     <FlexColumn columnPercentage={35}>
                         <ContactTextBox>
                             <ContactSvg src={ContactUsSvg.src} />
                             <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
-                            <ContactParagraph>Social Media Placeholder</ContactParagraph>
+                            <SocialMediaContainer isBackgroundLight={true}/>
                         </ContactTextBox>
                     </FlexColumn>
                     <FlexColumn columnPercentage={65}>

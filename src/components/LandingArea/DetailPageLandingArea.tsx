@@ -14,7 +14,7 @@ type DetailPageLandingAreaType = {
 
 export const DetailPageLandingArea: FC<DetailPageLandingAreaType> = ({ project, wallpaper }) => {
     return (
-        <LandingAreaWrapper height={80} wallpaper={wallpaper}>
+        <LandingAreaWrapper height={80} wallpaper={wallpaper} darkLevel={0.8}>
             <LogoWrapper isLogoLine={true} />
             <LandingAreaContentContainer>
                 <LandingAreaWelcomeText>

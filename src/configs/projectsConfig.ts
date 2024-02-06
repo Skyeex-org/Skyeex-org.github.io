@@ -1,11 +1,14 @@
-import ProjectPlaceholder from "@components/assets/ProjectPlaceholder.png";
+import StreamSnap from "@components/assets/projects/streamsnap.jpg";
+import Cruze from "@components/assets/projects/cruze.jpg";
+import CaRepair from "@components/assets/projects/caRepair.jpeg";
+import Adda from "@components/assets/projects/adda.jpg";
 
-export const ProjectsConfig: ProjectsConfigType[] = [
+export const ProjectsCardsConfig: ProjectsConfigType[] = [
     {
         id: 'streamsnap',
         title: 'Streamsnap',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: StreamSnap.src,
         previewDescription: 'Streamsnap is a cutting-edge multiplatform VOD streaming app with integrated analytics designed to provide a data-driven viewing experience across multiple devices.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -48,7 +51,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         id: 'cruze',
         title: 'Cruze',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: Cruze.src,
         previewDescription: 'Cruze revolutionizes commuting with its mobile carpooling app specially tailored for businesses and institutions fostering a sense for efficient and sustainable transportation.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -89,9 +92,9 @@ export const ProjectsConfig: ProjectsConfigType[] = [
     },
     {
         id: 'car-damage-detector',
-        title: 'Car damage detector',
+        title: 'CaRepair',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: CaRepair.src,
         previewDescription: 'Introducing a smart classifier engineered to accurately assess the accident-indused vehicle damage, bringing precision to the evaluation process, streamlining the repair workflow and enhance customer satisfaction.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -134,7 +137,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         id: 'adda',
         title: 'ADDA',
         subtitle: 'An usecase driven approach',
-        icon: ProjectPlaceholder.src,
+        icon: Adda.src,
         previewDescription: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
         htmlField: {
             __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
@@ -174,4 +177,5 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         isDetailPageEnabled: false,
     },
 ];
-export const ProjectsCardsPreviewConfig = ProjectsConfig.slice(0, 3);
+
+export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);

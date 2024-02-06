@@ -2,8 +2,11 @@ import styled from "styled-components";
 import LandingAreaWallpaper from '../../assets/LandArea.jpg';
 import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
-export const LandingAreaWrapper = styled.div<{ height?: number; wallpaper?: string }>`
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), 
+export const LandingAreaWrapper = styled.div<{
+    height?: number,
+    wallpaper?: string,
+    darkLevel?: number }>`
+    background: linear-gradient(to bottom, rgba(0, 0, 0, ${(props) => props.darkLevel || 0.6}), rgba(0, 0, 0, 0.1)), 
     url(${(props) => props.wallpaper || LandingAreaWallpaper.src}) fixed center;
     background-size: cover;
     position: relative;
