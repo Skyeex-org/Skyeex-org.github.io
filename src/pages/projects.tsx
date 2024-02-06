@@ -13,13 +13,18 @@ import { ProjectsMetadataContainer } from "@components/components/ProjectsMetada
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
 import { Footer } from "@components/components/Footer/Footer";
+import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
+import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 const ProjectsPage: FC = () => {
+    const { isMobile } = useGetScreenSize();
+
     return (
         <React.Fragment>
             <Head>
                 <title>Skyeex - Projects</title>
             </Head>
+            {!isMobile() && <ScrollTopButton />}
             <StandardBackground background={Colors.paleBluishGray}>
                 <LogoWrapper isDarkLogo={true} />
                 <ProjectsContainer>
