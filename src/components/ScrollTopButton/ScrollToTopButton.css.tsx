@@ -44,6 +44,11 @@ export const ScrollToTopButton = styled.button<{ isVisible: boolean }>`
     }
     
     ${minWidthQuery(Breakpoints.large)} {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    ${minWidthQuery(Breakpoints.xxLarge)} {
         width: 3.5rem;
         height: 3.5rem;
     }
