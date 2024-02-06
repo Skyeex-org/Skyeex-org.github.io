@@ -26,11 +26,9 @@ const ScrollTopButton: FC = () => {
 
     return (
         <React.Fragment>
-            {isVisible && (
-                <ScrollToTopButton onClick={handleScrollToTop}>
-                    <ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} />
-                </ScrollToTopButton>
-            )}
+            <ScrollToTopButton onClick={handleScrollToTop} isVisible={isVisible}>
+                <ScrollToTopIcon src={ArrowToTop.src} alt={ArrowToTop.src} />
+            </ScrollToTopButton>
         </React.Fragment>
     );
 };
