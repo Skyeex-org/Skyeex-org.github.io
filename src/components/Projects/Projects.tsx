@@ -10,10 +10,10 @@ import {
     SeparatorSpace,
     StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { useRouter } from "next/router";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 import { ProjectsCardsPreviewConfig } from "@components/configs/projectsConfig";
 import { Colors } from "@components/utils/cssMedia";
+import { useRouter } from "next/router";
 
 export const Projects: FC = () => {
     const router = useRouter();
