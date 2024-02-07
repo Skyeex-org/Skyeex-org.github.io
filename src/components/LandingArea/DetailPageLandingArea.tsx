@@ -6,6 +6,7 @@ import {
     LandingAreaWrapper,
 } from "@components/components/LandingArea/LandingArea.css";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
+import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
 type DetailPageLandingAreaType = {
     project: ProjectsConfigType;
@@ -13,8 +14,10 @@ type DetailPageLandingAreaType = {
 };
 
 export const DetailPageLandingArea: FC<DetailPageLandingAreaType> = ({ project, wallpaper }) => {
+    const { isMobile } = useGetScreenSize();
+
     return (
-        <LandingAreaWrapper height={80} wallpaper={wallpaper} darkLevel={0.8}>
+        <LandingAreaWrapper height={80} wallpaper={wallpaper} darkLevel={0.8} isMobile={isMobile()}>
             <LogoWrapper isLogoLine={true} />
             <LandingAreaContentContainer>
                 <LandingAreaWelcomeText>
