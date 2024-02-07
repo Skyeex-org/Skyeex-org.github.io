@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ServicesWrapper = styled.div`
-    background: ${Colors.white};
-    color: ${Colors.black};
     text-align: center;
   
     ${minWidthQuery(Breakpoints.large)} {

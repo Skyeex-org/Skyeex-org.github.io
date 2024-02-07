@@ -1,10 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "@components/utils/cssMedia";
-
-export const ProjectsWrapper = styled.div`
-    background: ${Colors.paleBluishGray};
-    color: black;
-`;
 
 export const ProjectsContainer = styled.div`
     padding: 2.5rem;
@@ -22,3 +16,5 @@ export const ProjectsHeadliner = styled.div`
     font-weight: bold;
     letter-spacing: 0.25rem;
 `;
+
+export const ProjectParagraph = styled.p``;

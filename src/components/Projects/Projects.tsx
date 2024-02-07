@@ -1,14 +1,18 @@
 import React, { FC } from "react";
-import { ProjectsContainer,ProjectsWrapper } from "@components/components/Projects/Projects.css";
-import { ProjectsCardsPreviewConfig } from "@components/configs/general";
+import {
+    ProjectsContainer,
+} from "@components/components/Projects/Projects.css";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import {
     Button,
     FlexContainer,
     SeparatorMargin,
-    SeparatorSpace
+    SeparatorSpace,
+    StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { ProjectsCardsPreviewConfig } from "@components/configs/projectsConfig";
+import { Colors } from "@components/utils/cssMedia";
 import { useRouter } from "next/router";
 
 export const Projects: FC = () => {
@@ -19,7 +23,7 @@ export const Projects: FC = () => {
     };
 
     return (
-        <ProjectsWrapper>
+        <StandardBackground background={Colors.paleBluishGray} color={Colors.black}>
             <ProjectsContainer>
                 <ProjectsMetadataContainer />
                 <FlexContainer positionType="space-around">
@@ -33,6 +37,6 @@ export const Projects: FC = () => {
                 <Button onClick={onShowMoreClick}>Show More</Button>
             </ProjectsContainer>
             <SeparatorSpace paddingValue={1.5} />
-        </ProjectsWrapper>
+        </StandardBackground>
     );
 };
