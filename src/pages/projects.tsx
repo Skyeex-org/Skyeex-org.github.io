@@ -10,7 +10,7 @@ import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
-import { ProjectsCardsConfig } from "@components/configs/projectsConfig";
+import { ProjectsConfig } from "@components/configs/projectsConfig";
 import { getStandardHeader } from "@components/utils/general";
 import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
@@ -29,7 +29,7 @@ const ProjectsPage: FC = () => {
                     <SeparatorSpace paddingValue={3} />
                     <ProjectsMetadataContainer />
                     <FlexContainer positionType="space-around">
-                        {ProjectsCardsConfig.map((project: ProjectsConfigType) => {
+                        {ProjectsConfig.map((project: ProjectsConfigType) => {
                             return (
                                 <FlexColumn columnPercentage={33} alignColumnsCenter={true} key={project.title}>
                                     <ProjectCard project={project} />

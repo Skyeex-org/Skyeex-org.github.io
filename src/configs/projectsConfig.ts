@@ -3,7 +3,7 @@ import Cruze from "@components/assets/projects/cruze.jpg";
 import CaRepair from "@components/assets/projects/caRepair.jpeg";
 import Adda from "@components/assets/projects/adda.jpg";
 
-export const ProjectsCardsConfig: ProjectsConfigType[] = [
+export const ProjectsConfig: ProjectsConfigType[] = [
     {
         id: 'streamsnap',
         title: 'Streamsnap',
@@ -178,4 +178,4 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
     },
 ];
 
-export const ProjectsCardsPreviewConfig = ProjectsCardsConfig.slice(0, 3);
+export const ProjectsCardsPreviewConfig = ProjectsConfig.slice(0, 3);
