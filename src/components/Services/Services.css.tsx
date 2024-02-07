@@ -57,10 +57,12 @@ export const ServicesParagraph = styled.p`
     font-size: 1.15rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
+        line-height: 2rem;
         font-size: 1.5rem;
     }
 
     ${minWidthQuery(Breakpoints.large)} {
+        line-height: 1.8rem;
         font-size: 1.15rem;
     }
 `;

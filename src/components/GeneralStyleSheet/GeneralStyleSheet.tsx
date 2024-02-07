@@ -53,7 +53,8 @@ export const TextContentWrapper = styled.div`
     background: ${Colors.white};
     color: ${Colors.black};
     padding: 2rem;
-    text-indent: 1rem;
+    text-indent: 1rem;  
+
   
     ${minWidthQuery(Breakpoints.medium)} {
       padding: 2rem 8rem 2rem 8rem;
