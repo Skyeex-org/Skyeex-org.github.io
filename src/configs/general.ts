@@ -5,10 +5,6 @@ import BrainSolid from "@components/assets/svgs/brain-solid.svg";
 import LinkedIn from "@components/assets/svgs/socialMedia/linkedin.svg";
 import Medium from "@components/assets/svgs/socialMedia/medium.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
-import StreamSnap from "@components/assets/projects/streamsnap.jpg";
-import CaRepair from "@components/assets/projects/caRepair.jpeg";
-import Adda from "@components/assets/projects/adda.jpg";
-import Cruze from "@components/assets/projects/cruze.jpg";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,

@@ -53,14 +53,21 @@ export const TextContentWrapper = styled.div`
     background: ${Colors.white};
     color: ${Colors.black};
     padding: 2rem;
+    text-indent: 1rem;  
+
+  
+    ${minWidthQuery(Breakpoints.medium)} {
+      padding: 2rem 8rem 2rem 8rem;
+      text-align: left;
+    }
   
     ${minWidthQuery(Breakpoints.large)} {
-        padding: 2rem 12rem 2rem 12rem;
+        padding: 2rem 24rem 2rem 24rem;
         text-align: left;
     }
     
     ${minWidthQuery(Breakpoints.xxLarge)} {
-        padding: 2rem 12rem 6rem 12rem;
+        padding: 2rem 32rem 6rem 32em;
     }
 `;
 
