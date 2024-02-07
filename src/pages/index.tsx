@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Head from "next/head";
 import { LandingArea } from "@components/components/LandingArea/LandingArea";
 import { Services } from "@components/components/Services/Services";
 import { Projects } from "@components/components/Projects/Projects";
@@ -7,6 +6,7 @@ import { Footer } from "@components/components/Footer/Footer";
 import { ContactForm } from "@components/components/ContactForm/ContactForm";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
+import { getStandardHeader } from "@components/utils/general";
 
 export default function Home() {
     const { isMobile } = useGetScreenSize();
@@ -14,9 +14,7 @@ export default function Home() {
 
     return (
         <React.Fragment>
-            <Head>
-                <title>Skyeex</title>
-            </Head>
+            {getStandardHeader('Skyeex')}
             {!isMobile() && <ScrollTopButton />}
             <LandingArea nextSectionReference={whatWeDoRef} />
             <Services ref={whatWeDoRef} />

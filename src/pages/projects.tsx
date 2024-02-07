@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import Head from "next/head";
 import {
     FlexColumn,
     FlexContainer,
@@ -8,10 +7,11 @@ import {
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Colors } from "@components/utils/cssMedia";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
-import { ProjectsCardsConfig } from "@components/configs/general";
 import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
+import { ProjectsCardsConfig } from "@components/configs/projectsConfig";
+import { getStandardHeader } from "@components/utils/general";
 import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
@@ -21,9 +21,7 @@ const ProjectsPage: FC = () => {
 
     return (
         <React.Fragment>
-            <Head>
-                <title>Skyeex - Projects</title>
-            </Head>
+            {getStandardHeader('Skyeex - Projects')}
             {!isMobile() && <ScrollTopButton />}
             <StandardBackground background={Colors.paleBluishGray}>
                 <LogoWrapper isDarkLogo={true} />

@@ -1,17 +1,17 @@
 import ErrorPage from 'next/error';
 import React, { FC, useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { ProjectsCardsConfig } from "@components/configs/general";
 import { Footer } from "@components/components/Footer/Footer";
 import { DetailPageLandingArea } from "@components/components/LandingArea/DetailPageLandingArea";
 import { TextContentWrapper } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { ServicesParagraph } from "@components/components/Services/Services.css";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
-import Head from "next/head";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
+import { ProjectsConfig } from "@components/configs/projectsConfig";
+import { getStandardHeader } from "@components/utils/general";
 
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
-    return ProjectsCardsConfig.find((obj) => obj.id === keyId);
+    return ProjectsConfig.find((obj) => obj.id === keyId);
 }
 
 const DetailPage: FC = () => {
@@ -30,9 +30,7 @@ const DetailPage: FC = () => {
 
     return (
         <React.Fragment>
-            <Head>
-                <title>{project.title}</title>
-            </Head>
+            {getStandardHeader(project.title)}
             {!isMobile() && <ScrollTopButton />}
             <DetailPageLandingArea project={project} wallpaper={project.icon} />
             <TextContentWrapper>
