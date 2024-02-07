@@ -45,7 +45,7 @@ export const ProjectsCardsConfig: ProjectsConfigType[] = [
                 'abilities, preparing me for a wide range of challenges and opportunities in the field of engineering ' +
                 'and technology.',
         },
-        isDetailPageEnabled: true,
+        isDetailPageEnabled: false,
     },
     {
         id: 'cruze',
