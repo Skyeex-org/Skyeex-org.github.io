@@ -21,6 +21,7 @@ export const ProjectCardWrapper = styled.div`
     margin: 2.5rem 1.25rem 0 1.25rem;
     user-select: none;
     transition: all 500ms ease;
+    cursor: pointer;
   
     ${minWidthQuery(Breakpoints.small)} {
         width: 60%;
@@ -35,8 +36,8 @@ export const ProjectCardWrapper = styled.div`
     }
 
     :hover {
-        box-shadow: 0 0 25px rgba(33, 33, 33, .15); 
-
+        box-shadow: 0 0 5rem rgba(33, 33, 33, .15);
+      
         ${ProjectCardTitle} {
             color: ${Colors.coreDarkerBlue};
         }
