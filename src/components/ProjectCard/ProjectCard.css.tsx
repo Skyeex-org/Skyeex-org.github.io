@@ -21,22 +21,22 @@ export const ProjectCardWrapper = styled.div`
     margin: 2.5rem 1.25rem 0 1.25rem;
     user-select: none;
     transition: all 500ms ease;
+    cursor: pointer;
+    line-height: 1.5rem;
   
     ${minWidthQuery(Breakpoints.small)} {
         width: 60%;
-        height: 20rem;
         margin: 2.5rem 0.5rem 0 0.5rem;
     }
 
      ${minWidthQuery(Breakpoints.medium)} {
         width: 22rem;
-        height: 30rem;
         margin: 2.5rem 0.5rem 0 0.5rem;
     }
 
     :hover {
-        box-shadow: 0 0 25px rgba(33, 33, 33, .15); 
-
+        box-shadow: 0 0 5rem rgba(33, 33, 33, .15);
+      
         ${ProjectCardTitle} {
             color: ${Colors.coreDarkerBlue};
         }

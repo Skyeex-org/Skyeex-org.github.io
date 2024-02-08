@@ -25,7 +25,7 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
             <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
-                <SeparatorSpace paddingValue={isMobile() ? 0.5 : 1} />
+                <SeparatorSpace paddingValue={isMobile() ? 0.15 : 1} />
                 <ProjectCardDescription>{project.previewDescription}</ProjectCardDescription>
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>

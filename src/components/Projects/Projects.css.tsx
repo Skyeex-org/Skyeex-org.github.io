@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const ProjectsContainer = styled.div`
-    padding: 2.5rem;
+    padding: 1rem 0.25rem 1rem 0.25rem;
     text-align: center;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        padding: 2.5rem;
+    }
 `;
 
 export const ProjectsTitle = styled.div`
