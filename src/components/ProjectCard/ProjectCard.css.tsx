@@ -22,16 +22,15 @@ export const ProjectCardWrapper = styled.div`
     user-select: none;
     transition: all 500ms ease;
     cursor: pointer;
+    line-height: 1.5rem;
   
     ${minWidthQuery(Breakpoints.small)} {
         width: 60%;
-        height: 20rem;
         margin: 2.5rem 0.5rem 0 0.5rem;
     }
 
      ${minWidthQuery(Breakpoints.medium)} {
         width: 22rem;
-        height: 30rem;
         margin: 2.5rem 0.5rem 0 0.5rem;
     }
 
