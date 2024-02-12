@@ -117,41 +117,27 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         icon: StreamSnap.src,
         previewDescription: 'Streamsnap is a cutting-edge multiplatform VOD streaming app with integrated analytics designed to provide a data-driven viewing experience across multiple devices.',
         htmlField: {
-            __html: 'During my time at the faculty, I had the opportunity to delve into a wide range of ' +
-                'courses across various disciplines. <div>&nbsp;</div> In the field of Mathematics, I took courses such as Linear ' +
-                'Algebra and Analytical Geometry, Mathematical Analysis (Differential Calculus), Mathematical ' +
-                'Analysis (Integral Calculus and Differential Equations), Special Mathematics in Engineering, and ' +
-                'Numerical Calculus. These courses played a fundamental role in shaping my understanding of complex ' +
-                'problems and honing my analytical skills, both of which are important in programming and systems theory.\n' +
-                '<div>&nbsp;</div>In Systems Engineering, I gained valuable insights into the inner workings of modern systems and ' +
-                'learned efficient methods for their analysis and control. Process Modeling allowed me to ' +
-                'mathematically model mechanical and electrical systems, providing a solid foundation for ' +
-                'understanding their behavior. The Signals and Systems course equipped me with the ability ' +
-                'to comprehend both discrete and continuous signals, enabling me to analyze and recognize ' +
-                'patterns effectively. This course also delved into advanced topics like image processing and ' +
-                'mathematical concepts like the Fourier transformation for modeling. Systems Theory provided a ' +
-                'comprehensive understanding of how systems behave in diverse environments, offering insights into ' +
-                'analysis, behavior prediction, and methods for understanding complex systems. Systems Identification, ' +
-                'on the other hand, focused on pattern recognition and the ability to identify models for specific ' +
-                'systems based on input-output data. I acquired proficiency in various identification methods, ' +
-                'from parametrical to non-parametrical, and gained skills in evaluating model accuracy. Lastly, ' +
-                'Automatic Control Engineering involved analyzing systems with predefined performance criteria ' +
-                'and implementing control strategies to enhance system performance.\n' +
-                '<div>&nbsp;</div>In Electronics & Engineering, I explored hardware design, hardware analysis, ' +
-                'firmware development, and data transmission, broadening my knowledge of electronics and embedded systems.\n' +
-                '<div>&nbsp;</div>In the realm of Software Engineering, my coursework covered a diverse array of topics. I delved ' +
-                'into the intricacies of the Linux Operating System, gained proficiency in programming algorithms, ' +
-                'and developed a deep understanding of Object-Oriented Programming and Design. I also delved into ' +
-                'threads management and concurrent programming, explored SQL-based databases, and honed my skills ' +
-                'in web backend and frontend development. Furthermore, I gained experience in assembly programming ' +
-                'and learned to build graphical models using Lisp and functional programming.\n' +
-                'In summary, my educational journey at the faculty provided me with a well-rounded knowledge base ' +
-                'that spans mathematics, systems engineering, electronics, and software engineering. These courses' +
-                ' not only enriched my technical expertise but also fostered critical thinking and problem-solving ' +
-                'abilities, preparing me for a wide range of challenges and opportunities in the field of engineering ' +
-                'and technology.',
+            __html: '<span style="font-size: 1.8rem">StreamSnap</span> is a proof-of-concept (PoC) mobile streaming ' +
+                'app designed to showcase the potential of a user-friendly streaming platform. The goal is to offer ' +
+                'a sneak peek into the creation of an innovative, on-the-go mobile app for watching movies and TV ' +
+                'shows.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Key Features:</span>' +
+                '<div>&nbsp;</div>' +
+                '<li><b>Seamless Integration</b> - StreamSnap seamlessly connects to two distinct backend systems, ensuring a smooth and uninterrupted streaming experience. The app taps into an external service provider, powered by a Django-based REST API, to host images, movies, assets, and videos. Additionally, it interfaces with a robust analytics platform, equipped with integrated machine learning, to track user activity and offer personalized recommendations.</li>' +
+                '<li><b>Personalized Recommendations</b> - Delve into a world of tailored entertainment with StreamSnap\'s advanced recommendation system. By analyzing user interactions and preferences, the platform delivers both general suggestions and genre-specific recommendations, enhancing the discovery of new content.</li>' +
+                '<li><b>Customizable Configuration</b> - Empowering content managers with flexibility, StreamSnap allows for the customization of app configurations through the external service provider. From publishing and unpublishing collections of movies to automatically filtering content based on predefined conditions, the platform offers granular control and efficiency. It\'s vital for content managers to understand specific rules in the configuration process to optimize content delivery.</li>' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Benefits:</span>' +
+                '<div>&nbsp;</div>' +
+                '<li><b>Enhanced User Experience</b> - StreamSnap prioritizes user experience above all else, offering a seamless interface and intuitive navigation. With personalized recommendations and customizable configurations, users can discover and enjoy content tailored to their preferences effortlessly.</li>' +
+                '<li><b>Efficient Content Management</b> - Content managers benefit from StreamSnap\'s streamlined processes, enabling them to curate and deliver content with precision. The platform\'s configurable options empower managers to make data-driven decisions and optimize content distribution effectively.</li>' +
+                '<li><b>Future-Proof Technology</b> - With a foundation built on cutting-edge technology and innovative solutions, StreamSnap sets the stage for the future of mobile streaming. By embracing machine learning and adaptable configurations, the platform remains agile and ready to evolve alongside shifting industry trends.</li>' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">StreamSnap</span> offers a hassle-free solution to your streaming needs. Whether you\'re a casual viewer or a content curator, our user-friendly platform ensures that entertainment is always just a tap away.' +
+                '<div>&nbsp;</div>'
         },
-        isDetailPageEnabled: false,
+        isDetailPageEnabled: true,
     },
     {
         id: 'adda',
