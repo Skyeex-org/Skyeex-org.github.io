@@ -55,9 +55,12 @@ export const ProjectCardWrapperContainer = styled.div`
     }
 `;
 
-export const ProjectCardImage = styled.img`
-    width: 100%;
-    height: 43%;
+export const ProjectCardImage = styled.div<{ imageSource: string }>`
+    width: 100%; 
+    height: 12.5rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(${(props) => props.imageSource});
+    background-size: cover; 
+    background-position: center;
 `;
 
 export const ProjectCardDescription = styled.p`
