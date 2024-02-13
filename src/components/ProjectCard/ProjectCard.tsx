@@ -27,7 +27,7 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
                 <SeparatorSpace paddingValue={isMobile() ? 0.15 : 1} />
-                <ProjectCardDescription>{getTextSizeBasedOnBigBreakpoint(project.previewDescription, isBigScreen())}</ProjectCardDescription>
+                <ProjectCardDescription>{getTextSizeBasedOnBigBreakpoint(project.previewDescription, isBigScreen())}...</ProjectCardDescription>
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>
     );
