@@ -12,4 +12,8 @@ export const getStandardHeader = (title: string) => {
             <title>{title}</title>
         </Head>
     )
-}
+};
+
+export const getTextSizeBasedOnBigBreakpoint = (text: string, isBigScreen: boolean): string => {
+    return isBigScreen ? text : text.slice(0, 150);
+};

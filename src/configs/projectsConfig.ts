@@ -44,7 +44,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         icon: CaRepair.src,
         previewDescription: 'Our mobile application is specifically designed for the Automotive Insurance Industry ' +
             'to simplify the assessment of car damages. By allowing users to take photos or upload existing ' +
-            'images of damaged cars...',
+            'images of damaged cars',
         htmlField: {
             __html: 'Our mobile application is specifically designed for the Automotive Insurance Industry to simplify the assessment of car damages. By allowing users to take photos or upload existing images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.' +
                 '<div>&nbsp;</div>' +
@@ -75,7 +75,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         icon: MedCity.src,
         previewDescription: 'Our web-based application is a breakthrough in the medical field, designed to aid doctors in the ' +
                 'detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images ' +
-                'and receive rapid results...',
+                'and receive rapid results',
         htmlField: {
             __html: 'Our web-based application is a breakthrough in the medical field, designed to aid doctors in the detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images and receive rapid results, our system streamlines the diagnostic process, facilitating early detection and treatment of brain tumors.' +
                 '<div>&nbsp;</div>' +
