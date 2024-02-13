@@ -113,7 +113,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
     {
         id: 'streamsnap',
         title: 'Streamsnap',
-        subtitle: 'An usecase driven approach',
+        subtitle: 'Stream and VideoOnDemand mobile app',
         icon: StreamSnap.src,
         previewDescription: 'Streamsnap is a cutting-edge multiplatform VOD streaming app with integrated analytics designed to provide a data-driven viewing experience across multiple devices.',
         htmlField: {
@@ -122,7 +122,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 'a sneak peek into the creation of an innovative, on-the-go mobile app for watching movies and TV ' +
                 'shows.' +
                 '<div>&nbsp;</div>' +
-                '<span style="font-size: 1.8rem">Key Features:</span>' +
+                '<span style="font-size: 1.8rem">Notable Features:</span>' +
                 '<div>&nbsp;</div>' +
                 '<li><b>Seamless Integration</b> - StreamSnap seamlessly connects to two distinct backend systems, ensuring a smooth and uninterrupted streaming experience. The app taps into an external service provider, powered by a Django-based REST API, to host images, movies, assets, and videos. Additionally, it interfaces with a robust analytics platform, equipped with integrated machine learning, to track user activity and offer personalized recommendations.</li>' +
                 '<li><b>Personalized Recommendations</b> - Delve into a world of tailored entertainment with StreamSnap\'s advanced recommendation system. By analyzing user interactions and preferences, the platform delivers both general suggestions and genre-specific recommendations, enhancing the discovery of new content.</li>' +
