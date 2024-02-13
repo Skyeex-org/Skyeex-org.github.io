@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import {
     ProjectCardImage, ProjectCardTitle, ProjectCardWrapper,
-    ProjectCardWrapperContainer, ProjectCardDescription
+    ProjectCardWrapperContainer, ProjectCardDescription,
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
@@ -21,7 +21,7 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
 
     return (
         <ProjectCardWrapper onClick={project.isDetailPageEnabled ? handleProjectCardClick : () => null}>
-            <ProjectCardImage src={project.icon} />
+            <ProjectCardImage imageSource={project.icon} />
             <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
