@@ -8,8 +8,8 @@ import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,
-    welcomeText: 'Sky High Software Quality',
-    underWelcomeText: 'We produce top-notch software for our customers',
+    welcomeText: 'Architecting new digital horizons',
+    underWelcomeText: "Quality isn't an afterthought – it's the cornerstone of everything we do",
     buttonText: 'Get Started'
 };
 
@@ -62,7 +62,7 @@ export const SocialMediaConfig: SocialMediaConfigType[] = [
 ];
 
 export const FooterConfig: FooterConfigType = {
-    metadataMoto: 'Architecting new digital horizons',
+    metadataMoto: 'Discover new heights with us',
     metadataTitle: 'Have questions?',
     metadataText: 'skyeex-org@gmail.com',
     websiteUrl: 'https://skyeex-org.github.io/'
