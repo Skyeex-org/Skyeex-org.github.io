@@ -46,7 +46,11 @@ export const ProjectsConfig: ProjectsConfigType[] = [
             'to simplify the assessment of car damages. By allowing users to take photos or upload existing ' +
             'images of damaged cars...',
         htmlField: {
-            __html: 'Our mobile application is specifically designed for the Automotive Insurance Industry to simplify the assessment of car damages. By allowing users to take photos or upload existing images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.' +
+            __html: 'This mobile application is specifically designed for the Automotive Insurance Industry to simplify the assessment of car damages. By allowing users to take photos or upload existing images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Our Contributions:</span>' +
+                '<div>&nbsp;</div>' +
+                'Our involvement centered around the development of the machine learning algorithm for damage detection and the backend system, encompassing AI integration and API implementation.' +
                 '<div>&nbsp;</div>' +
                 '<span style="font-size: 1.8rem">Notable Features:</span>' +
                 '<div>&nbsp;</div>' +
@@ -63,8 +67,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 '<li><b>Transparency</b> - Provide transparent classifications of damages, fostering trust between insurance companies and policyholders.</li>' +
                 '<li><b>Cost-Effectiveness</b> - Optimize repair and replacement decisions, minimizing unnecessary costs for insurance companies and policyholders alike.</li>' +
                 '<div>&nbsp;</div>' +
-                'The Car Damage Classifier is a valuable tool for the Automotive Insurance Industry, offering a streamlined and efficient way to assess car damages. With its advanced technology and user-friendly interface, our application simplifies the claim processing workflow, improves accuracy, and ultimately benefits insurance companies, agents, and policyholders..' +
-                '<div>&nbsp;</div>'
+                'The Car Damage Classifier is a valuable tool for the Automotive Insurance Industry, offering a streamlined and efficient way to assess car damages. With its advanced technology and user-friendly interface, our application simplifies the claim processing workflow, improves accuracy, and ultimately benefits insurance companies, agents, and policyholders..'
         },
         isDetailPageEnabled: true,
     },
@@ -77,7 +80,11 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 'detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images ' +
                 'and receive rapid results...',
         htmlField: {
-            __html: 'Our web-based application is a breakthrough in the medical field, designed to aid doctors in the detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images and receive rapid results, our system streamlines the diagnostic process, facilitating early detection and treatment of brain tumors.' +
+            __html: 'This web-based application is a breakthrough in the medical field, designed to aid doctors in the detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images and receive rapid results, our system streamlines the diagnostic process, facilitating early detection and treatment of brain tumors.' +
+                '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Our Contributions:</span>' +
+                '<div>&nbsp;</div>' +
+                'Our involvement centered around the development of the machine learning algorithm for damage detection and the backend system, encompassing AI integration and API implementation.' +
                 '<div>&nbsp;</div>' +
                 '<span style="font-size: 1.8rem">Notable Features:</span>' +
                 '<div>&nbsp;</div>' +
@@ -94,8 +101,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 '<li><b>Time Savings</b> - By streamlining the diagnostic process, our system saves valuable time for doctors, allowing them to focus on patient care and treatment.</li>' +
                 '<li><b>Improved Patient Care</b> - Timely and accurate tumor detection enhances patient care by enabling doctors to provide targeted treatments and interventions tailored to individual patient needs.</li>' +
                 '<div>&nbsp;</div>' +
-                'The Brain Tumor Detection System is a game-changer in the medical field, revolutionizing the way brain tumors are diagnosed and treated. With its web-based accessibility, advanced image analysis capabilities, and user-friendly interface, our system empowers doctors to detect and classify glioma, meningioma, and pituitary tumors with speed and accuracy. Thank you for considering the Brain Tumor Detection System for your medical diagnostic needs.' +
-                '<div>&nbsp;</div>'
+                'The Brain Tumor Detection System is a game-changer in the medical field, revolutionizing the way brain tumors are diagnosed and treated. With its web-based accessibility, advanced image analysis capabilities, and user-friendly interface, our system empowers doctors to detect and classify glioma, meningioma, and pituitary tumors with speed and accuracy. Thank you for considering the Brain Tumor Detection System for your medical diagnostic needs.'
         },
         isDetailPageEnabled: true,
     },
@@ -111,6 +117,10 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 'a sneak peek into the creation of an innovative, on-the-go mobile app for watching movies and TV ' +
                 'shows.' +
                 '<div>&nbsp;</div>' +
+                '<span style="font-size: 1.8rem">Our Contributions:</span>' +
+                '<div>&nbsp;</div>' +
+                'Our role encompassed designing and implementing a machine learning-based recommendation system, developing backend APIs, crafting a hybrid mobile application for iOS and Android, configuring system settings, and providing video player services.' +
+                '<div>&nbsp;</div>' +
                 '<span style="font-size: 1.8rem">Notable Features:</span>' +
                 '<div>&nbsp;</div>' +
                 '<li><b>Seamless Integration</b> - StreamSnap seamlessly connects to two distinct backend systems, ensuring a smooth and uninterrupted streaming experience. The app taps into an external service provider, powered by a Django-based REST API, to host images, movies, assets, and videos. Additionally, it interfaces with a robust analytics platform, equipped with integrated machine learning, to track user activity and offer personalized recommendations.</li>' +
@@ -123,8 +133,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 '<li><b>Efficient Content Management</b> - Content managers benefit from StreamSnap\'s streamlined processes, enabling them to curate and deliver content with precision. The platform\'s configurable options empower managers to make data-driven decisions and optimize content distribution effectively.</li>' +
                 '<li><b>Future-Proof Technology</b> - With a foundation built on cutting-edge technology and innovative solutions, StreamSnap sets the stage for the future of mobile streaming. By embracing machine learning and adaptable configurations, the platform remains agile and ready to evolve alongside shifting industry trends.</li>' +
                 '<div>&nbsp;</div>' +
-                'StreamSnap offers a hassle-free solution to your streaming needs. Whether you\'re a casual viewer or a content curator, our user-friendly platform ensures that entertainment is always just a tap away.' +
-                '<div>&nbsp;</div>'
+                'StreamSnap offers a hassle-free solution to your streaming needs. Whether you\'re a casual viewer or a content curator, our user-friendly platform ensures that entertainment is always just a tap away.'
         },
         isDetailPageEnabled: true,
     },
