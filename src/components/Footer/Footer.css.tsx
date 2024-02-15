@@ -7,7 +7,7 @@ export const FooterWrapper = styled.div`
 
 export const FooterContainer = styled.div`
     width: 100%;
-    margin: 1rem 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     
     ${minWidthQuery(Breakpoints.medium)} {
         margin: 5rem 0 1.5rem 0;
