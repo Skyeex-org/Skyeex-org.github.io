@@ -30,9 +30,15 @@ export const LandingAreaContentContainer = styled.div`
 export const LandingAreaWelcomeText = styled.div`
     font-size: 3rem;
     font-weight: bold;
+    padding: 1rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
+        padding: 0.3rem;
         font-size: 4rem;
+    }
+    
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 0;
     }
 `;
 
@@ -40,13 +46,18 @@ export const LandingAreaUnderText = styled.div`
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
-  
-    * {
-        display: inline-block;
-        margin-left: 0.2rem;
-    }
+    padding: 1rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
         font-size: 1.5rem;
+    }
+
+    ${minWidthQuery(Breakpoints.large)} {
+        padding: 0;
+    }
+
+    * {
+        display: inline-block;
+        margin-left: 0.2rem;
     }
 `;
