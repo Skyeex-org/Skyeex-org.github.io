@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "@components/utils/cssMedia";
 import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const FooterWrapper = styled.div`

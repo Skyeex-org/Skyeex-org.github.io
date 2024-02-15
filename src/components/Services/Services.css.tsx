@@ -38,6 +38,7 @@ export const ServicesOverTitle = styled.p`
     display: none;
   
     ${minWidthQuery(Breakpoints.medium)} {
+        padding-left: 0;
         display: inline;
     }
 `;
