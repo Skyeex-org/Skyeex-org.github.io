@@ -12,17 +12,30 @@ import { getStandardHeader } from "@components/utils/general";
 
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
     return ProjectsConfig.find((obj) => obj.id === keyId);
-}
+};
 
 const DetailPage: FC = () => {
     const { isMobile } = useGetScreenSize();
     const router = useRouter();
     const { slugDetailPage } = router.query || {};
+    const [loading, setLoading] = useState<boolean>(true);
     const [project, setProject] = useState<ProjectsConfigType>();
 
     useEffect(() => {
-        setProject(fetchProjectConfigObject(slugDetailPage as string));
+        if (slugDetailPage) {
+            setLoading(true); // Set loading to true when fetching data
+            const fetchProject = async (): Promise<void> => {
+                const projectData = await fetchProjectConfigObject(slugDetailPage as string);
+                setProject(projectData);
+                setLoading(false); // Set loading to false when data is fetched
+            };
+            fetchProject().then(null);
+        }
     }, [slugDetailPage])
+
+    if (loading) {
+        return <></>;
+    }
 
     if (!project) {
         return <ErrorPage statusCode={404} />;
@@ -32,9 +45,9 @@ const DetailPage: FC = () => {
         <React.Fragment>
             {getStandardHeader(project.title)}
             {!isMobile() && <ScrollTopButton />}
-            <DetailPageLandingArea project={project} wallpaper={project.icon} />
+            {<DetailPageLandingArea project={project} wallpaper={project.icon}/>}
             <TextContentWrapper>
-                <ServicesParagraph dangerouslySetInnerHTML={project.htmlField} />
+                {<ServicesParagraph dangerouslySetInnerHTML={project.htmlField}/>}
             </TextContentWrapper>
             <Footer />
         </React.Fragment>
