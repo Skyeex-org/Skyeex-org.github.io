@@ -23,12 +23,15 @@ const DetailPage: FC = () => {
 
     useEffect(() => {
         if (slugDetailPage) {
-            setLoading(true); // Set loading to true when fetching data
+            setLoading(true);
+
             const fetchProject = async (): Promise<void> => {
                 const projectData = await fetchProjectConfigObject(slugDetailPage as string);
+
                 setProject(projectData);
-                setLoading(false); // Set loading to false when data is fetched
+                setLoading(false);
             };
+
             fetchProject().then(null);
         }
     }, [slugDetailPage])
