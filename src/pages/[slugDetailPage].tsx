@@ -48,7 +48,7 @@ const DetailPage: FC = () => {
         <React.Fragment>
             {getStandardHeader(project.title)}
             {!isMobile() && <ScrollTopButton />}
-            {<DetailPageLandingArea project={project} wallpaper={project.icon}/>}
+            <DetailPageLandingArea project={project} wallpaper={project.icon}/>
             <TextContentWrapper>
                 {<ServicesParagraph dangerouslySetInnerHTML={project.htmlField}/>}
             </TextContentWrapper>
