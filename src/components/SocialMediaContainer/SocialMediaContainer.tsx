@@ -2,9 +2,9 @@ import React from "react";
 import { FlexContainer, SocialMediaWrapper, SocialMediaIcon } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { SocialMediaConfig } from "@components/configs/general";
 
-interface BackgroundType {
+type BackgroundType = {
     isBackgroundLight: boolean;
-  }
+};
 
 export const SocialMediaContainer: React.FC<BackgroundType> = ({ isBackgroundLight }) => {
     const handleSocialMediaIconClick = (url: string) => {

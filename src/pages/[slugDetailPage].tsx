@@ -1,4 +1,3 @@
-import ErrorPage from 'next/error';
 import React, { FC, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Footer } from "@components/components/Footer/Footer";
@@ -8,11 +7,13 @@ import { ServicesParagraph } from "@components/components/Services/Services.css"
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
-import { getStandardHeader } from "@components/utils/general";
+import Custom404 from "@components/pages/404";
+import { getStandardHeaderForPages } from "@components/pages/index";
 
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
-    return ProjectsConfig.find((obj) => obj.id === keyId);
-}
+    // return ProjectsConfig.find((obj) => obj.id === keyId);
+    return undefined;
+};
 
 const DetailPage: FC = () => {
     const { isMobile } = useGetScreenSize();
@@ -25,12 +26,12 @@ const DetailPage: FC = () => {
     }, [slugDetailPage])
 
     if (!project) {
-        return <ErrorPage statusCode={404} />;
+        return <Custom404 />;
     }
 
     return (
         <React.Fragment>
-            {getStandardHeader(project.title)}
+            {getStandardHeaderForPages(project.title)}
             {!isMobile() && <ScrollTopButton />}
             <DetailPageLandingArea project={project} wallpaper={project.icon} />
             <TextContentWrapper>
