@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { ProjectsConfig } from "@components/configs/projectsConfig";
 import { usePathname } from 'next/navigation'
@@ -43,14 +43,14 @@ const Custom404 = () => {
     }
 
     return (
-        <>
+        <React.Fragment>
             <LogoWrapper />
             <Custom404Wrapper>
                 <Custom404Code>404</Custom404Code>
                 <Custom404VerticalLine></Custom404VerticalLine>
                 <Custom404Message>This page could not be found.</Custom404Message>
             </Custom404Wrapper>
-        </>
+        </React.Fragment>
     )
 };
 
