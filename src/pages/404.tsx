@@ -12,9 +12,9 @@ const removeLeadingAndTrailingSlashes = (str: string | null): string => {
 }
 
 const Custom404 = () => {
-    const [isLoading, setIsLoading] = useState(true);
     const router = useRouter();
     const pathname = usePathname();
+    const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
         const redirectIfRequired = async () => {
