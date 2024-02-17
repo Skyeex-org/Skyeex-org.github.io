@@ -5,11 +5,11 @@ import { usePathname } from 'next/navigation'
 
 const matchProjectsConfigWithId = (id: string): boolean => {
     return ProjectsConfig.some(item => item.id === id)
-}
+};
 
 const removeLeadingAndTrailingSlashes = (str: string | null): string => {
     return str ? str.replace(/^\/|\/$/g, '') : '';
-}
+};
 
 const Custom404 = () => {
     const router = useRouter();
