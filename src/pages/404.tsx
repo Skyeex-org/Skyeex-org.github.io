@@ -2,6 +2,13 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { ProjectsConfig } from "@components/configs/projectsConfig";
 import { usePathname } from 'next/navigation'
+import {
+    Custom404Code,
+    Custom404Message,
+    Custom404VerticalLine,
+    Custom404Wrapper
+} from "@components/components/Custom404Design/Custom404Design.css";
+import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 
 const matchProjectsConfigWithId = (id: string): boolean => {
     return ProjectsConfig.some(item => item.id === id)
@@ -35,7 +42,16 @@ const Custom404 = () => {
         return <></>;
     }
 
-    return <h1>404 - Page Not Found</h1>;
+    return (
+        <>
+            <LogoWrapper />
+            <Custom404Wrapper>
+                <Custom404Code>404</Custom404Code>
+                <Custom404VerticalLine></Custom404VerticalLine>
+                <Custom404Message>This page could not be found.</Custom404Message>
+            </Custom404Wrapper>
+        </>
+    )
 };
 
 export default Custom404;
