@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import {
     Custom404Code,
     Custom404Message,
-    Custom404VerticalLine,
+    Custom404Line,
     Custom404Wrapper
 } from "@components/components/Custom404Design/Custom404Design.css";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
@@ -47,7 +47,7 @@ const Custom404 = () => {
             <LogoWrapper />
             <Custom404Wrapper>
                 <Custom404Code>404</Custom404Code>
-                <Custom404VerticalLine></Custom404VerticalLine>
+                <Custom404Line></Custom404Line>
                 <Custom404Message>This page could not be found.</Custom404Message>
             </Custom404Wrapper>
         </React.Fragment>

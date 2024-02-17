@@ -24,7 +24,7 @@ export const Custom404Code = styled.h1`
     }
 `;
 
-export const Custom404VerticalLine = styled.div`
+export const Custom404Line = styled.div`
     background: ${Colors.white};
     height: 3px;
     width: 4rem;
