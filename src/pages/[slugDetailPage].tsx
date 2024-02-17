@@ -18,25 +18,26 @@ const DetailPage: FC = () => {
     const { isMobile } = useGetScreenSize();
     const router = useRouter();
     const { slugDetailPage } = router.query || {};
-    const [loading, setLoading] = useState<boolean>(true);
+
+    const [isLoading, setIsLoading] = useState<boolean>(true);
     const [project, setProject] = useState<ProjectsConfigType>();
 
     useEffect(() => {
         if (slugDetailPage) {
-            setLoading(true);
+            setIsLoading(true);
 
             const fetchProject = async (): Promise<void> => {
                 const projectData = await fetchProjectConfigObject(slugDetailPage as string);
 
                 setProject(projectData);
-                setLoading(false);
+                setIsLoading(false);
             };
 
             fetchProject().then(null);
         }
     }, [slugDetailPage])
 
-    if (loading) {
+    if (isLoading) {
         return <></>;
     }
 
@@ -48,9 +49,9 @@ const DetailPage: FC = () => {
         <React.Fragment>
             {getStandardHeader(project.title)}
             {!isMobile() && <ScrollTopButton />}
-            <DetailPageLandingArea project={project} wallpaper={project.icon}/>
+            <DetailPageLandingArea project={project} wallpaper={project.icon} />
             <TextContentWrapper>
-                <ServicesParagraph dangerouslySetInnerHTML={project.htmlField}/>
+                <ServicesParagraph dangerouslySetInnerHTML={project.htmlField} />
             </TextContentWrapper>
             <Footer />
         </React.Fragment>
