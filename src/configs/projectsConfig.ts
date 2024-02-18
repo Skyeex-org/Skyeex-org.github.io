@@ -15,6 +15,10 @@ export const ProjectsConfig: ProjectsConfigType[] = [
             __html: 'Unlock a new era of workplace connectivity with this innovative platform designed to foster camaraderie, cut costs and save time. ' +
             'Say goodbye to the hassle of solo rides and hello to a greener, more efficient way of traveling.' +
             '<div>&nbsp;</div>' +
+            '<span style="font-size: 1.8rem">Our Contributions:</span>' +
+            '<div>&nbsp;</div>' +
+            'Our part was primarily centered around implementing the given design optimally and integrating it with the back-end API for flawless functionality and user experience for the Android platform.' +
+            '<div>&nbsp;</div>' +
             '<span style="font-size: 1.8rem">Notable Features:</span>' +
             '<div>&nbsp;</div>' +
             '<li><b>Simple & intuitive interface</b> - Navigate the app effortlessly with its user-friendly design, making carpooling a breeze.</li>' +
@@ -145,6 +149,10 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         previewDescription: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
         htmlField: {
             __html: 'Revolutionize your quality control process with ADDA, a groundbreaking solution that harnesses the power of machine learning and neural networks to bring unparalleled accuracy to defect detection in dinnerware. ' +
+            '<div>&nbsp;</div>' +
+            '<span style="font-size: 1.8rem">Our Contributions:</span>' +
+            '<div>&nbsp;</div>' +
+            'Our mission on the project was engineering a machine learning classification system, trained on raw products and their classification on being production ready or not.' +
             '<div>&nbsp;</div>' +
             '<span style="font-size: 1.8rem">Notable Features:</span>' +
             '<div>&nbsp;</div>' +
