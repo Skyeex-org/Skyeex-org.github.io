@@ -18,13 +18,24 @@ export const LandingAreaWrapper = styled.div<{
 `;
 
 export const LandingAreaContentContainer = styled.div`
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: ${Colors.white};
     text-align: center;
+`;
+
+export const DetailPageLandingAreaContentContainer = styled.div`
     width: 100%;
+    height: 100%;
+    top: 85%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: ${Colors.white};
+    text-align: center;
 `;
 
 export const LandingAreaWelcomeText = styled.div`
@@ -49,4 +60,11 @@ export const LandingAreaUnderText = styled.div`
     ${minWidthQuery(Breakpoints.medium)} {
         font-size: 1.5rem;
     }
+`;
+
+export const LandingAreaReferenceText = styled.div`
+    font-size: 0.75rem;
+    margin: 1rem;
+    position: absolute;
+    bottom: 35%;
 `;
