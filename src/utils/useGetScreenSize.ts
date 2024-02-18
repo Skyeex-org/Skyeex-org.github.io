@@ -19,12 +19,6 @@ export const useGetScreenSize = () => {
     };
 
     useEffect(() => {
-        if (window.innerWidth < SCREEN_SIZES.mobile) setResolution('mobile' as resolutions);
-        else if (window.innerWidth < SCREEN_SIZES.tablet) setResolution('tablet' as resolutions);
-        else setResolution('desktop' as resolutions);
-    }, [])
-
-    useEffect(() => {
         setupResolutionAdaptation();
         window.addEventListener('resize', setupResolutionAdaptation);
 
@@ -37,6 +31,7 @@ export const useGetScreenSize = () => {
         resolution,
         isMobile: (): boolean => resolution === 'mobile',
         isTablet: (): boolean => resolution === 'tablet',
-        isDesktop: (): boolean => resolution === 'desktop'
+        isDesktop: (): boolean => resolution === 'desktop',
+        isBigScreen: (): boolean => resolution === 'bigScreen'
     };
 };

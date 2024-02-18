@@ -45,7 +45,8 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         icon: CaRepair.src,
         previewDescription: 'Our mobile application is specifically designed for the Automotive Insurance Industry ' +
             'to simplify the assessment of car damages. By allowing users to take photos or upload existing ' +
-            'images of damaged cars...',
+            'images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of ' +
+            'damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.',
         htmlField: {
             __html: 'Our mobile application is specifically designed for the Automotive Insurance Industry to simplify the assessment of car damages. By allowing users to take photos or upload existing images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.' +
                 '<div>&nbsp;</div>' +
@@ -76,8 +77,9 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         subtitle: 'Brain Tumor Analysis in Medical Industry',
         icon: MedCity.src,
         previewDescription: 'Our web-based application is a breakthrough in the medical field, designed to aid doctors in the ' +
-                'detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images ' +
-                'and receive rapid results...',
+            'detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images ' +
+            'and receive rapid results, our system streamlines the diagnostic process, facilitating early detection' +
+            ' and treatment of brain tumors.',
         htmlField: {
             __html: 'Our web-based application is a breakthrough in the medical field, designed to aid doctors in the detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images and receive rapid results, our system streamlines the diagnostic process, facilitating early detection and treatment of brain tumors.' +
                 '<div>&nbsp;</div>' +
@@ -107,7 +109,11 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'Streamsnap',
         subtitle: 'Stream and VideoOnDemand mobile app',
         icon: StreamSnap.src,
-        previewDescription: 'Streamsnap is a cutting-edge multiplatform VOD streaming app with integrated analytics designed to provide a data-driven viewing experience across multiple devices.',
+        previewDescription: 'StreamSnap is a proof-of-concept (PoC) mobile streaming app designed to showcase the potential ' +
+            'of a user-friendly streaming platform. The goal is to offer a sneak peek into the creation of an ' +
+            'innovative, on-the-go mobile app for watching movies and TV shows. The app connects to two distinct ' +
+            'backend systems service provider and an analytics platform with integrated machine learning. Additionally, ' +
+            'there\'s a...',
         htmlField: {
             __html: '<span style="font-size: 1.8rem">StreamSnap</span> is a proof-of-concept (PoC) mobile streaming ' +
                 'app designed to showcase the potential of a user-friendly streaming platform. The goal is to offer ' +

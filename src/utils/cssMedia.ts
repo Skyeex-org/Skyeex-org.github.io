@@ -21,6 +21,7 @@ export const Breakpoints = {
 };
 
 export const SCREEN_SIZES = {
+    bigScreen: 1700,
     desktop: 1200,
     tablet: 768,
     mobile: 400
