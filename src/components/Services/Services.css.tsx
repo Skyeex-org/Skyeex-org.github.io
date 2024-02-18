@@ -15,8 +15,9 @@ export const ServicesWrapper = styled.div`
 `;
 
 export const ServicesTitle = styled.div`
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    padding-top: 2rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
         padding: 2rem;
@@ -37,6 +38,7 @@ export const ServicesOverTitle = styled.p`
     display: none;
   
     ${minWidthQuery(Breakpoints.medium)} {
+        padding-left: 0;
         display: inline;
     }
 `;

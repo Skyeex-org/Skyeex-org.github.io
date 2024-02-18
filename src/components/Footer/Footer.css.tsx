@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Colors } from "@components/utils/cssMedia";
 import { Breakpoints, minWidthQuery } from "@components/utils/cssMedia";
 
 export const FooterWrapper = styled.div`
@@ -8,7 +7,11 @@ export const FooterWrapper = styled.div`
 
 export const FooterContainer = styled.div`
     width: 100%;
-    margin: 5rem 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
+    
+    ${minWidthQuery(Breakpoints.medium)} {
+        margin: 5rem 0 1.5rem 0;
+    }
 `;
 
 export const FooterMetadataContainer = styled.div`
@@ -30,8 +33,10 @@ export const FooterMetadataMotto = styled.div`
     font-weight: bold;
     text-align: center;
     margin-bottom: 5rem;
-
+    padding: 0.7rem;
+  
     ${minWidthQuery(Breakpoints.medium)} {
+        padding: 0;
         width: 50%;
         font-size: 2.5rem;
         margin-bottom: 1rem;

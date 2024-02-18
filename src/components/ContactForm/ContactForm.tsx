@@ -28,7 +28,7 @@ enum EmailElements {
 }
 
 export const ContactForm: FC = () => {
-    const { isDesktop } = useGetScreenSize();
+    const { isMobile, isTablet, isDesktop } = useGetScreenSize();
 
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
@@ -86,6 +86,7 @@ export const ContactForm: FC = () => {
     return (
         <StandardBackground>
             <ContactWrapper>
+                <SeparatorSpace paddingValue={isMobile() || isTablet() ? 2 : 0} />
                 <FlexContainer positionType="space-around">
                     <FlexColumn columnPercentage={35}>
                         <ContactTextBox>
@@ -125,7 +126,7 @@ export const ContactForm: FC = () => {
                             <Button disabled={!canSubmitForm}>Send Message</Button>
                         </ContactFormWrapper>
                     </FlexColumn>
-                    <SeparatorSpace paddingValue={3} />
+                    <SeparatorSpace paddingValue={2} />
                 </FlexContainer>
             </ContactWrapper>
         </StandardBackground>
