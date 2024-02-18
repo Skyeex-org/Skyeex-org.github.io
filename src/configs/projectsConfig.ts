@@ -36,6 +36,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
             "Ready to transform your workplace commute? Elevate your team's travel experience with this carpooling mobile application – where connectivity, sustainability, and collaboration converge for a brighter, more efficient future! 🚀"
         },
         isDetailPageEnabled: true,
+        isImageReferenceOnly: true,
     },
     {
         id: 'car-damage-detector',
@@ -67,6 +68,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 '<div>&nbsp;</div>'
         },
         isDetailPageEnabled: true,
+        isImageReferenceOnly: true,
     },
     {
         id: 'brain-tumor-detector',
@@ -98,6 +100,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 '<div>&nbsp;</div>'
         },
         isDetailPageEnabled: true,
+        isImageReferenceOnly: true,
     },
     {
         id: 'streamsnap',
@@ -127,6 +130,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
                 '<div>&nbsp;</div>'
         },
         isDetailPageEnabled: true,
+        isImageReferenceOnly: true,
     },
     {
         id: 'adda',
@@ -157,6 +161,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
             'Experience the future of defect detection with ADDA – where machine learning, neural networks, and advanced imaging converge to elevate your quality control standards to unprecedented heights! 🌟'
         },
         isDetailPageEnabled: true,
+        isImageReferenceOnly: true,
     },
 ];
 

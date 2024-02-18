@@ -28,6 +28,7 @@ type ProjectsConfigType = {
     previewDescription: string;
     htmlField: innerHtmlType;
     isDetailPageEnabled: boolean;
+    isImageReferenceOnly: boolean;
 };
 
 type SocialMediaConfigType = {
