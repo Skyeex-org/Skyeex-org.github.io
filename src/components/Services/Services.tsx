@@ -4,7 +4,7 @@ import {
     ServicesOverTitle,
     ServicesParagraph,
     ServicesTitle,
-    ServicesWrapper
+    ServicesWrapper, ServiceTitlesWrapper
 } from "@components/components/Services/Services.css";
 import { ServiceCard } from "@components/components/ServiceCard/ServiceCard";
 import { ServicesCardsConfig, ServicesConfig } from "@components/configs/general";
@@ -27,10 +27,12 @@ export const Services = forwardRef<HTMLDivElement, HTMLProps<HTMLDivElement>>((
         <StandardBackground>
             <ServicesWrapper ref={ref}>
                 <SeparatorSpace paddingValue={isMobile() ? 1 : 4}>
-                    <FlexContainer positionType="space-around">
+                    <FlexContainer positionType={"space-around"}>
                         <FlexColumn columnPercentage={50}>
-                            <ServicesOverTitle>{ServicesConfig.overTitle}</ServicesOverTitle>
-                            <ServicesTitle>{ServicesConfig.title}</ServicesTitle>
+                            <ServiceTitlesWrapper>
+                                <ServicesOverTitle>{ServicesConfig.overTitle}</ServicesOverTitle>
+                                <ServicesTitle>{ServicesConfig.title}</ServicesTitle>
+                            </ServiceTitlesWrapper>
                         </FlexColumn>
                         <FlexColumn columnPercentage={50}>
                             <ServicesContent>
