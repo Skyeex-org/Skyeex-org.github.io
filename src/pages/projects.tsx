@@ -38,6 +38,7 @@ const ProjectsPage: FC = () => {
                         })}
                     </FlexContainer>
                 </ProjectsContainer>
+                <SeparatorSpace paddingValue={isMobile() ? 2 : 1} />
             </StandardBackground>
             <Footer />
         </React.Fragment>

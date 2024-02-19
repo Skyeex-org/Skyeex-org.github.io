@@ -1,10 +1,15 @@
 import styled from "styled-components";
-import { Colors } from "@components/utils/cssMedia";
+import { Breakpoints, Colors, minWidthQuery } from "@components/utils/cssMedia";
 
 export const LandingLogoWrapper = styled.div`
     height: 1px;
     width: 100%;
     position: absolute;
+    text-align: center;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        text-align: left;
+    }
 `;
 
 export const LandingLogo = styled.img`
