@@ -10,11 +10,11 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'Cruze',
         subtitle: 'Mobile corporate carpooling application',
         icon: Cruze.src,
-        previewDescription: 'Cruze aims to revolutionize commuting with its mobile carpooling app specially tailored for businesses and institutions fostering a sense for efficient and sustainable transportation. ' +
-            'Say goodbye to the hassle of solo rides and hello to a greener, more efficient way of traveling. ',
+        previewDescription: 'Cruze aims to revolutionize commuting with its innovative mobile carpooling app, meticulously tailored for businesses and institutions, fostering a sense of community and promoting efficient, sustainable transportation practices. ' +
+            'Unlock a new era of commuting with Cruze and say goodbye to the hassle of solo rides and hello to a greener, more efficient way of travelling. ',
         htmlField: {
-            __html: 'Cruze aims to revolutionize commuting with its mobile carpooling app specially tailored for businesses and institutions fostering a sense for efficient and sustainable transportation. ' +
-            'Say goodbye to the hassle of solo rides and hello to a greener, more efficient way of traveling.' +
+            __html: 'Cruze aims to revolutionize commuting with its innovative mobile carpooling app, meticulously tailored for businesses and institutions, fostering a sense of community and promoting efficient, sustainable transportation practices. ' +
+            'Unlock a new era of commuting with Cruze and say goodbye to the hassle of solo rides and hello to a greener, more efficient way of travelling.' +
             '<div>&nbsp;</div>' +
             '<span style="font-size: 1.8rem">Our Contributions:</span>' +
             '<div>&nbsp;</div>' +
