@@ -11,17 +11,17 @@ import { ProjectsMetadataContainer } from "@components/components/ProjectsMetada
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
-import { getStandardHeader } from "@components/utils/general";
 import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
+import { getStandardHeaderForPages } from "@components/pages/index";
 
 const ProjectsPage: FC = () => {
     const { isMobile } = useGetScreenSize();
 
     return (
         <React.Fragment>
-            {getStandardHeader('Skyeex - Projects')}
+            {getStandardHeaderForPages('Skyeex - Projects')}
             {!isMobile() && <ScrollTopButton />}
             <StandardBackground background={Colors.paleBluishGray}>
                 <LogoWrapper isDarkLogo={true} />

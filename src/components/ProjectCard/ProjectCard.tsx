@@ -6,7 +6,6 @@ import {
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { useRouter } from "next/router";
-import { getTextSizeBasedOnBigBreakpoint } from "@components/utils/general";
 
 export type ProjectCardType = {
     project: ProjectsConfigType;
@@ -20,6 +19,10 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
         router.push(`/${project.id}`).then(null);
     };
 
+    const getTextSizeBasedOnBigBreakpoint = (text: string): string => {
+        return isBigScreen() ? text : text.slice(0, 250);
+    };
+
     return (
         <ProjectCardWrapper onClick={project.isDetailPageEnabled ? handleProjectCardClick : () => null}>
             <ProjectCardImage imageSource={project.icon} />
@@ -27,7 +30,7 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
                 <SeparatorSpace paddingValue={isMobile() ? 0.15 : 1} />
-                <ProjectCardDescription>{getTextSizeBasedOnBigBreakpoint(project.previewDescription, isBigScreen())}...</ProjectCardDescription>
+                <ProjectCardDescription>{getTextSizeBasedOnBigBreakpoint(project.previewDescription)}...</ProjectCardDescription>
                 <SeparatorSpace paddingValue={isMobile() ? 0.15 : 0.8} />
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>

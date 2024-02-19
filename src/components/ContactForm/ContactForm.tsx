@@ -19,13 +19,17 @@ import {
 import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
-import { isValidEmail } from "@components/utils/general";
 
 enum EmailElements {
     NAME = 'name',
     EMAIL = 'email',
     MESSAGE = 'message'
 }
+
+const isValidEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+};
 
 export const ContactForm: FC = () => {
     const { isMobile, isTablet, isDesktop } = useGetScreenSize();
