@@ -11,8 +11,7 @@ import Custom404 from "@components/pages/404";
 import { getStandardHeaderForPages } from "@components/pages/index";
 
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
-    // return ProjectsConfig.find((obj) => obj.id === keyId);
-    return undefined;
+    return ProjectsConfig.find((obj) => obj.id === keyId);
 };
 
 const DetailPage: FC = () => {
