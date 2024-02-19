@@ -10,10 +10,11 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'Cruze',
         subtitle: 'Mobile corporate carpooling application',
         icon: Cruze.src,
-        previewDescription: 'Cruze revolutionizes commuting with its mobile carpooling app specially tailored for businesses and institutions fostering a sense for efficient and sustainable transportation.',
+        previewDescription: 'Cruze aims to revolutionize commuting with its innovative mobile carpooling app, meticulously tailored for businesses and institutions, fostering a sense of community and promoting efficient, sustainable transportation practices. ' +
+            'Unlock a new era of commuting with Cruze and say goodbye to the hassle of solo rides and hello to a greener, more efficient way of travelling. ',
         htmlField: {
-            __html: 'Unlock a new era of workplace connectivity with this innovative platform designed to foster camaraderie, cut costs and save time. ' +
-            'Say goodbye to the hassle of solo rides and hello to a greener, more efficient way of traveling.' +
+            __html: 'Cruze aims to revolutionize commuting with its innovative mobile carpooling app, meticulously tailored for businesses and institutions, fostering a sense of community and promoting efficient, sustainable transportation practices. ' +
+            'Unlock a new era of commuting with Cruze and say goodbye to the hassle of solo rides and hello to a greener, more efficient way of travelling.' +
             '<div>&nbsp;</div>' +
             '<span style="font-size: 1.8rem">Our Contributions:</span>' +
             '<div>&nbsp;</div>' +
@@ -156,9 +157,11 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'ADDA',
         subtitle: 'Artificial vision for defect detection in the ceramic industry',
         icon: Adda.src,
-        previewDescription: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes.',
+        previewDescription: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes. ' + 
+            'A groundbreaking solution that harnesses the power of machine learning and neural networks to bring unparalleled accuracy to defect detection in dinnerware. ',
         htmlField: {
-            __html: 'Revolutionize your quality control process with ADDA, a groundbreaking solution that harnesses the power of machine learning and neural networks to bring unparalleled accuracy to defect detection in dinnerware. ' +
+            __html: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes. ' +
+            'A groundbreaking solution that harnesses the power of machine learning and neural networks to bring unparalleled accuracy to defect detection in dinnerware. ' +
             '<div>&nbsp;</div>' +
             '<span style="font-size: 1.8rem">Our Contributions:</span>' +
             '<div>&nbsp;</div>' +
