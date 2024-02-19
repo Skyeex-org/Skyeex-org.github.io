@@ -19,11 +19,28 @@ const DetailPage: FC = () => {
     const { isMobile } = useGetScreenSize();
     const router = useRouter();
     const { slugDetailPage } = router.query || {};
+
+    const [isLoading, setIsLoading] = useState<boolean>(true);
     const [project, setProject] = useState<ProjectsConfigType>();
 
     useEffect(() => {
-        setProject(fetchProjectConfigObject(slugDetailPage as string));
+        if (slugDetailPage) {
+            setIsLoading(true);
+
+            const fetchProject = async (): Promise<void> => {
+                const projectData = await fetchProjectConfigObject(slugDetailPage as string);
+
+                setProject(projectData);
+                setIsLoading(false);
+            };
+
+            fetchProject().then(null);
+        }
     }, [slugDetailPage])
+
+    if (isLoading) {
+        return <></>;
+    }
 
     if (!project) {
         return <Custom404 />;
