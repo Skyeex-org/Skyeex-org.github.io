@@ -14,13 +14,18 @@ export const ServicesWrapper = styled.div`
     }
 `;
 
+export const ServiceTitlesWrapper = styled.div`
+    ${minWidthQuery(Breakpoints.medium)} {
+        padding: 2rem;
+    }
+`;
+
 export const ServicesTitle = styled.div`
     font-size: 2.5rem;
     font-weight: bold;
     padding-top: 2rem;
 
     ${minWidthQuery(Breakpoints.medium)} {
-        padding: 2rem;
         font-size: 4rem;
     }
 
