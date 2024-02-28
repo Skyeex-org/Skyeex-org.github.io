@@ -48,7 +48,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'CaRepair',
         subtitle: 'Machine Learning in Automotive Insurance Industry',
         icon: CaRepair.src,
-        previewDescription: 'Our mobile application is specifically designed for the Automotive Insurance Industry ' +
+        previewDescription: 'This mobile application is specifically designed for the Automotive Insurance Industry ' +
             'to simplify the assessment of car damages. By allowing users to take photos or upload existing ' +
             'images of damaged cars, the Car Damage Classifier provides quick and accurate classifications of ' +
             'damage severity levels, streamlining the claim processing workflow for insurance agents and claim adjusters.',
@@ -84,7 +84,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'MedCity',
         subtitle: 'Brain Tumor Analysis in Medical Industry',
         icon: MedCity.src,
-        previewDescription: 'Our web-based application is a breakthrough in the medical field, designed to aid doctors in the ' +
+        previewDescription: 'This web-based application is a breakthrough in the medical field, designed to aid doctors in the ' +
             'detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images ' +
             'and receive rapid results, our system streamlines the diagnostic process, facilitating early detection' +
             ' and treatment of brain tumors.',
@@ -122,11 +122,9 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         icon: StreamSnap.src,
         previewDescription: 'StreamSnap is a proof-of-concept (PoC) mobile streaming app designed to showcase the potential ' +
             'of a user-friendly streaming platform. The goal is to offer a sneak peek into the creation of an ' +
-            'innovative, on-the-go mobile app for watching movies and TV shows. The app connects to two distinct ' +
-            'backend systems service provider and an analytics platform with integrated machine learning. Additionally, ' +
-            'there\'s a...',
+            'innovative, on-the-go mobile app for watching movies and TV shows.',
         htmlField: {
-            __html: '<span style="font-size: 1.8rem">StreamSnap</span> is a proof-of-concept (PoC) mobile streaming ' +
+            __html: 'StreamSnap is a proof-of-concept (PoC) mobile streaming ' +
                 'app designed to showcase the potential of a user-friendly streaming platform. The goal is to offer ' +
                 'a sneak peek into the creation of an innovative, on-the-go mobile app for watching movies and TV ' +
                 'shows.' +
@@ -157,8 +155,10 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'ADDA',
         subtitle: 'Artificial vision for defect detection in the ceramic industry',
         icon: Adda.src,
-        previewDescription: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes. ' + 
-            'A groundbreaking solution that harnesses the power of machine learning and neural networks to bring unparalleled accuracy to defect detection in dinnerware. ',
+        previewDescription: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine ' +
+            'learning and neural networks meet, paving the way for unparalleled precision in quality control processes. ' +
+            'A groundbreaking solution that harnesses the power of machine learning and neural networks to bring ' +
+            'unparalleled accuracy to defect detection in dinnerware. ',
         htmlField: {
             __html: 'Unveiling ADDA (Automated defect detection analyser) where the convergence of machine learning and neural networks meet, paving the way for unparalleled precision in quality control processes. ' +
             'A groundbreaking solution that harnesses the power of machine learning and neural networks to bring unparalleled accuracy to defect detection in dinnerware. ' +
