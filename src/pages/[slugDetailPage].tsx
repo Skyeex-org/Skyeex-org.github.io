@@ -7,8 +7,8 @@ import { ServicesParagraph } from "@components/components/Services/Services.css"
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
+import Custom404 from "@components/pages/404";
 import { getStandardHeaderForPages } from "@components/pages/index";
-import { notFound } from "next/navigation";
 
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
     return ProjectsConfig.find((obj) => obj.id === keyId);
@@ -42,7 +42,7 @@ const DetailPage: FC = () => {
     }
 
     if (!project) {
-        return notFound();
+        return <Custom404 />;
     }
 
     return (
