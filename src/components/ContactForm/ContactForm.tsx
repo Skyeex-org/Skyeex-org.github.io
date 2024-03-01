@@ -91,7 +91,7 @@ export const ContactForm: FC = () => {
         <StandardBackground>
             <ContactWrapper>
                 <SeparatorSpace paddingValue={isMobile() || isTablet() ? 2 : 0} />
-                <FlexContainer positionType="space-around">
+                <FlexContainer positionType={"space-around"}>
                     <FlexColumn columnPercentage={35}>
                         <ContactTextBox>
                             <ContactSvg src={ContactUsSvg.src} />

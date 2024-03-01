@@ -28,7 +28,7 @@ const ProjectsPage: FC = () => {
                 <ProjectsContainer>
                     <SeparatorSpace paddingValue={3} />
                     <ProjectsMetadataContainer />
-                    <FlexContainer positionType="space-around">
+                    <FlexContainer positionType={"space-around"}>
                         {ProjectsConfig.map((project: ProjectsConfigType) => {
                             return (
                                 <FlexColumn columnPercentage={33} alignColumnsCenter={true} key={project.title}>

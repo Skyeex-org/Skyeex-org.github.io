@@ -26,7 +26,7 @@ export const Projects: FC = () => {
         <StandardBackground background={Colors.paleBluishGray} color={Colors.black}>
             <ProjectsContainer>
                 <ProjectsMetadataContainer />
-                <FlexContainer positionType="space-around">
+                <FlexContainer positionType={"space-around"}>
                     {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType) => {
                         return (
                             <ProjectCard project={project} key={project.title} />
