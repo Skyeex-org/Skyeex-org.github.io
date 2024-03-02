@@ -7,13 +7,18 @@ import { ContactForm } from "@components/components/ContactForm/ContactForm";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import Head from "next/head";
+import { MetaConfig } from "@components/configs/general";
 
-export const getStandardHeaderForPages = (title: string) => {
+export const getStandardHeaderForPages = (title: string, metaDescription?: string) => {
     return (
         <Head>
             <title>{title}</title>
+            <meta name="description" content={metaDescription} />
+            <meta name="keywords" content="Skyeex, technology solutions, mobile apps, web development, AI, backend, digital innovation, quality" />
+            <meta name="author" content="Skyeex" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
-    )
+    );
 };
 
 export default function Home() {
@@ -22,7 +27,7 @@ export default function Home() {
 
     return (
         <React.Fragment>
-            {getStandardHeaderForPages('Skyeex')}
+            {getStandardHeaderForPages('Skyeex', MetaConfig.homeMetaDescription)}
             {!isMobile() && <ScrollTopButton />}
             <LandingArea nextSectionReference={whatWeDoRef} />
             <Services ref={whatWeDoRef} />

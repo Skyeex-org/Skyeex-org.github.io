@@ -43,3 +43,8 @@ type FooterConfigType = {
     metadataText: string;
     websiteUrl: string;
 };
+
+type MetaConfigType = {
+    homeMetaDescription: string;
+    projectsMetaDescription: string;
+};
