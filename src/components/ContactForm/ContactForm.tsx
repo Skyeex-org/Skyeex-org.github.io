@@ -94,7 +94,7 @@ export const ContactForm: FC = () => {
                 <FlexContainer positionType={"space-around"}>
                     <FlexColumn columnPercentage={35}>
                         <ContactTextBox>
-                            <ContactSvg src={ContactUsSvg.src} />
+                            <ContactSvg src={ContactUsSvg.src} alt={ContactUsSvg.src} />
                             <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
                             <SocialMediaContainer isBackgroundLight={true}/>
                         </ContactTextBox>

@@ -16,7 +16,7 @@ export const SocialMediaContainer: React.FC<BackgroundType> = ({ isBackgroundLig
             {SocialMediaConfig.map((platform: SocialMediaConfigType) => {
                 return (
                 <SocialMediaWrapper isBackgroundLight={isBackgroundLight} onClick={() => handleSocialMediaIconClick(platform.url)} key={platform.id}>
-                    <SocialMediaIcon isBackgroundLight={isBackgroundLight} src={platform.icon} />
+                    <SocialMediaIcon isBackgroundLight={isBackgroundLight} src={platform.icon} alt={platform.icon} />
                 </SocialMediaWrapper>
                 );
             })}
