@@ -68,4 +68,9 @@ export const FooterConfig: FooterConfigType = {
     websiteUrl: 'https://skyeex-org.github.io/'
 };
 
+export const MetaConfig: MetaConfigType = {
+    homeMetaDescription: 'Skyeex pioneers the creation of new digital landscapes, architecting innovative solutions for mobile, web, AI, and backend needs. At Skyeex, quality isn\'t an afterthought – it\'s the foundation of every project. We\'re committed to excellence, ensuring that every product we deliver exceeds expectations and sets new industry standards. Let us lead you into the future of technology, where quality and innovation go hand in hand.',
+    projectsMetaDescription: 'Explore Skyeex\'s exciting projects in mobile apps, websites, AI, and backend systems. Quality is key to everything we do. See how we excel in our work, exceed expectations, and set new standards. Let us guide you through our projects and into a future filled with quality and innovation.'
+};
+
 export const formSubmitCodeUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';

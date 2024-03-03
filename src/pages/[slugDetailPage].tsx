@@ -9,6 +9,7 @@ import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
 import Custom404 from "@components/pages/404";
 import { getStandardHeaderForPages } from "@components/pages/index";
+import { MetaConfig } from "@components/configs/general";
 
 const fetchProjectConfigObject = (keyId: string): ProjectsConfigType | undefined => {
     return ProjectsConfig.find((obj) => obj.id === keyId);
@@ -47,7 +48,7 @@ const DetailPage: FC = () => {
 
     return (
         <React.Fragment>
-            {getStandardHeaderForPages(project.title)}
+            {getStandardHeaderForPages(project.title, MetaConfig.projectsMetaDescription)}
             {!isMobile() && <ScrollTopButton />}
             <DetailPageLandingArea project={project} wallpaper={project.icon} />
             <TextContentWrapper>

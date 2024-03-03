@@ -19,7 +19,7 @@ export const LogoWrapper: FC<LogoWrapperType> = ({ isDarkLogo, isLogoLine }) => 
 
     return (
         <LandingLogoWrapper>
-            <LandingLogo src={skyeexLogo.src} onClick={navigateHome}/>
+            <LandingLogo src={skyeexLogo.src} onClick={navigateHome} alt={skyeexLogo.src} />
             {isLogoLine && <LandingLogoLine />}
         </LandingLogoWrapper>
     )
