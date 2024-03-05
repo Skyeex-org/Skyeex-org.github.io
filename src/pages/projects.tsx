@@ -15,13 +15,14 @@ import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { getStandardHeaderForPages } from "@components/pages/index";
+import { MetaConfig } from "@components/configs/general";
 
 const ProjectsPage: FC = () => {
     const { isMobile } = useGetScreenSize();
 
     return (
         <React.Fragment>
-            {getStandardHeaderForPages('Skyeex - Projects')}
+            {getStandardHeaderForPages('Skyeex Software - Projects', MetaConfig.projectsMetaDescription)}
             {!isMobile() && <ScrollTopButton />}
             <StandardBackground background={Colors.paleBluishGray}>
                 <LogoWrapper isDarkLogo={true} />
