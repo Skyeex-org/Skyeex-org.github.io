@@ -3,8 +3,24 @@ import Cruze from "@components/assets/projects/cruze.jpg";
 import CaRepair from "@components/assets/projects/caRepair.jpeg";
 import Adda from "@components/assets/projects/adda.jpg";
 import MedCity from "@components/assets/projects/medCity.jpg";
+import RoadTrafficMonitoring from "@components/assets/projects/roadTrafficMonitoring.jpg";
 
 export const ProjectsConfig: ProjectsConfigType[] = [
+    {
+        id: 'road-traffic-monitoring',
+        title: 'Road Traffic Monitoring',
+        subtitle: 'Real Time and VOD Traffic Analysis',
+        icon: RoadTrafficMonitoring.src,
+        previewDescription: 'Collaborating with NTT Data, we\'re creating a cutting-edge road traffic monitoring system' +
+            ' for real-time and on-demand analysis. Our solution aims to develop the traffic management by providing ' +
+            'live streaming and video-on-demand capabilities, delivering valuable insights to optimize transportation ' +
+            'networks and enhance commuter experiences.',
+        htmlField: {
+            __html: ''
+        },
+        isDetailPageEnabled: false,
+        isImageReferenceOnly: true,
+    },
     {
         id: 'cruze',
         title: 'Cruze',
