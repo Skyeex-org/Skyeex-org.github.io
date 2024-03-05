@@ -27,7 +27,7 @@ export default function Home() {
 
     return (
         <React.Fragment>
-            {getStandardHeaderForPages('Skyeex', MetaConfig.homeMetaDescription)}
+            {getStandardHeaderForPages('Skyeex Software - Architecting new digital horizons', MetaConfig.homeMetaDescription)}
             {!isMobile() && <ScrollTopButton />}
             <LandingArea nextSectionReference={whatWeDoRef} />
             <Services ref={whatWeDoRef} />
