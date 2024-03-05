@@ -28,7 +28,7 @@ const DetailPage: FC = () => {
             setIsLoading(true);
 
             const fetchProject = async (): Promise<void> => {
-                const projectData = await fetchProjectConfigObject(slugDetailPage as string);
+                const projectData = fetchProjectConfigObject(slugDetailPage as string);
 
                 setProject(projectData);
                 setIsLoading(false);
@@ -48,7 +48,7 @@ const DetailPage: FC = () => {
 
     return (
         <React.Fragment>
-            {getStandardHeaderForPages(project.title, MetaConfig.projectsMetaDescription)}
+            {getStandardHeaderForPages(`Skyeex Software Projects - ${project.title}`, MetaConfig.projectsMetaDescription)}
             {!isMobile() && <ScrollTopButton />}
             <DetailPageLandingArea project={project} wallpaper={project.icon} />
             <TextContentWrapper>
