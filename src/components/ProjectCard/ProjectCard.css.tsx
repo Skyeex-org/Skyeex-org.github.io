@@ -71,3 +71,7 @@ export const ProjectCardDescription = styled.p`
         font-size: 1rem;
     }
 `;
+
+export const ProjectPartner = styled.img`
+    width: 40%;
+`;

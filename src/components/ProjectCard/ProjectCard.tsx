@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import {
     ProjectCardImage, ProjectCardTitle, ProjectCardWrapper,
-    ProjectCardWrapperContainer, ProjectCardDescription,
+    ProjectCardWrapperContainer, ProjectCardDescription, ProjectPartner,
 } from "@components/components/ProjectCard/ProjectCard.css";
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
@@ -23,6 +23,8 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
         return isBigScreen() ? text.slice(0, 300) : text.slice(0, 250);
     };
 
+    const projectDescription = project.partner ? project.previewDescription.slice(0, 180) : getTextSizeBasedOnBigBreakpoint(project.previewDescription);
+
     return (
         <ProjectCardWrapper onClick={project.isDetailPageEnabled ? handleProjectCardClick : () => null}>
             <ProjectCardImage imageSource={project.icon} />
@@ -30,8 +32,9 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
                 <SeparatorSpace paddingValue={isMobile() ? 0.15 : 1} />
-                <ProjectCardDescription>{getTextSizeBasedOnBigBreakpoint(project.previewDescription)}...</ProjectCardDescription>
+                <ProjectCardDescription>{projectDescription}...</ProjectCardDescription>
                 <SeparatorSpace paddingValue={isMobile() ? 0.15 : 0.8} />
+                { project.partner && <ProjectPartner src={project.partner} /> }
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>
     );

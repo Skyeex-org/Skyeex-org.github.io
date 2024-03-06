@@ -29,6 +29,7 @@ type ProjectsConfigType = {
     htmlField: innerHtmlType;
     isDetailPageEnabled: boolean;
     isImageReferenceOnly: boolean;
+    partner: string;
 };
 
 type SocialMediaConfigType = {

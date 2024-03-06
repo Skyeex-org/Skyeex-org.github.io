@@ -4,6 +4,7 @@ import CaRepair from "@components/assets/projects/caRepair.jpeg";
 import Adda from "@components/assets/projects/adda.jpg";
 import MedCity from "@components/assets/projects/medCity.jpg";
 import RoadTrafficMonitoring from "@components/assets/projects/roadTrafficMonitoring.jpg";
+import NttData from "@components/assets/projects/nttData.png";
 
 export const ProjectsConfig: ProjectsConfigType[] = [
     {
@@ -20,6 +21,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         },
         isDetailPageEnabled: false,
         isImageReferenceOnly: true,
+        partner: NttData.src
     },
     {
         id: 'cruze',
@@ -58,6 +60,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         },
         isDetailPageEnabled: true,
         isImageReferenceOnly: true,
+        partner: ''
     },
     {
         id: 'car-damage-detector',
@@ -94,6 +97,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         },
         isDetailPageEnabled: true,
         isImageReferenceOnly: true,
+        partner: ''
     },
     {
         id: 'brain-tumor-detector',
@@ -130,6 +134,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         },
         isDetailPageEnabled: true,
         isImageReferenceOnly: true,
+        partner: ''
     },
     {
         id: 'streamsnap',
@@ -165,6 +170,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         },
         isDetailPageEnabled: true,
         isImageReferenceOnly: true,
+        partner: ''
     },
     {
         id: 'adda',
@@ -204,6 +210,7 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         },
         isDetailPageEnabled: true,
         isImageReferenceOnly: true,
+        partner: ''
     },
 ];
 
