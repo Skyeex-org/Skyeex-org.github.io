@@ -1,11 +1,9 @@
 import React, { FC } from "react";
-import { SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { SeparatorMargin, StandardWrapper } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import {
-    HeadlineParagraph,
-    ProjectsContainer,
-    TopHeadliner,
-    HeadlineTitle
-} from "@components/components/Projects/Projects.css";
+    HeadlineParagraph, HeadlineTitle,
+    TopHeadliner
+} from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer.css";
 
 export type HeadlineMetadataContainerType = {
     topHeadliner: string;
@@ -14,7 +12,7 @@ export type HeadlineMetadataContainerType = {
 
 export const HeadlineMetadataContainer: FC<HeadlineMetadataContainerType> = ({ topHeadliner, headlineTitle }) => {
     return (
-        <ProjectsContainer>
+        <StandardWrapper>
             <SeparatorMargin marginValue={1.5} />
             <TopHeadliner>
                 <HeadlineParagraph>{topHeadliner}</HeadlineParagraph>
@@ -23,6 +21,6 @@ export const HeadlineMetadataContainer: FC<HeadlineMetadataContainerType> = ({ t
                 <HeadlineParagraph>{headlineTitle}</HeadlineParagraph>
             </HeadlineTitle>
             <SeparatorMargin marginValue={3} />
-        </ProjectsContainer>
+        </StandardWrapper>
     )
 }

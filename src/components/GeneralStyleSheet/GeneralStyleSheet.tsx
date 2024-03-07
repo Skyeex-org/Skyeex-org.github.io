@@ -102,4 +102,13 @@ export const SocialMediaIcon = styled.img<{ isBackgroundLight: boolean}>`
 export const StandardBackground = styled.div<{ background?: string, color?: string }>`
     background: ${(props) => props.background || Colors.white};
     color: ${(props) => props.color || Colors.black};
-`
+`;
+
+export const StandardWrapper = styled.div`
+    padding: 1rem 0.25rem 1rem 0.25rem;
+    text-align: center;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        padding: 2.5rem;
+    }
+`;
