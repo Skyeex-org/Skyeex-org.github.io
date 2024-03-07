@@ -12,7 +12,7 @@ export const SocialMediaContainer: React.FC<BackgroundType> = ({ isBackgroundLig
     };
 
     return (
-        <FlexContainer positionType="center">
+        <FlexContainer positionType={"center"}>
             {SocialMediaConfig.map((platform: SocialMediaConfigType) => {
                 return (
                 <SocialMediaWrapper isBackgroundLight={isBackgroundLight} onClick={() => handleSocialMediaIconClick(platform.url)} key={platform.id}>

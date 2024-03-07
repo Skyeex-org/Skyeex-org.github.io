@@ -7,7 +7,7 @@ import {
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Colors } from "@components/utils/cssMedia";
 import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
-import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { HeadlineMetadataContainer } from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsContainer } from "@components/components/Projects/Projects.css";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
@@ -28,7 +28,7 @@ const ProjectsPage: FC = () => {
                 <LogoWrapper isDarkLogo={true} />
                 <ProjectsContainer>
                     <SeparatorSpace paddingValue={3} />
-                    <ProjectsMetadataContainer />
+                    <HeadlineMetadataContainer />
                     <FlexContainer positionType={"space-around"}>
                         {ProjectsConfig.map((project: ProjectsConfigType) => {
                             return (

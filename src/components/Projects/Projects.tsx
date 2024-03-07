@@ -10,7 +10,7 @@ import {
     SeparatorSpace,
     StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { HeadlineMetadataContainer } from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer";
 import { ProjectsCardsPreviewConfig } from "@components/configs/projectsConfig";
 import { Colors } from "@components/utils/cssMedia";
 import { useRouter } from "next/router";
@@ -25,7 +25,7 @@ export const Projects: FC = () => {
     return (
         <StandardBackground background={Colors.paleBluishGray} color={Colors.black}>
             <ProjectsContainer>
-                <ProjectsMetadataContainer />
+                <HeadlineMetadataContainer topHeadliner={'PRECISION & EFFICIENCY'} headlineTitle={'Engineered solutions'} />
                 <FlexContainer positionType={"space-around"}>
                     {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType) => {
                         return (
