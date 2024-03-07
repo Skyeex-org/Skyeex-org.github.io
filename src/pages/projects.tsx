@@ -28,7 +28,7 @@ const ProjectsPage: FC = () => {
                 <LogoWrapper isDarkLogo={true} />
                 <ProjectsContainer>
                     <SeparatorSpace paddingValue={3} />
-                    <HeadlineMetadataContainer />
+                    <HeadlineMetadataContainer topHeadliner={'PRECISION & EFFICIENCY'} headlineTitle={'Engineered solutions'} />
                     <FlexContainer positionType={"space-around"}>
                         {ProjectsConfig.map((project: ProjectsConfigType) => {
                             return (
