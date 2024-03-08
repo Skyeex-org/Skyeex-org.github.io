@@ -35,9 +35,11 @@ export const FlexColumn = styled.div<{
     columnPercentage: number,
     shouldHaveBorder?: boolean,
     alignColumnsCenter?: boolean,
+    padding?: number;
 }>`
     flex: 1 1 100%;
     border-bottom: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
+    padding: ${(props) => props.padding || 0}rem;
     
     ${minWidthQuery(Breakpoints.large)} {
         flex: ${(props) => `1 1 ${props.columnPercentage}%;`}

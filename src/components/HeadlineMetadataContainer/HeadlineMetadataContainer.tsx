@@ -8,9 +8,14 @@ import {
 export type HeadlineMetadataContainerType = {
     topHeadliner: string;
     headlineTitle: string;
+    disableBottomSeparator?: boolean;
 };
 
-export const HeadlineMetadataContainer: FC<HeadlineMetadataContainerType> = ({ topHeadliner, headlineTitle }) => {
+export const HeadlineMetadataContainer: FC<HeadlineMetadataContainerType> = ({
+    topHeadliner,
+    headlineTitle,
+    disableBottomSeparator
+}) => {
     return (
         <StandardWrapper>
             <SeparatorMargin marginValue={1.5} />
@@ -20,7 +25,7 @@ export const HeadlineMetadataContainer: FC<HeadlineMetadataContainerType> = ({ t
             <HeadlineTitle>
                 <HeadlineParagraph>{headlineTitle}</HeadlineParagraph>
             </HeadlineTitle>
-            <SeparatorMargin marginValue={3} />
+            {!disableBottomSeparator && <SeparatorMargin marginValue={3} />}
         </StandardWrapper>
     )
 }

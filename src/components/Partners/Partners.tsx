@@ -16,7 +16,7 @@ export const Partners: FC  = () => {
                 <FlexContainer positionType={'center'}>
                     {PartnersConfig.map((partner) => {
                        return (
-                           <FlexColumn columnPercentage={33} key={partner.name}>
+                           <FlexColumn columnPercentage={33} key={partner.name} padding={1}>
                                <PartnersLogo src={partner.icon} alt={partner.name} />
                            </FlexColumn>
                        )
