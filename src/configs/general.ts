@@ -5,6 +5,7 @@ import BrainSolid from "@components/assets/svgs/brain-solid.svg";
 import LinkedIn from "@components/assets/svgs/socialMedia/linkedin.svg";
 import Medium from "@components/assets/svgs/socialMedia/medium.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
+import NttData from "@components/assets/projects/nttData.png";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,
@@ -45,6 +46,13 @@ export const ServicesCardsConfig: ServiceConfigType[] = [
         title: 'Machine Learning',
         content: 'We offer Machine Learning services, leveraging my expertise in this field to provide ' +
             'tailored solutions that harness the power of data and algorithms for diverse applications',
+    },
+];
+
+export const PartnersConfig: PartnersConfigType[] = [
+    {
+        name: "NTT Data",
+        icon: NttData.src
     },
 ];
 

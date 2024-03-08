@@ -32,6 +32,11 @@ type ProjectsConfigType = {
     partner: string;
 };
 
+type PartnersConfigType = {
+    name: string;
+    icon: string;
+}
+
 type SocialMediaConfigType = {
     id: string;
     icon: string;
