@@ -4,8 +4,11 @@ import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
 import LinkedIn from "@components/assets/svgs/socialMedia/linkedin.svg";
 import Medium from "@components/assets/svgs/socialMedia/medium.svg";
+import Website from "@components/assets/svgs/link-solid.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
 import NttData from "@components/assets/projects/nttData.png";
+import CiganOliviuDavid from "@components/assets/team/CiganOliviuDavid.jpg"
+import VassRichardDaniel from "@components/assets/team/VassRichardDaniel.jpg";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,
@@ -56,7 +59,7 @@ export const PartnersConfig: PartnersConfigType[] = [
     },
 ];
 
-export const SocialMediaConfig: SocialMediaConfigType[] = [
+export const WebsiteSocialMediaConfig: SocialMediaConfigType[] = [
     {
         id: "linkedin",
         icon: LinkedIn.src,
@@ -71,6 +74,7 @@ export const SocialMediaConfig: SocialMediaConfigType[] = [
 
 export const TeamConfig: TeamProfileConfigType[] = [
     {
+        image: CiganOliviuDavid.src,
         fullName: "Cigan Oliviu-David",
         position: "Founder",
         socialMedia: [
@@ -86,12 +90,13 @@ export const TeamConfig: TeamProfileConfigType[] = [
             },
             {
                 id: "website",
-                icon: Medium.src,
+                icon: Website.src,
                 url: "#",
             }
         ]
     },
     {
+        image: VassRichardDaniel.src,
         fullName: "Vass Richard Daniel",
         position: "Founder",
         socialMedia: [
@@ -107,7 +112,7 @@ export const TeamConfig: TeamProfileConfigType[] = [
             },
             {
                 id: "website",
-                icon: Medium.src,
+                icon: Website.src,
                 url: "#",
             }
         ]

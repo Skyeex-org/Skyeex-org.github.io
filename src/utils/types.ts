@@ -56,6 +56,7 @@ type MetaConfigType = {
 };
 
 type TeamProfileConfigType = {
+    image: string;
     fullName: string;
     position: string;
     socialMedia: SocialMediaConfigType[];

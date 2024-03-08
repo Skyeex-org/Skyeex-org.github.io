@@ -1,7 +1,8 @@
 import React, { FC } from "react";
-import { CardWrapper } from "@components/components/Cards/Cards.css";
+import { CardDescription, CardTitle, CardWrapper } from "@components/components/Cards/Cards.css";
 import { SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { ProjectCard } from "@components/components/Cards/ProjectCard/ProjectCard";
+import { ProfileCardImage } from "@components/components/Cards/ProfileCard/ProfileCard.css";
+import { SocialMediaContainer } from "@components/components/SocialMediaContainer/SocialMediaContainer";
 
 type ProfileCardType = {
     profile: TeamProfileConfigType;
@@ -9,16 +10,13 @@ type ProfileCardType = {
 
 export const ProfileCard: FC<ProfileCardType> = ({ profile }) => {
     return (
-        <CardWrapper>
-            {profile.fullName}
+        <CardWrapper padding={1.5}>
+            <ProfileCardImage src={profile.image} />
             <SeparatorMargin marginValue={1.5} />
-            {profile.position}
+            <CardTitle>{profile.fullName}</CardTitle>
+            <CardDescription>{profile.position}</CardDescription>
             <SeparatorMargin marginValue={1.5} />
-            {profile.socialMedia.map((social: SocialMediaConfigType) => {
-                return (
-                    <p key={social.id}>{social.id}</p>
-                );
-            })}
+            <SocialMediaContainer isBackgroundLight={true} socialMediaIcons={profile.socialMedia} />
         </CardWrapper>
     )
 }
