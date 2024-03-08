@@ -9,8 +9,6 @@ import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import Head from "next/head";
 import { MetaConfig } from "@components/configs/general";
 import { Partners } from "@components/components/Partners/Partners";
-import { Colors } from "@components/utils/cssMedia";
-import { StandardBackground } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Team } from "@components/components/Team/Team";
 
 export const getStandardHeaderForPages = (title: string, metaDescription?: string) => {

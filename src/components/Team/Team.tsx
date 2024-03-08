@@ -1,13 +1,14 @@
 import React, { FC } from "react";
 import {
     FlexContainer,
-    SeparatorMargin,
     SeparatorSpace,
     StandardBackground,
     StandardWrapper
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Colors } from "@components/utils/cssMedia";
 import { HeadlineMetadataContainer } from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer";
+import { ProfileCard } from "@components/components/Cards/ProfileCard/ProfileCard";
+import { TeamConfig } from "@components/configs/general";
 
 export const Team: FC = () => {
     return (
@@ -15,10 +16,12 @@ export const Team: FC = () => {
             <StandardWrapper>
                 <HeadlineMetadataContainer headlineTitle={'Skyeex Team'} />
                 <FlexContainer positionType={"space-around"}>
-                    Ok
+                    {TeamConfig.map((teamMember) => {
+                        return (
+                            <ProfileCard profile={teamMember} key={teamMember.fullName} />
+                        )
+                    })}
                 </FlexContainer>
-                <SeparatorMargin marginValue={3} />
-                Social media
             </StandardWrapper>
             <SeparatorSpace paddingValue={1.5} />
         </StandardBackground>

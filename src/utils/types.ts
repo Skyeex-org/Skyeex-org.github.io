@@ -54,3 +54,9 @@ type MetaConfigType = {
     homeMetaDescription: string;
     projectsMetaDescription: string;
 };
+
+type TeamProfileConfigType = {
+    fullName: string;
+    position: string;
+    socialMedia: SocialMediaConfigType[];
+};

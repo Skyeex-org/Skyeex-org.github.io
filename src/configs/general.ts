@@ -58,16 +58,61 @@ export const PartnersConfig: PartnersConfigType[] = [
 
 export const SocialMediaConfig: SocialMediaConfigType[] = [
     {
-        id: 'linkedin',
+        id: "linkedin",
         icon: LinkedIn.src,
         url: "https://skyeex-org.github.io/",
     },
     {
-        id: 'medium',
+        id: "medium",
         icon: Medium.src,
         url: "https://skyeex-org.github.io/",
     }
 ];
+
+export const TeamConfig: TeamProfileConfigType[] = [
+    {
+        fullName: "Cigan Oliviu-David",
+        position: "Founder",
+        socialMedia: [
+            {
+                id: "linkedin",
+                icon: LinkedIn.src,
+                url: "#",
+            },
+            {
+                id: "medium",
+                icon: Medium.src,
+                url: "#",
+            },
+            {
+                id: "website",
+                icon: Medium.src,
+                url: "#",
+            }
+        ]
+    },
+    {
+        fullName: "Vass Richard Daniel",
+        position: "Founder",
+        socialMedia: [
+            {
+                id: "linkedin",
+                icon: LinkedIn.src,
+                url: "#",
+            },
+            {
+                id: "medium",
+                icon: Medium.src,
+                url: "#",
+            },
+            {
+                id: "website",
+                icon: Medium.src,
+                url: "#",
+            }
+        ]
+    },
+]
 
 export const FooterConfig: FooterConfigType = {
     metadataMoto: 'Discover new heights with us',
