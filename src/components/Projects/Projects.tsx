@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
+import { ProjectCard } from "@components/components/Cards/ProjectCard/ProjectCard";
 import {
     Button,
     FlexContainer,

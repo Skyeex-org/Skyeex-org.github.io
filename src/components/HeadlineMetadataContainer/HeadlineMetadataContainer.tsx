@@ -6,7 +6,7 @@ import {
 } from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer.css";
 
 export type HeadlineMetadataContainerType = {
-    topHeadliner: string;
+    topHeadliner?: string;
     headlineTitle: string;
     disableBottomSeparator?: boolean;
 };
@@ -19,9 +19,11 @@ export const HeadlineMetadataContainer: FC<HeadlineMetadataContainerType> = ({
     return (
         <StandardWrapper>
             <SeparatorMargin marginValue={1.5} />
-            <TopHeadliner>
-                <HeadlineParagraph>{topHeadliner}</HeadlineParagraph>
-            </TopHeadliner>
+            {topHeadliner &&
+                <TopHeadliner>
+                    <HeadlineParagraph>{topHeadliner}</HeadlineParagraph>
+                </TopHeadliner>
+            }
             <HeadlineTitle>
                 <HeadlineParagraph>{headlineTitle}</HeadlineParagraph>
             </HeadlineTitle>

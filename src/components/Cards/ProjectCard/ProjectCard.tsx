@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import {
     ProjectCardImage, ProjectCardTitle, ProjectCardWrapper,
     ProjectCardWrapperContainer, ProjectCardDescription, ProjectPartner,
-} from "@components/components/ProjectCard/ProjectCard.css";
+} from "@components/components/Cards/ProjectCard/ProjectCard.css";
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { useRouter } from "next/router";

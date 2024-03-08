@@ -6,7 +6,7 @@ import {
     StandardBackground, StandardWrapper
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Colors } from "@components/utils/cssMedia";
-import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
+import { ProjectCard } from "@components/components/Cards/ProjectCard/ProjectCard";
 import { HeadlineMetadataContainer } from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
