@@ -97,7 +97,7 @@ export const TeamConfig: TeamProfileConfigType[] = [
     },
     {
         image: VassRichardDaniel.src,
-        fullName: "Vass Richard Daniel",
+        fullName: "Vass Richard-Daniel",
         position: "Founder",
         socialMedia: [
             {
