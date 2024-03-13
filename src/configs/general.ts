@@ -4,7 +4,11 @@ import MobileSolid from "@components/assets/svgs/mobile-solid.svg";
 import BrainSolid from "@components/assets/svgs/brain-solid.svg";
 import LinkedIn from "@components/assets/svgs/socialMedia/linkedin.svg";
 import Medium from "@components/assets/svgs/socialMedia/medium.svg";
+import Website from "@components/assets/svgs/link-solid.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
+import NttData from "@components/assets/projects/nttData.png";
+import CiganOliviuDavid from "@components/assets/team/CiganOliviuDavid.jpg"
+import VassRichardDaniel from "@components/assets/team/VassRichardDaniel.jpg";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,
@@ -48,18 +52,72 @@ export const ServicesCardsConfig: ServiceConfigType[] = [
     },
 ];
 
-export const SocialMediaConfig: SocialMediaConfigType[] = [
+export const PartnersConfig: PartnersConfigType[] = [
     {
-        id: 'linkedin',
+        name: "NTT Data",
+        icon: NttData.src
+    },
+];
+
+export const WebsiteSocialMediaConfig: SocialMediaConfigType[] = [
+    {
+        id: "linkedin",
         icon: LinkedIn.src,
         url: "https://skyeex-org.github.io/",
     },
     {
-        id: 'medium',
+        id: "medium",
         icon: Medium.src,
         url: "https://skyeex-org.github.io/",
     }
 ];
+
+export const TeamConfig: TeamProfileConfigType[] = [
+    {
+        image: CiganOliviuDavid.src,
+        fullName: "Cigan Oliviu-David",
+        position: "Founder",
+        socialMedia: [
+            {
+                id: "linkedin",
+                icon: LinkedIn.src,
+                url: "#",
+            },
+            {
+                id: "medium",
+                icon: Medium.src,
+                url: "#",
+            },
+            {
+                id: "website",
+                icon: Website.src,
+                url: "#",
+            }
+        ]
+    },
+    {
+        image: VassRichardDaniel.src,
+        fullName: "Vass Richard-Daniel",
+        position: "Founder",
+        socialMedia: [
+            {
+                id: "linkedin",
+                icon: LinkedIn.src,
+                url: "#",
+            },
+            {
+                id: "medium",
+                icon: Medium.src,
+                url: "#",
+            },
+            {
+                id: "website",
+                icon: Website.src,
+                url: "#",
+            }
+        ]
+    },
+]
 
 export const FooterConfig: FooterConfigType = {
     metadataMoto: 'Discover new heights with us',

@@ -17,7 +17,7 @@ import {
     StandardBackground,
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Colors } from "@components/utils/cssMedia";
-import { FooterConfig } from "@components/configs/general";
+import { FooterConfig, WebsiteSocialMediaConfig } from "@components/configs/general";
 
 export const Footer: FC = () => {
     return (
@@ -35,7 +35,7 @@ export const Footer: FC = () => {
                     </FooterMetadataContainer>
                     <FooterLine />
                     <SeparatorMargin marginValue={1.5} />
-                    <SocialMediaContainer isBackgroundLight={false}/>
+                    <SocialMediaContainer isBackgroundLight={false} socialMediaIcons={WebsiteSocialMediaConfig}/>
                     <SeparatorMargin marginValue={1.5} />
                     <FooterCopyright>
                         <FooterCopyrightText href={FooterConfig.websiteUrl}>

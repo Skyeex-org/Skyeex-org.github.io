@@ -32,6 +32,11 @@ type ProjectsConfigType = {
     partner: string;
 };
 
+type PartnersConfigType = {
+    name: string;
+    icon: string;
+}
+
 type SocialMediaConfigType = {
     id: string;
     icon: string;
@@ -48,4 +53,11 @@ type FooterConfigType = {
 type MetaConfigType = {
     homeMetaDescription: string;
     projectsMetaDescription: string;
+};
+
+type TeamProfileConfigType = {
+    image: string;
+    fullName: string;
+    position: string;
+    socialMedia: SocialMediaConfigType[];
 };

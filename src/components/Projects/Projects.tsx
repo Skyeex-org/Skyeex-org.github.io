@@ -1,16 +1,13 @@
 import React, { FC } from "react";
-import {
-    ProjectsContainer,
-} from "@components/components/Projects/Projects.css";
-import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
+import { ProjectCard } from "@components/components/Cards/ProjectCard/ProjectCard";
 import {
     Button,
     FlexContainer,
     SeparatorMargin,
     SeparatorSpace,
-    StandardBackground
+    StandardBackground, StandardWrapper
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { HeadlineMetadataContainer } from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer";
 import { ProjectsCardsPreviewConfig } from "@components/configs/projectsConfig";
 import { Colors } from "@components/utils/cssMedia";
 import { useRouter } from "next/router";
@@ -24,8 +21,8 @@ export const Projects: FC = () => {
 
     return (
         <StandardBackground background={Colors.paleBluishGray} color={Colors.black}>
-            <ProjectsContainer>
-                <ProjectsMetadataContainer />
+            <StandardWrapper>
+                <HeadlineMetadataContainer topHeadliner={'PRECISION & EFFICIENCY'} headlineTitle={'Engineered solutions'} />
                 <FlexContainer positionType={"space-around"}>
                     {ProjectsCardsPreviewConfig.map((project: ProjectsConfigType) => {
                         return (
@@ -35,7 +32,7 @@ export const Projects: FC = () => {
                 </FlexContainer>
                 <SeparatorMargin marginValue={3} />
                 <Button onClick={onShowMoreClick}>Show More</Button>
-            </ProjectsContainer>
+            </StandardWrapper>
             <SeparatorSpace paddingValue={1.5} />
         </StandardBackground>
     );

@@ -8,6 +8,9 @@ import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopBut
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import Head from "next/head";
 import { MetaConfig } from "@components/configs/general";
+import { Partners } from "@components/components/Partners/Partners";
+import { Team } from "@components/components/Team/Team";
+import { AppLayoutConfig } from "@components/configs/appLayoutConfig";
 
 export const getStandardHeaderForPages = (title: string, metaDescription?: string) => {
     return (
@@ -29,10 +32,13 @@ export default function Home() {
         <React.Fragment>
             {getStandardHeaderForPages('Skyeex Software - Architecting new digital horizons', MetaConfig.homeMetaDescription)}
             {!isMobile() && <ScrollTopButton />}
-            <LandingArea nextSectionReference={whatWeDoRef} />
-            <Services ref={whatWeDoRef} />
-            <Projects />
-            <ContactForm />
+            {AppLayoutConfig.landingArea && <LandingArea nextSectionReference={whatWeDoRef}/>}
+            {AppLayoutConfig.services && <Services ref={whatWeDoRef} />}
+            {AppLayoutConfig.projects && <Projects />}
+            {AppLayoutConfig.partners && <Partners />}
+            {AppLayoutConfig.team && <Team />}
+            {AppLayoutConfig.contactForm && <ContactForm />}
+            {AppLayoutConfig.footer && <Footer />}
             <Footer />
         </React.Fragment>
     )
