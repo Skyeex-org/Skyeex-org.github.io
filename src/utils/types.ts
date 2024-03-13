@@ -29,7 +29,13 @@ type ProjectsConfigType = {
     htmlField: innerHtmlType;
     isDetailPageEnabled: boolean;
     isImageReferenceOnly: boolean;
+    partner: string;
 };
+
+type PartnersConfigType = {
+    name: string;
+    icon: string;
+}
 
 type SocialMediaConfigType = {
     id: string;
@@ -47,4 +53,11 @@ type FooterConfigType = {
 type MetaConfigType = {
     homeMetaDescription: string;
     projectsMetaDescription: string;
+};
+
+type TeamProfileConfigType = {
+    image: string;
+    fullName: string;
+    position: string;
+    socialMedia: SocialMediaConfigType[];
 };

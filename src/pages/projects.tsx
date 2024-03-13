@@ -3,13 +3,12 @@ import {
     FlexColumn,
     FlexContainer,
     SeparatorSpace,
-    StandardBackground
+    StandardBackground, StandardWrapper
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { Colors } from "@components/utils/cssMedia";
-import { ProjectCard } from "@components/components/ProjectCard/ProjectCard";
-import { ProjectsMetadataContainer } from "@components/components/ProjectsMetadataContainer/ProjectsMetadataContainer";
+import { ProjectCard } from "@components/components/Cards/ProjectCard/ProjectCard";
+import { HeadlineMetadataContainer } from "@components/components/HeadlineMetadataContainer/HeadlineMetadataContainer";
 import { LogoWrapper } from "@components/components/LogoWrapper/LogoWrapper";
-import { ProjectsContainer } from "@components/components/Projects/Projects.css";
 import { ProjectsConfig } from "@components/configs/projectsConfig";
 import { Footer } from "@components/components/Footer/Footer";
 import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopButton";
@@ -26,9 +25,9 @@ const ProjectsPage: FC = () => {
             {!isMobile() && <ScrollTopButton />}
             <StandardBackground background={Colors.paleBluishGray}>
                 <LogoWrapper isDarkLogo={true} />
-                <ProjectsContainer>
+                <StandardWrapper>
                     <SeparatorSpace paddingValue={3} />
-                    <ProjectsMetadataContainer />
+                    <HeadlineMetadataContainer topHeadliner={'PRECISION & EFFICIENCY'} headlineTitle={'Engineered solutions'} />
                     <FlexContainer positionType={"space-around"}>
                         {ProjectsConfig.map((project: ProjectsConfigType) => {
                             return (
@@ -38,7 +37,7 @@ const ProjectsPage: FC = () => {
                             );
                         })}
                     </FlexContainer>
-                </ProjectsContainer>
+                </StandardWrapper>
                 <SeparatorSpace paddingValue={isMobile() ? 2 : 1} />
             </StandardBackground>
             <Footer />

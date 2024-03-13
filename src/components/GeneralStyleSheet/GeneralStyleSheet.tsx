@@ -35,9 +35,11 @@ export const FlexColumn = styled.div<{
     columnPercentage: number,
     shouldHaveBorder?: boolean,
     alignColumnsCenter?: boolean,
+    padding?: number;
 }>`
     flex: 1 1 100%;
     border-bottom: ${(props) => props.shouldHaveBorder ? '1px solid rgba(204, 204, 204, 0.7)' : 'none'};
+    padding: ${(props) => props.padding || 0}rem;
     
     ${minWidthQuery(Breakpoints.large)} {
         flex: ${(props) => `1 1 ${props.columnPercentage}%;`}
@@ -102,4 +104,13 @@ export const SocialMediaIcon = styled.img<{ isBackgroundLight: boolean}>`
 export const StandardBackground = styled.div<{ background?: string, color?: string }>`
     background: ${(props) => props.background || Colors.white};
     color: ${(props) => props.color || Colors.black};
-`
+`;
+
+export const StandardWrapper = styled.div`
+    padding: 1rem 0.25rem 1rem 0.25rem;
+    text-align: center;
+
+    ${minWidthQuery(Breakpoints.medium)} {
+        padding: 2.5rem;
+    }
+`;

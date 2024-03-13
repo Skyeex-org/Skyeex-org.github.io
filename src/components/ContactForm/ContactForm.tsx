@@ -16,7 +16,7 @@ import {
     FlexContainer,
     SeparatorSpace, StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
+import { FooterConfig, formSubmitCodeUrl, WebsiteSocialMediaConfig } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
@@ -96,7 +96,7 @@ export const ContactForm: FC = () => {
                         <ContactTextBox>
                             <ContactSvg src={ContactUsSvg.src} alt={ContactUsSvg.src} />
                             <ContactParagraph isBold={true}>{FooterConfig.metadataText}</ContactParagraph>
-                            <SocialMediaContainer isBackgroundLight={true}/>
+                            <SocialMediaContainer isBackgroundLight={true} socialMediaIcons={WebsiteSocialMediaConfig} />
                         </ContactTextBox>
                     </FlexColumn>
                     <FlexColumn columnPercentage={65}>
