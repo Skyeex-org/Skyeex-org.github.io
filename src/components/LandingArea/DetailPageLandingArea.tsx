@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import {
-    DetailPageLandingAreaContentContainer,
+    LandingAreaContentContainer,
     LandingAreaReferenceText,
     LandingAreaUnderText,
     LandingAreaWelcomeText,
@@ -20,15 +20,15 @@ export const DetailPageLandingArea: FC<DetailPageLandingAreaType> = ({ project, 
     return (
         <LandingAreaWrapper height={80} wallpaper={wallpaper} darkLevel={0.8} isMobile={isMobile()}>
             <LogoWrapper isLogoLine={true} />
-            <DetailPageLandingAreaContentContainer>
+            <LandingAreaContentContainer >
                 <LandingAreaWelcomeText>
                     {project.title}
                 </LandingAreaWelcomeText>
                 <LandingAreaUnderText>
                     {project.subtitle}
                 </LandingAreaUnderText>
-                {project.isImageReferenceOnly && <LandingAreaReferenceText>Image for reference only - Not actual product</LandingAreaReferenceText>}
-            </DetailPageLandingAreaContentContainer>
+            </LandingAreaContentContainer >
+            {project.isImageReferenceOnly && <LandingAreaReferenceText>Image for reference only - Not actual product</LandingAreaReferenceText>}
         </LandingAreaWrapper>
     )
 }
