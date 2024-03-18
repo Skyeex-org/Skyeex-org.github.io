@@ -20,7 +20,10 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
     };
 
     const getTextSizeBasedOnBigBreakpoint = (text: string): string => {
-        return isBigScreen() ? text.slice(0, 300) : text.slice(0, 250);
+        if (isMobile()) return text.slice(0, 150);
+        if (isBigScreen()) return text.slice(0, 300);
+
+        return text.slice(0, 250);
     };
 
     return (

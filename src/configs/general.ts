@@ -17,7 +17,7 @@ export const ServicesConfig: ServicesConfigType = {
     overTitle: 'Our Services',
     title: 'Take your craft to the next level',
     paragraphOne: "Our comprehensive tech stack empowers us to deliver a diverse range of services, spanning backend development, web and mobile application development, and even cutting-edge machine learning solutions.",
-    paragraphTwo: "From concept to execution, we are your dedicated partners in turning visions into reality because success is not just a goal; it is our shared destination."
+    paragraphTwo: "From concept to execution, we are your dedicated partners in turning visions into reality because success is not just a goal, it is our shared destination."
 };
 
 export const ServicesCardsConfig: ServiceConfigType[] = [
