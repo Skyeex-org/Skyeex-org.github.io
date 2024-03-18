@@ -27,17 +27,6 @@ export const LandingAreaContentContainer = styled.div`
     text-align: center;
 `;
 
-export const DetailPageLandingAreaContentContainer = styled.div`
-    width: 100%;
-    height: 100%;
-    top: 85%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: ${Colors.white};
-    text-align: center;
-`;
-
 export const LandingAreaWelcomeText = styled.div`
     font-size: 3rem;
     font-weight: bold;
@@ -74,8 +63,8 @@ export const LandingAreaUnderText = styled.div`
 `;
 
 export const LandingAreaReferenceText = styled.div`
-    font-size: 0.75rem;
-    margin: 1rem;
     position: absolute;
-    bottom: 35%;
+    margin: 1rem;
+    bottom: 0;
+    font-size: 0.75rem;
 `;

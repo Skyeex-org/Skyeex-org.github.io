@@ -84,12 +84,11 @@ export const ProjectsConfig: ProjectsConfigType[] = [
         title: 'MedCity',
         subtitle: 'Brain Tumor Analysis in Medical Industry',
         icon: MedCity.src,
-        previewDescription: 'This web-based application is a breakthrough in the medical field, designed to aid doctors in the ' +
-            'detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images ' +
-            'and receive rapid results, our system streamlines the diagnostic process, facilitating early detection' +
-            ' and treatment of brain tumors.',
+        previewDescription: 'Improving medical diagnostics, this application empowers doctors in detecting glioma, meningioma, ' +
+        'and pituitary tumors. Through seamless upload of X-ray images and rapid result delivery, the system optimizes diagnostic procedures, ' +
+        'facilitating early intervention and treatment for brain tumors.',
         htmlField: {
-            __html: 'This web-based application is a breakthrough in the medical field, designed to aid doctors in the detection of glioma, meningioma, and pituitary tumors. By allowing doctors to upload X-ray images and receive rapid results, our system streamlines the diagnostic process, facilitating early detection and treatment of brain tumors.' +
+            __html: 'Improving medical diagnostics, this application empowers doctors in detecting glioma, meningioma, and pituitary tumors. Through seamless upload of X-ray images and rapid result delivery, the system optimizes diagnostic procedures, facilitating early intervention and treatment for brain tumors.' +
                 '<div>&nbsp;</div>' +
                 '<span style="font-size: 1.8rem">Our Contributions:</span>' +
                 '<div>&nbsp;</div>' +
