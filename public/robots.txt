@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://skyeex.net
-
-# Sitemaps
-Sitemap: https://skyeex.net/sitemap.xml
