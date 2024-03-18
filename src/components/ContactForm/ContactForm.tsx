@@ -16,7 +16,7 @@ import {
     FlexContainer,
     SeparatorSpace, StandardBackground
 } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
-import { FooterConfig, formSubmitCodeUrl } from "@components/configs/general";
+import { FooterConfig, formSubmitUrl } from "@components/configs/general";
 import ContactUsSvg from "../../assets/svgs/contact-us.svg";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 
@@ -106,7 +106,7 @@ export const ContactForm: FC = () => {
                                 <SeparatorSpace paddingValue={1.5} />
                             </React.Fragment>
                         )}
-                        <ContactFormWrapper action={formSubmitCodeUrl} method="POST" onSubmit={onSubmitFormProcess}>
+                        <ContactFormWrapper action={formSubmitUrl} method="POST" onSubmit={onSubmitFormProcess}>
                             <ContactInput
                                 placeholder={EmailElements.NAME}
                                 name={EmailElements.NAME}

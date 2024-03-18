@@ -73,4 +73,4 @@ export const MetaConfig: MetaConfigType = {
     projectsMetaDescription: 'Explore Skyeex\'s exciting projects in mobile apps, websites, AI, and backend systems. Quality is key to everything we do. See how we excel in our work, exceed expectations, and set new standards. Let us guide you through our projects and into a future filled with quality and innovation.'
 };
 
-export const formSubmitCodeUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';
+export const formSubmitUrl = 'https://formsubmit.co/3429fe035dc96d7c043c7fd6bf477a8c';
