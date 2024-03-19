@@ -63,9 +63,9 @@ export const ProjectCardImage = styled.div<{ imageSource: string }>`
     background-position: center;
 `;
 
-export const ProjectCardDescription = styled.p`
+export const ProjectCardDescription = styled.p<{ textColor?: string }>`
     font-size: 1.15rem;
-    color: ${Colors.paleGray};
+    color: ${(props) => props.textColor || Colors.paleGray};
 
     ${minWidthQuery(Breakpoints.medium)} {
         font-size: 1rem;
