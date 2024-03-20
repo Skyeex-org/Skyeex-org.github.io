@@ -23,7 +23,7 @@ export const ServicesConfig: ServicesConfigType = {
 export const ServicesCardsConfig: ServiceConfigType[] = [
     {
         icon: SeverSolid.src,
-        title: 'Backend Services',
+        title: 'Backend',
         content: 'We specialize in backend systems, where we excel at designing, developing, and optimizing the ' +
             'technology that powers applications. With a focus on scalability and security, ' +
             'We ensure that these systems are reliable and efficient.',
@@ -42,7 +42,7 @@ export const ServicesCardsConfig: ServiceConfigType[] = [
     },
     {
         icon: BrainSolid.src,
-        title: 'Machine Learning',
+        title: 'AI & ML',
         content: 'We offer Machine Learning services, leveraging my expertise in this field to provide ' +
             'tailored solutions that harness the power of data and algorithms for diverse applications',
     },

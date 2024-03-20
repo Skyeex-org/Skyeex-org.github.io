@@ -8,6 +8,7 @@ import ScrollTopButton from "@components/components/ScrollTopButton/ScrollTopBut
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import Head from "next/head";
 import { MetaConfig } from "@components/configs/general";
+import { AOSInit } from "@components/components/AOSInit/AOSInit";
 
 export const getStandardHeaderForPages = (title: string, metaDescription?: string) => {
     return (
@@ -27,6 +28,7 @@ export default function Home() {
 
     return (
         <React.Fragment>
+            <AOSInit />
             {getStandardHeaderForPages('Skyeex Software - Architecting new digital horizons', MetaConfig.homeMetaDescription)}
             {!isMobile() && <ScrollTopButton />}
             <LandingArea nextSectionReference={whatWeDoRef} />
