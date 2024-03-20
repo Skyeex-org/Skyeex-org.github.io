@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import {
-    ServiceCardImage,
+    ServiceCardImage, ServiceCardTech,
     ServiceCardTitle,
     ServiceCardWrapper,
 } from "@components/components/ServiceCard/ServiceCard.css";
@@ -18,9 +18,9 @@ export const ServiceCard: FC<ServiceCardType> = ({ service }) => {
             <ServiceCardTitle>{service.title}</ServiceCardTitle>
             <SeparatorSpace paddingValue={2} />
             <FlexContainer positionType={'space-around'}>
-                <div data-aos="zoom-in-right">Django</div>
-                <div data-aos="zoom-in-up">NextJS</div>
-                <div data-aos="zoom-in-left">Kotlin/Java</div>
+                {service.techStack.map((tech) => {
+                    return <ServiceCardTech src={tech} data-aos="zoom-in-up" key={tech} alt={tech} />
+                })}
             </FlexContainer>
         </ServiceCardWrapper>
     );

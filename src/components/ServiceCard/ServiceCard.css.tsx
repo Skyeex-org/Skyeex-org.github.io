@@ -37,3 +37,7 @@ export const ServiceCardImage = styled.img`
         height: 12.5rem;
     }
 `;
+
+export const ServiceCardTech = styled.img`
+    width: 20%;
+`;

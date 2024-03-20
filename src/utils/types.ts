@@ -16,6 +16,7 @@ type ServiceConfigType = {
     icon: string;
     title: string;
     content: string;
+    techStack: string[];
 };
 
 type innerHtmlType = { __html: string | TrustedHTML };
