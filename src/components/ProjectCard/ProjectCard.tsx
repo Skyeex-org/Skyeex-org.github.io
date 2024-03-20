@@ -6,6 +6,7 @@ import {
 import { SeparatorSpace, SeparatorMargin } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 import { useGetScreenSize } from "@components/utils/useGetScreenSize";
 import { useRouter } from "next/router";
+import { Colors } from "@components/utils/cssMedia";
 
 export type ProjectCardType = {
     project: ProjectsConfigType;
@@ -20,7 +21,10 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
     };
 
     const getTextSizeBasedOnBigBreakpoint = (text: string): string => {
-        return isBigScreen() ? text.slice(0, 300) : text.slice(0, 250);
+        if (isMobile()) return text.slice(0, 150);
+        if (isBigScreen()) return text.slice(0, 300);
+
+        return text.slice(0, 250);
     };
 
     return (
@@ -29,9 +33,11 @@ export const ProjectCard: FC<ProjectCardType> = ({ project }) => {
             <SeparatorMargin marginValue={0.5} />
             <ProjectCardWrapperContainer>
                 <ProjectCardTitle>{project.title}</ProjectCardTitle>
-                <SeparatorSpace paddingValue={isMobile() ? 0.15 : 1} />
+                <SeparatorSpace paddingValue={isMobile() ? 0.15 : 1}/>
                 <ProjectCardDescription>{getTextSizeBasedOnBigBreakpoint(project.previewDescription)}...</ProjectCardDescription>
-                <SeparatorSpace paddingValue={isMobile() ? 0.15 : 0.8} />
+                <SeparatorSpace paddingValue={0.5}/>
+                {project.isDetailPageEnabled && <ProjectCardDescription textColor={Colors.footerWrapperEbony}>Read more</ProjectCardDescription>}
+                <SeparatorSpace paddingValue={isMobile() ? 0.1 : 0.8}/>
             </ProjectCardWrapperContainer>
         </ProjectCardWrapper>
     );
