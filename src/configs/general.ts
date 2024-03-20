@@ -7,7 +7,6 @@ import Medium from "@components/assets/svgs/socialMedia/medium.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
 import Python from "@components/assets/svgs/python.svg";
 import Django from "@components/assets/svgs/django.svg";
-
 import NextJS from "@components/assets/svgs/nextjs.svg";
 import React from "@components/assets/svgs/react.svg";
 import ReactNative from "@components/assets/svgs/react-native.svg";

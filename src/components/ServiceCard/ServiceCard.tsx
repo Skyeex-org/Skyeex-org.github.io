@@ -19,7 +19,7 @@ export const ServiceCard: FC<ServiceCardType> = ({ service }) => {
             <SeparatorSpace paddingValue={2} />
             <FlexContainer positionType={'space-around'}>
                 {service.techStack.map((tech) => {
-                    return <ServiceCardTech src={tech} data-aos="zoom-in-up" key={tech} alt={tech} />
+                    return <ServiceCardTech src={tech} key={tech} alt={tech} data-aos="zoom-in-up" />
                 })}
             </FlexContainer>
         </ServiceCardWrapper>
