@@ -37,3 +37,19 @@ export const ServiceCardImage = styled.img`
         height: 12.5rem;
     }
 `;
+
+export const ServiceCardTech = styled.img`
+    width: 20%;
+
+    ${minWidthQuery(Breakpoints.small)} {
+        width: 15%;
+    }
+    
+    ${minWidthQuery(Breakpoints.medium)} {
+        width: 10%;
+    }
+
+    ${minWidthQuery(Breakpoints.large)} {
+        width: 20%;
+    }
+`;

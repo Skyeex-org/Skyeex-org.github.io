@@ -5,6 +5,13 @@ import BrainSolid from "@components/assets/svgs/brain-solid.svg";
 import LinkedIn from "@components/assets/svgs/socialMedia/linkedin.svg";
 import Medium from "@components/assets/svgs/socialMedia/medium.svg";
 import SkyeexLogo from "@components/assets/SkyeexLogo.svg";
+import Python from "@components/assets/svgs/python.svg";
+import Django from "@components/assets/svgs/django.svg";
+import NextJS from "@components/assets/svgs/nextjs.svg";
+import React from "@components/assets/svgs/react.svg";
+import ReactNative from "@components/assets/svgs/react-native.svg";
+import Java from "@components/assets/svgs/java.svg";
+import Kotlin from "@components/assets/svgs/kotlin.png";
 
 export const LandingAreaConfig: LandingAreaConfigType = {
     landingLogo: SkyeexLogo.src,
@@ -23,28 +30,44 @@ export const ServicesConfig: ServicesConfigType = {
 export const ServicesCardsConfig: ServiceConfigType[] = [
     {
         icon: SeverSolid.src,
-        title: 'Backend Services',
+        title: 'Backend',
         content: 'We specialize in backend systems, where we excel at designing, developing, and optimizing the ' +
             'technology that powers applications. With a focus on scalability and security, ' +
             'We ensure that these systems are reliable and efficient.',
+        techStack: [
+            Python.src,
+            Django.src
+        ]
     },
     {
         icon: DesktopSolid.src,
         title: 'Web Apps',
         content: 'As a software company, our expertise also encompasses developing web applications. ' +
             'We have an in-depth understanding of web technologies, frameworks, and programming languages.',
+        techStack: [
+            NextJS.src,
+            React.src
+        ]
     },
     {
         icon: MobileSolid.src,
         title: 'Mobile Apps',
         content: 'We possess a comprehensive knowledge of mobile development, specifically hybrid development. ' +
             'In addition to our existing expertise, We are committed to staying up-to-date with the latest trends and best practices.',
+        techStack: [
+            Java.src,
+            Kotlin.src,
+            ReactNative.src
+        ]
     },
     {
         icon: BrainSolid.src,
-        title: 'Machine Learning',
+        title: 'AI & ML',
         content: 'We offer Machine Learning services, leveraging my expertise in this field to provide ' +
             'tailored solutions that harness the power of data and algorithms for diverse applications',
+        techStack: [
+            Python.src,
+        ]
     },
 ];
 

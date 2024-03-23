@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import {
-    ServiceCardImage,
+    ServiceCardImage, ServiceCardTech,
     ServiceCardTitle,
-    ServiceCardWrapper
+    ServiceCardWrapper,
 } from "@components/components/ServiceCard/ServiceCard.css";
-import { SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
+import { FlexContainer, SeparatorSpace } from "@components/components/GeneralStyleSheet/GeneralStyleSheet";
 
 type ServiceCardType = {
     service: ServiceConfigType;
@@ -13,9 +13,15 @@ type ServiceCardType = {
 export const ServiceCard: FC<ServiceCardType> = ({ service }) => {
     return (
         <ServiceCardWrapper>
-            <ServiceCardImage src={service.icon} alt={service.title} />
-            <SeparatorSpace paddingValue={2} />
+            <ServiceCardImage src={service.icon} alt={service.title}/>
+            <SeparatorSpace paddingValue={2}/>
             <ServiceCardTitle>{service.title}</ServiceCardTitle>
+            <SeparatorSpace paddingValue={2} />
+            <FlexContainer positionType={'space-around'}>
+                {service.techStack.map((tech) => {
+                    return <ServiceCardTech src={tech} key={tech} alt={tech} />
+                })}
+            </FlexContainer>
         </ServiceCardWrapper>
     );
 };
